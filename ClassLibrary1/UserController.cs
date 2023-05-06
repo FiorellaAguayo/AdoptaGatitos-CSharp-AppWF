@@ -14,7 +14,7 @@ namespace ClassLibrary1
         public static bool ValidateLogin(string username, string password)
         {
             string path = "UsersGuardados.txt";
-            List<User> users = Controller.ReadUser(path);
+            List<User> users = FileController.ReadUser(path);
 
             foreach (User user in users) 
             {
@@ -30,7 +30,7 @@ namespace ClassLibrary1
         public static bool ValidateSignUp(string email, string username, string password)
         {
             string path = "UsersGuardados.txt";
-            List<User> users = Controller.ReadUser(path);
+            List<User> users = FileController.ReadUser(path);
             
             bool userFound = false;
 
@@ -46,7 +46,7 @@ namespace ClassLibrary1
             if(!userFound && ValidateEmail(email)) 
             { 
                 User newUser = new User(email, username, password);
-                Controller.WriteUser(newUser, path);
+                FileController.WriteUser(newUser, path);
                 return true;
             }
             else 
@@ -70,7 +70,7 @@ namespace ClassLibrary1
         public static User GetUserByUsername(string username)
         {
             string path = "UsersGuardados.txt";
-            List<User> users = Controller.ReadUser(path);
+            List<User> users = FileController.ReadUser(path);
             User userFound = null;
 
             foreach (User user in users)

@@ -7,7 +7,7 @@ using System.IO;
 
 namespace ClassLibrary1
 {
-    public class Controller
+    public class FileController
     {
         public static void WriteUser(User user, string path)
         {

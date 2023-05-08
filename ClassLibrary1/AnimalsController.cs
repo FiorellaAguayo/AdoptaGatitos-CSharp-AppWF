@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class Employed
+    public class AnimalsController
     {
-        private DateTime _dateAdmission;
-        private string _area;
+
     }
 }

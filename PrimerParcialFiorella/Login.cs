@@ -59,9 +59,9 @@ namespace PrimerParcial
             string username = txb_Usser.Text;
             string password = txb_Password.Text;
 
-            if (UserController.ValidateLogin(username, password))
+            if (UserDAL.ValidateLogin(username, password))
             {
-                this.currentUser = UserController.GetUserByUsername(username);
+                this.currentUser = UserDAL.GetUserByUsername(username);
                 Principal principal = new Principal();
                 MessageBox.Show("Bienvenido");
                 principal.Show();

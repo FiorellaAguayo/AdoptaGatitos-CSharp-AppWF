@@ -28,13 +28,6 @@ C:\Users\fiore\source\repos\PrimerParcialFiorella\PrimerParcialFiorella\obj\Debu
 C:\Users\fiore\source\repos\PrimerParcialFiorella\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcialFiorella.pdb
 C:\Users\fiore\source\repos\PrimerParcialFiorella\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcialFiorella.genruntimeconfig.cache
 C:\Users\fiore\source\repos\PrimerParcialFiorella\PrimerParcialFiorella\obj\Debug\net6.0-windows\ref\PrimerParcialFiorella.dll
-C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.exe
-C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.deps.json
-C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.runtimeconfig.json
-C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.dll
-C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.pdb
-C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\ClassLibrary1.dll
-C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\ClassLibrary1.pdb
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcialFiorella.csproj.AssemblyReference.cache
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcial.Access.resources
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcial.Account.resources
@@ -42,6 +35,7 @@ C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-win
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcial.BePart.resources
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcial.Contact.resources
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcial.Donation.resources
+C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcialFiorella.DonationCompleteData.resources
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcial.Login.resources
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcial.MainScreen.resources
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcial.Principal.resources
@@ -52,6 +46,13 @@ C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-win
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcialFiorella.AssemblyInfoInputs.cache
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcialFiorella.AssemblyInfo.cs
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcialFiorella.csproj.CoreCompileInputs.cache
+C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.exe
+C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.deps.json
+C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.runtimeconfig.json
+C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.dll
+C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\PrimerParcialFiorella.pdb
+C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\ClassLibrary1.dll
+C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\ClassLibrary1.pdb
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcialFiorella.csproj.CopyComplete
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\PrimerParcialFiorella.dll
 C:\Users\fiore\source\repos\TP1_LABO1\PrimerParcialFiorella\obj\Debug\net6.0-windows\refint\PrimerParcialFiorella.dll

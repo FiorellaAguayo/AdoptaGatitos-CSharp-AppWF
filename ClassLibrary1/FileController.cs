@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-
-namespace ClassLibrary1
+﻿namespace ClassLibrary1
 {
     public class FileController
     {
-        public static void WriteUser(User user, string path)
+        public static void WriteUser(List<User> users, string path)
         {
             using (StreamWriter sw = new StreamWriter(path, true))
             {
-                sw.WriteLine($"{user.Email},{user.UserName},{user.Password}");
+                foreach (User user in users)
+                {
+                    sw.WriteLine($"{user.Id},{user.Email},{user.UserName},{user.Password}");
+                }
             }
         }
 

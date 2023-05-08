@@ -77,13 +77,15 @@ namespace PrimerParcial
 
         private void btn_SignUp_Click(object sender, EventArgs e)
         {
-            if (UserController.ValidateSignUp(txb_Email.Text, txb_Usser.Text, txb_Password.Text))
+            User user = UserDAL.CreateUser(txb_Email.Text, txb_Usser.Text, txb_Password.Text);
+
+            if(UserDAL.AddUser(user))
             {
-                MessageBox.Show("Usuario creado con exito");
+                MessageBox.Show("Usuario registrado con exito");
             }
             else
             {
-                MessageBox.Show("Datos incorrectos");
+                MessageBox.Show("No se pudo registrar el usuario");
             }
         }
 

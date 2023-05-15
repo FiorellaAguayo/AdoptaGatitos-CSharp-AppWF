@@ -1,8 +1,20 @@
-﻿namespace ClassLibrary1
+﻿using System.Text;
+
+namespace ClassLibrary1
 {
     public class FileController
     {
-        public static void WriteUser(List<User> users, string path)
+        //escribe UN USUARIO
+        public static void WriteUser(User user, string path)
+        {
+            using (StreamWriter sw = new StreamWriter(path, true))
+            {
+               sw.WriteLine($"{user.Id},{user.Email},{user.UserName},{user.Password},{user.Role}");
+            }
+        }
+
+        //escribe USUARIOS
+        public static void WriteUsers(List<User> users, string path)
         {
             using (StreamWriter sw = new StreamWriter(path, true))
             {
@@ -25,12 +37,18 @@
                     if (!string.IsNullOrEmpty(line))
                     {
                         string[] fields = line.Split(',');
-                        User user = new User(fields[0], fields[1], fields[2]);
+                        User user = new User(int.Parse(fields[0]),fields[1], fields[2], fields[3], fields[4]);
                         users.Add(user);
                     }
                 }
             }
             return users;
+        }
+
+        public static string ShowUserList(string path) 
+        { 
+            string userList = File.ReadAllText(path);
+            return userList;
         }
     }
 }

@@ -34,17 +34,18 @@
             txb_Password = new TextBox();
             ll_SignUp = new LinkLabel();
             label2 = new Label();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // btn_Login
             // 
-            btn_Login.BackColor = Color.FromArgb(224, 224, 224);
+            btn_Login.BackColor = Color.White;
             btn_Login.FlatAppearance.BorderSize = 0;
             btn_Login.FlatAppearance.MouseDownBackColor = Color.LightSlateGray;
             btn_Login.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption;
             btn_Login.FlatStyle = FlatStyle.Flat;
             btn_Login.ForeColor = SystemColors.WindowFrame;
-            btn_Login.Location = new Point(99, 172);
+            btn_Login.Location = new Point(254, 190);
             btn_Login.Name = "btn_Login";
             btn_Login.Size = new Size(315, 32);
             btn_Login.TabIndex = 3;
@@ -58,7 +59,7 @@
             label1.BackColor = Color.FromArgb(192, 192, 255);
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.WindowFrame;
-            label1.Location = new Point(209, 23);
+            label1.Location = new Point(362, 27);
             label1.Name = "label1";
             label1.Size = new Size(100, 33);
             label1.TabIndex = 2;
@@ -69,7 +70,7 @@
             txb_Usser.BorderStyle = BorderStyle.None;
             txb_Usser.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txb_Usser.ForeColor = SystemColors.WindowFrame;
-            txb_Usser.Location = new Point(99, 78);
+            txb_Usser.Location = new Point(254, 103);
             txb_Usser.Name = "txb_Usser";
             txb_Usser.Size = new Size(315, 20);
             txb_Usser.TabIndex = 1;
@@ -82,7 +83,7 @@
             txb_Password.BorderStyle = BorderStyle.None;
             txb_Password.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txb_Password.ForeColor = SystemColors.WindowFrame;
-            txb_Password.Location = new Point(99, 115);
+            txb_Password.Location = new Point(254, 138);
             txb_Password.Name = "txb_Password";
             txb_Password.Size = new Size(315, 20);
             txb_Password.TabIndex = 2;
@@ -94,7 +95,7 @@
             // 
             ll_SignUp.ActiveLinkColor = SystemColors.Highlight;
             ll_SignUp.AutoSize = true;
-            ll_SignUp.Location = new Point(277, 234);
+            ll_SignUp.Location = new Point(435, 249);
             ll_SignUp.Name = "ll_SignUp";
             ll_SignUp.Size = new Size(59, 15);
             ll_SignUp.TabIndex = 0;
@@ -106,18 +107,28 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = SystemColors.WindowFrame;
-            label2.Location = new Point(151, 234);
+            label2.Location = new Point(309, 249);
             label2.Name = "label2";
             label2.Size = new Size(129, 15);
             label2.TabIndex = 7;
             label2.Text = "¿No tienes una cuenta?";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(161, 273);
+            panel1.TabIndex = 8;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 192, 255);
-            ClientSize = new Size(509, 273);
+            ClientSize = new Size(649, 273);
+            Controls.Add(panel1);
             Controls.Add(label2);
             Controls.Add(ll_SignUp);
             Controls.Add(txb_Password);
@@ -125,9 +136,10 @@
             Controls.Add(btn_Login);
             Controls.Add(label1);
             ForeColor = SystemColors.Highlight;
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Login";
             Opacity = 0.9D;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
             ResumeLayout(false);
@@ -142,5 +154,6 @@
         private LinkLabel ll_SignUp;
         private Label label2;
         public TextBox txb_Usser;
+        private Panel panel1;
     }
 }

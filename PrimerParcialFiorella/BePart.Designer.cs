@@ -32,8 +32,12 @@
             label1 = new Label();
             label2 = new Label();
             groupBox1 = new GroupBox();
+            txb_Password = new TextBox();
             label8 = new Label();
+            txb_Phone = new TextBox();
             label7 = new Label();
+            txb_Email = new TextBox();
+            txb_Direction = new TextBox();
             label6 = new Label();
             label3 = new Label();
             label4 = new Label();
@@ -43,10 +47,6 @@
             rb_FaceToFace = new RadioButton();
             rb_Virtual = new RadioButton();
             label9 = new Label();
-            txb_Password = new TextBox();
-            txb_Phone = new TextBox();
-            txb_Email = new TextBox();
-            txb_Direction = new TextBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -75,7 +75,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(56, 46);
+            label2.Location = new Point(48, 42);
             label2.Name = "label2";
             label2.Size = new Size(423, 21);
             label2.TabIndex = 3;
@@ -101,6 +101,14 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Detalles del usuario";
             // 
+            // txb_Password
+            // 
+            txb_Password.Location = new Point(86, 185);
+            txb_Password.Multiline = true;
+            txb_Password.Name = "txb_Password";
+            txb_Password.Size = new Size(219, 29);
+            txb_Password.TabIndex = 21;
+            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -111,6 +119,14 @@
             label8.TabIndex = 20;
             label8.Text = "Contraseña";
             // 
+            // txb_Phone
+            // 
+            txb_Phone.Location = new Point(70, 142);
+            txb_Phone.Multiline = true;
+            txb_Phone.Name = "txb_Phone";
+            txb_Phone.Size = new Size(219, 29);
+            txb_Phone.TabIndex = 19;
+            // 
             // label7
             // 
             label7.AutoSize = true;
@@ -120,6 +136,23 @@
             label7.Size = new Size(58, 17);
             label7.TabIndex = 18;
             label7.Text = "Teléfono";
+            // 
+            // txb_Email
+            // 
+            txb_Email.Location = new Point(51, 102);
+            txb_Email.Multiline = true;
+            txb_Email.Name = "txb_Email";
+            txb_Email.Size = new Size(219, 29);
+            txb_Email.TabIndex = 17;
+            txb_Email.TextChanged += txb_Email_TextChanged;
+            // 
+            // txb_Direction
+            // 
+            txb_Direction.Location = new Point(74, 65);
+            txb_Direction.Multiline = true;
+            txb_Direction.Name = "txb_Direction";
+            txb_Direction.Size = new Size(219, 29);
+            txb_Direction.TabIndex = 16;
             // 
             // label6
             // 
@@ -174,7 +207,7 @@
             txb_Reason.Location = new Point(540, 165);
             txb_Reason.Multiline = true;
             txb_Reason.Name = "txb_Reason";
-            txb_Reason.Size = new Size(204, 168);
+            txb_Reason.Size = new Size(204, 189);
             txb_Reason.TabIndex = 18;
             // 
             // rb_FaceToFace
@@ -208,39 +241,6 @@
             label9.Size = new Size(153, 20);
             label9.TabIndex = 21;
             label9.Text = "Cómo queres ayudar?";
-            // 
-            // txb_Password
-            // 
-            txb_Password.Location = new Point(86, 185);
-            txb_Password.Multiline = true;
-            txb_Password.Name = "txb_Password";
-            txb_Password.Size = new Size(219, 29);
-            txb_Password.TabIndex = 21;
-            // 
-            // txb_Phone
-            // 
-            txb_Phone.Location = new Point(70, 142);
-            txb_Phone.Multiline = true;
-            txb_Phone.Name = "txb_Phone";
-            txb_Phone.Size = new Size(219, 29);
-            txb_Phone.TabIndex = 19;
-            // 
-            // txb_Email
-            // 
-            txb_Email.Location = new Point(51, 102);
-            txb_Email.Multiline = true;
-            txb_Email.Name = "txb_Email";
-            txb_Email.Size = new Size(219, 29);
-            txb_Email.TabIndex = 17;
-            txb_Email.TextChanged += txb_Email_TextChanged;
-            // 
-            // txb_Direction
-            // 
-            txb_Direction.Location = new Point(74, 65);
-            txb_Direction.Multiline = true;
-            txb_Direction.Name = "txb_Direction";
-            txb_Direction.Size = new Size(219, 29);
-            txb_Direction.TabIndex = 16;
             // 
             // BePart
             // 

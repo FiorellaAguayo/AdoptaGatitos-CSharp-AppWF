@@ -27,11 +27,8 @@
             }
             else if (rb_Virtual.Checked)
             {
-                modality = "Virtual";
+                //modality = "Virtual";90 =;
             }
-            //MessageBox.Show($"{name}, {direction}, {email}, {phone}, {modality}, {reason}");
-
-            
         }
 
         private void txb_Email_TextChanged(object sender, EventArgs e)

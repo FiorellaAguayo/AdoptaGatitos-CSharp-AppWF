@@ -1,7 +1,12 @@
-﻿namespace PrimerParcial
+﻿using ClassLibrary1;
+using PrimerParcialFiorella;
+
+namespace PrimerParcial
 {
     public partial class Principal : Form
     {
+        private static User currentUser;
+
         //fields
         private Button currentButton;
         private Random random;
@@ -9,10 +14,11 @@
         //private Form ActiveForm;
 
         //constructor
-        public Principal()
+        public Principal(User user)
         {
             InitializeComponent();
             random = new Random();
+            currentUser = user;
         }
 
         //methods
@@ -102,7 +108,7 @@
         private void btn_Account_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            Account formAccount = new Account();
+            Account formAccount = new Account(currentUser);
             formAccount.MdiParent = this;
             formAccount.Show();
         }

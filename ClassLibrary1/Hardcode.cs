@@ -8,6 +8,12 @@ namespace ClassLibrary1
 {
     public class Hardcode
     {
+        public static void Administrator(List<User> userList)
+        {
+            User Administrator = new User(1000, "Fiorella Marina Aguayo", "1123303770", "fiorelamarina12@gmail.com", "FiorellaUTN", "202020", "Administrador");
+            userList.Add(Administrator);
+        }
+
         public static void ListAnimals(List<string> list)
         {
             List<Animal> listAnimals = new List<Animal>

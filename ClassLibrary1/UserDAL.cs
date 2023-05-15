@@ -11,7 +11,10 @@ namespace ClassLibrary1
 {
     public class UserDAL
     {
-        private static readonly string path = @"C:\Users\fiore\OneDrive\Escritorio\TP1_LABO1\PrimerParcialFiorella\bin\Debug\net6.0-windows\UsersGuardados.txt";
+        private static readonly string path = @"C:\Users\irlid\Desktop\PARCIAL_Fiorella\PrimerParcialFiorella\bin\Debug\net6.0-windows\UsersGuardados.txt";
+        private static int _lastId = 1000;
+        private static string _role = "Visitante";
+
 
         public static User CreateUser(string email, string userName, string password)
         {
@@ -23,54 +26,79 @@ namespace ClassLibrary1
             return user;
         }
 
-        public static bool AddUser(User incomingUser)
+        public enum UserAddError
+        {
+            NoError,
+            Error,
+            EmailExists,
+            UserNameExists,
+            BothExist
+        }
+
+        public static UserAddError AddUser(User incomingUser)
         {
             List<User> users = FileController.ReadUser(path);
-            bool userFound = false;
+
+            if (incomingUser == null || !ValidateEmail(incomingUser.Email) || string.IsNullOrEmpty(incomingUser.Email) || string.IsNullOrEmpty(incomingUser.UserName) || string.IsNullOrEmpty(incomingUser.Password))
+            {
+                return UserAddError.Error;
+            }
+
+            bool emailExists = false;
+            bool userNameExists = false;
 
             foreach (User user in users)
             {
-                if (user.Email == incomingUser.Email || user.UserName == incomingUser.UserName)
+                if (user.Email == incomingUser.Email)
                 {
-                    userFound = true;
-                    break;
+                    emailExists = true;
+                }
+                if (user.UserName == incomingUser.UserName)
+                {
+                    userNameExists = true;
                 }
             }
 
-            if (!userFound && ValidateEmail(incomingUser.Email) && !string.IsNullOrEmpty(incomingUser.UserName) && !string.IsNullOrEmpty(incomingUser.Password))
+            if (emailExists && userNameExists)
             {
-                int newId = users.Count > 0 ? users.Max(u => u.Id) + 1 : 1000; // Genera un nuevo ID único
-                User newUser = new User(newId.ToString(), incomingUser.Email, incomingUser.UserName, incomingUser.Password);
-                users.Add(newUser);
-                FileController.WriteUser(users, path);
-                return true;
+                return UserAddError.BothExist;
+            }
+            else if (emailExists)
+            {
+                return UserAddError.EmailExists;
+            }
+            else if (userNameExists)
+            {
+                return UserAddError.UserNameExists;
             }
             else
             {
-                return false;
+                int newId = ++_lastId;
+                User newUser = new User(newId, incomingUser.Email, incomingUser.UserName, incomingUser.Password, _role);
+                FileController.WriteUser(newUser, path);
+                return UserAddError.NoError;
             }
         }
 
-        public void ModifyUser(User user)
+
+        public void Modify(User user)
         {
-            List<User> users = new List<User>();
-
-            User userToUpdate = users.FirstOrDefault(u => u.Id == user.Id);
-
-            if (userToUpdate != null)
+            List<User> users = FileController.ReadUser(path);
+            User userToModify = users.FirstOrDefault(u => u.Id == user.Id);
+            if (userToModify != null)
             {
-                userToUpdate.UserName = user.UserName;
-                userToUpdate.Email = user.Email;
-
+                userToModify.Email = user.Email;
+                userToModify.UserName = user.UserName;
+                userToModify.Password = user.Password;
                 using (StreamWriter sw = new StreamWriter(path, false))
                 {
                     foreach (User u in users)
                     {
-                        sw.WriteLine($"{u.Id},{u.UserName},{u.Email}");
+                        sw.WriteLine($"{u.Id},{u.Email},{u.UserName},{u.Password},{u.Role}");
                     }
                 }
             }
-        }
+        }   
 
         //public void EliminarUsuario(string userId)
         //{
@@ -92,15 +120,16 @@ namespace ClassLibrary1
         //    }
         //}
 
-        public static bool ValidateLogin(string username, string password)
+        public static bool ValidateExistingLogin(string username, string password, out int id)
         {
-            string path = "UsersGuardados.txt";
             List<User> users = FileController.ReadUser(path);
+            id = 0;
 
             foreach (User user in users) 
             {
                 if (user.UserName == username && user.Password == password)
                 {
+                    id = user.Id;
                     return true;
                 }
             }
@@ -148,15 +177,14 @@ namespace ClassLibrary1
             }
         }
 
-        public static User GetUserByUsername(string username)
+        public static User GetUserById(int id)
         {
-            string path = "UsersGuardados.txt";
             List<User> users = FileController.ReadUser(path);
             User userFound = null;
 
             foreach (User user in users)
             {
-                if(user.UserName == username)
+                if(user.Id == id)
                 {
                     userFound = user;
                     break;

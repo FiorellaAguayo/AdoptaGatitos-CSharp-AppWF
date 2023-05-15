@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fiore\\.nuget\\packages\\": {}
+    "C:\\Users\\irlid\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fiore\\source\\repos\\TP1_LABO1\\PrimerParcialFiorella\\PrimerParcialFiorella.csproj",
+      "projectUniqueName": "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\PrimerParcialFiorella\\PrimerParcialFiorella.csproj",
       "projectName": "PrimerParcialFiorella",
-      "projectPath": "C:\\Users\\fiore\\source\\repos\\TP1_LABO1\\PrimerParcialFiorella\\PrimerParcialFiorella.csproj",
-      "packagesPath": "C:\\Users\\fiore\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fiore\\source\\repos\\TP1_LABO1\\PrimerParcialFiorella\\obj\\",
+      "projectPath": "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\PrimerParcialFiorella\\PrimerParcialFiorella.csproj",
+      "packagesPath": "C:\\Users\\irlid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\PrimerParcialFiorella\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fiore\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\irlid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\fiore\\source\\repos\\TP1_LABO1\\ClassLibrary1\\ClassLibrary1.csproj": {
-              "projectPath": "C:\\Users\\fiore\\source\\repos\\TP1_LABO1\\ClassLibrary1\\ClassLibrary1.csproj"
+            "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\ClassLibrary1\\ClassLibrary1.csproj": {
+              "projectPath": "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\ClassLibrary1\\ClassLibrary1.csproj"
             }
           }
         }

@@ -29,12 +29,13 @@ namespace ClassLibrary1
             this.Password = password;
         }
 
-        public User(int id, string email, string userName, string password)
+        public User(int id, string email, string userName, string password, string role)
         {
             UserName = userName;
             Password = password;
             Email = email;
             Id = id;
+            Role = role;
         }
 
         public User(int id, string fullName, string phone, string email, string userName, string password, string role) 

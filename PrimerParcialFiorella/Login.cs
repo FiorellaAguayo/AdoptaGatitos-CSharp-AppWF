@@ -4,8 +4,6 @@ namespace PrimerParcial
 {
     public partial class Login : Form
     {
-        private User currentUser;
-
         public Login()
         {
             InitializeComponent();
@@ -58,12 +56,13 @@ namespace PrimerParcial
         {
             string username = txb_Usser.Text;
             string password = txb_Password.Text;
+            int id;
 
-            if (UserDAL.ValidateLogin(username, password))
+            if (UserDAL.ValidateExistingLogin(username, password, out id))
             {
-                this.currentUser = UserDAL.GetUserByUsername(username);
-                Principal principal = new Principal();
+                Principal principal = new Principal(UserDAL.GetUserById(id));
                 MessageBox.Show("Bienvenido");
+                this.Hide();
                 principal.Show();
             }
             else
@@ -75,19 +74,10 @@ namespace PrimerParcial
         private void ll_SignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             SignUp signUp = new SignUp();
-            signUp.MdiParent = this.MdiParent;
+            this.Hide();
+
+            signUp.Location = this.Location;
             signUp.Show();
-
-        }
-
-        public string ObtenerNombreUsuario()
-        {
-            return txb_Usser.Text;
-        }
-
-        public string ObtenerContraseña()
-        {
-            return txb_Password.Text;
         }
     }
 }

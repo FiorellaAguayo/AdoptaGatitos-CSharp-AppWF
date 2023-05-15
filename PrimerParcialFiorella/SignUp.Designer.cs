@@ -34,6 +34,7 @@
             txb_Usser = new TextBox();
             txb_Password = new TextBox();
             btn_Back = new Button();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // label1
@@ -42,7 +43,7 @@
             label1.BackColor = Color.FromArgb(255, 192, 255);
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(199, 23);
+            label1.Location = new Point(362, 27);
             label1.Name = "label1";
             label1.Size = new Size(118, 33);
             label1.TabIndex = 3;
@@ -50,14 +51,14 @@
             // 
             // btn_SignUp
             // 
-            btn_SignUp.BackColor = Color.FromArgb(224, 224, 224);
+            btn_SignUp.BackColor = Color.White;
             btn_SignUp.FlatAppearance.BorderSize = 0;
             btn_SignUp.FlatAppearance.MouseDownBackColor = Color.LightSlateGray;
             btn_SignUp.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption;
             btn_SignUp.FlatStyle = FlatStyle.Flat;
             btn_SignUp.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btn_SignUp.ForeColor = SystemColors.WindowFrame;
-            btn_SignUp.Location = new Point(114, 208);
+            btn_SignUp.Location = new Point(254, 229);
             btn_SignUp.Name = "btn_SignUp";
             btn_SignUp.Size = new Size(315, 32);
             btn_SignUp.TabIndex = 18;
@@ -70,7 +71,7 @@
             txb_Email.BorderStyle = BorderStyle.None;
             txb_Email.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txb_Email.ForeColor = SystemColors.WindowFrame;
-            txb_Email.Location = new Point(114, 75);
+            txb_Email.Location = new Point(254, 103);
             txb_Email.Name = "txb_Email";
             txb_Email.Size = new Size(315, 20);
             txb_Email.TabIndex = 22;
@@ -83,7 +84,7 @@
             txb_Usser.BorderStyle = BorderStyle.None;
             txb_Usser.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txb_Usser.ForeColor = SystemColors.WindowFrame;
-            txb_Usser.Location = new Point(114, 112);
+            txb_Usser.Location = new Point(254, 138);
             txb_Usser.Name = "txb_Usser";
             txb_Usser.Size = new Size(315, 20);
             txb_Usser.TabIndex = 23;
@@ -96,7 +97,7 @@
             txb_Password.BorderStyle = BorderStyle.None;
             txb_Password.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txb_Password.ForeColor = SystemColors.WindowFrame;
-            txb_Password.Location = new Point(114, 152);
+            txb_Password.Location = new Point(254, 173);
             txb_Password.Name = "txb_Password";
             txb_Password.Size = new Size(315, 20);
             txb_Password.TabIndex = 24;
@@ -106,7 +107,7 @@
             // 
             // btn_Back
             // 
-            btn_Back.Location = new Point(12, 12);
+            btn_Back.Location = new Point(184, 12);
             btn_Back.Name = "btn_Back";
             btn_Back.Size = new Size(75, 23);
             btn_Back.TabIndex = 25;
@@ -114,20 +115,32 @@
             btn_Back.UseVisualStyleBackColor = true;
             btn_Back.Click += btn_Back_Click;
             // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(161, 273);
+            panel1.TabIndex = 26;
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 255);
-            ClientSize = new Size(509, 273);
+            ClientSize = new Size(649, 273);
+            Controls.Add(panel1);
             Controls.Add(btn_Back);
             Controls.Add(txb_Password);
             Controls.Add(txb_Usser);
             Controls.Add(txb_Email);
             Controls.Add(btn_SignUp);
             Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "SignUp";
+            Opacity = 0.9D;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SignUp";
             Load += SignUp_Load;
             ResumeLayout(false);
@@ -142,5 +155,6 @@
         private TextBox txb_Usser;
         private TextBox txb_Password;
         private Button btn_Back;
+        private Panel panel1;
     }
 }

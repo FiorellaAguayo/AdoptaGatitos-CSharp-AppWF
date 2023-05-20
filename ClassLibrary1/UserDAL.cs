@@ -1,8 +1,10 @@
 ﻿using ClassLibrary1;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Globalization;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -11,7 +13,7 @@ namespace ClassLibrary1
 {
     public class UserDAL
     {
-        private static readonly string path = @"C:\Users\irlid\Desktop\PARCIAL_Fiorella\PrimerParcialFiorella\bin\Debug\net6.0-windows\UsersGuardados.txt";
+        private static readonly string path = @"C:\Users\fiore\source\repos\parcialUno\PrimerParcialFiorella\bin\Debug\net6.0-windows\UsersGuardados.txt";
         private static int _lastId = 1000;
         private static string _role = "Visitante";
 
@@ -191,6 +193,65 @@ namespace ClassLibrary1
                 }
             }
             return userFound;
+        }
+
+        public static Collaborator CreateCollaborator(string email, string fullName, string phone, string direction, string modality, string reason)
+        {
+            Collaborator user = new Collaborator(email, fullName, phone, direction, modality, reason);
+            return user;
+        }
+
+        public enum CollaboratorAddError
+        {
+            NoError,
+            Error,
+            NotSameEmail,
+            NotSamePassword,
+            BothAreNotSame
+        }
+
+        public static CollaboratorAddError AddCollaborator(Collaborator incomingUser, User currentUser)
+        {
+            List<User> users = FileController.ReadUser(path);
+
+            if (string.IsNullOrWhiteSpace(incomingUser.Email) || string.IsNullOrWhiteSpace(incomingUser.FullName) 
+                || string.IsNullOrWhiteSpace(incomingUser.Phone) || string.IsNullOrWhiteSpace(incomingUser.Direction) 
+                || string.IsNullOrWhiteSpace(incomingUser.Modality) || string.IsNullOrWhiteSpace(incomingUser.Reason))
+            {
+                return CollaboratorAddError.Error;
+            }
+
+            bool SameEmail = true;
+            bool SamePassword = true;
+
+            if(incomingUser.Email != currentUser.Email)
+            {
+                SameEmail = false;
+            }
+            if(incomingUser.Password != currentUser.Password)
+            {
+                SamePassword = false;
+            }
+
+            if (!SameEmail && !SamePassword)
+            {
+                return CollaboratorAddError.BothAreNotSame;
+            }
+            else if (!SameEmail)
+            {
+                return CollaboratorAddError.NotSameEmail;
+            }
+            else if (!SamePassword)
+            {
+                return CollaboratorAddError.NotSamePassword;
+            }
+            else
+            {
+                DateTime currentDate = DateTime.Now;
+                Collaborator newCollaborator = new Collaborator(currentUser.Id, incomingUser.Email, currentUser.Password, currentUser.UserName, incomingUser.FullName, incomingUser.Phone, incomingUser.Direction, incomingUser.Modality, incomingUser.Reason, currentDate, "Colaborador");
+                FileController.WriteUser(newCollaborator, path);
+                return CollaboratorAddError.NoError;
+            }
         }
     }
 }

@@ -144,7 +144,6 @@
             txb_Email.Name = "txb_Email";
             txb_Email.Size = new Size(219, 29);
             txb_Email.TabIndex = 17;
-            txb_Email.TextChanged += txb_Email_TextChanged;
             // 
             // txb_Direction
             // 

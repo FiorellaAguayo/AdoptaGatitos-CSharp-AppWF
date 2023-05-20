@@ -92,7 +92,7 @@ namespace PrimerParcial
         private void btn_BePart_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            BePart formBePart = new BePart();
+            BePart formBePart = new BePart(currentUser);
             formBePart.MdiParent = this;
             formBePart.Show();
         }

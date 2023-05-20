@@ -4,18 +4,16 @@ namespace ClassLibrary1
 {
     public class User
     {
-        private static int lastId = 1000;
-
-        private int _id;
-        private string _fullName;
-        private string _phone;
-        private string _email;
-        private string _user;
-        private string _password;
-        private string _role;
+        private int _id = 0;
+        private string _fullName = "";
+        private string _phone = "";
+        private string _email = "";
+        private string _user = "";
+        private string _password = "";   
+        private string _role = "";
 
         public int Id { get { return _id; } set { _id = value; } }
-        public string FullName { get { return _user; } set { _user = value; } }
+        public string FullName { get { return _fullName; } set { _fullName = value; } }
         public string Phone { get { return _phone; } set { _phone = value; } }
         public string Email { get { return _email; } set { _email = value; } }
         public string UserName { get { return _user; } set { _user = value; } } 

@@ -80,7 +80,6 @@ namespace PrimerParcial
 
         private void btn_SignUp_Click(object sender, EventArgs e)
         {
-            // Obtiene los datos del usuario desde los campos de texto
             string email = txb_Email.Text;
             string username = txb_Usser.Text;
             string password = txb_Password.Text;

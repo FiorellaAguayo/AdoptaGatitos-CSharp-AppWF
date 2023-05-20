@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\ClassLibrary1\\ClassLibrary1.csproj": {}
+    "C:\\Users\\fiore\\source\\repos\\parcialUno\\ClassLibrary1\\ClassLibrary1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "C:\\Users\\fiore\\source\\repos\\parcialUno\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\fiore\\source\\repos\\parcialUno\\ClassLibrary1\\ClassLibrary1.csproj",
         "projectName": "ClassLibrary1",
-        "projectPath": "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\ClassLibrary1\\ClassLibrary1.csproj",
-        "packagesPath": "C:\\Users\\irlid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irlid\\Desktop\\PARCIAL_Fiorella\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\fiore\\source\\repos\\parcialUno\\ClassLibrary1\\ClassLibrary1.csproj",
+        "packagesPath": "C:\\Users\\fiore\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fiore\\source\\repos\\parcialUno\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\irlid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fiore\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

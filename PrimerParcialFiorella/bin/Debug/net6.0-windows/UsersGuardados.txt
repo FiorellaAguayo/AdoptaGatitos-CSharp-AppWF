@@ -1,2 +1,0 @@
-1001,fiore@gmail.com,fiore,123,Visitante
-1002,jose@gmail.com,jose,123,Visitante

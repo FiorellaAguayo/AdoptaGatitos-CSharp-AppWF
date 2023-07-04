@@ -40,6 +40,9 @@
             lblPassword = new Label();
             lblEmail = new Label();
             lblRole = new Label();
+            label5 = new Label();
+            label7 = new Label();
+            listView1 = new ListView();
             SuspendLayout();
             // 
             // btnDelete
@@ -164,11 +167,41 @@
             lblRole.TabIndex = 14;
             lblRole.Text = "Rol";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(552, 51);
+            label5.Name = "label5";
+            label5.Size = new Size(166, 20);
+            label5.TabIndex = 28;
+            label5.Text = "Historial de donaciones";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(552, 81);
+            label7.Name = "label7";
+            label7.Size = new Size(167, 15);
+            label7.TabIndex = 29;
+            label7.Text = "Aun no has hecho donaciones";
+            // 
+            // listView1
+            // 
+            listView1.Location = new Point(552, 110);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(166, 97);
+            listView1.TabIndex = 30;
+            listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Account
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(listView1);
+            Controls.Add(label7);
+            Controls.Add(label5);
             Controls.Add(btnDelete);
             Controls.Add(btnLogout);
             Controls.Add(label6);
@@ -203,5 +236,8 @@
         private Label lblPassword;
         private Label lblEmail;
         private Label lblRole;
+        private Label label5;
+        private Label label7;
+        private ListView listView1;
     }
 }

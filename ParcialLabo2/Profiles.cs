@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using ClassLibrary;
+
 namespace ParcialLabo2
 {
     public partial class Profiles : Form
     {
-        public Profiles()
+        private User user;
+
+        public Profiles(User currentUser)
         {
             InitializeComponent();
+            user = currentUser;
         }
 
         private void Profiles_Load(object sender, EventArgs e)

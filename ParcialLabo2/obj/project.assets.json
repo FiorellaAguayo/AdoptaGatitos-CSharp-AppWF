@@ -923,11 +923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fiore\\OneDrive\\Escritorio\\RepoFiore\\ParcialLabo2\\ParcialLabo2.csproj",
+      "projectUniqueName": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\ParcialLabo2\\ParcialLabo2.csproj",
       "projectName": "ParcialLabo2",
-      "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\RepoFiore\\ParcialLabo2\\ParcialLabo2.csproj",
+      "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\ParcialLabo2\\ParcialLabo2.csproj",
       "packagesPath": "C:\\Users\\fiore\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\RepoFiore\\ParcialLabo2\\obj\\",
+      "outputPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\ParcialLabo2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fiore\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -944,8 +944,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\fiore\\OneDrive\\Escritorio\\RepoFiore\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\RepoFiore\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         }

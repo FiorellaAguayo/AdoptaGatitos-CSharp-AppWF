@@ -25,6 +25,9 @@
     <Compile Update="Profiles.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SeeUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>

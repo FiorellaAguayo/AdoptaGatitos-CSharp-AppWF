@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WS9j0BskwvBlEwVGU9cZ4utcJOiBA7RQ2U1L8A6AaoH6o4CIz3lfDMYyOkqxEtoE7e6x5Mn7j6v1WAXulBa9+A==",
+  "dgSpecHash": "Ij0lvbX7cHDhV+PrcintbeMb4/5Ws3mPMceNaDe4/R9BZpoN3wrWz71jrB1o8jJ1NjqjzAoZ/4g5zgQC/xNJ8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\RepoFiore\\ClassLibrary\\ClassLibrary.csproj",
+  "projectFilePath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\ClassLibrary\\ClassLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fiore\\.nuget\\packages\\google.api.commonprotos\\2.7.0\\google.api.commonprotos.2.7.0.nupkg.sha512",
     "C:\\Users\\fiore\\.nuget\\packages\\google.api.gax\\4.3.1\\google.api.gax.4.3.1.nupkg.sha512",

@@ -19,16 +19,16 @@ namespace ParcialLabo2
         private Random random;
         private int temporalIndex;
         private static User currentUser;
-        private FirestoreABM _firestoreABM;
         private FirestoreConnection _connection;
+        private FirestoreABM _firestoreABM;
 
-        public Principal(User user, FirestoreConnection connection, FirestoreABM firestoreAbm)
+        public Principal(User user, FirestoreConnection connection, FirestoreABM firestoreABM)
         {
             InitializeComponent();
             random = new Random();
             currentUser = user;
-            _firestoreABM = firestoreAbm;
             _connection = connection;
+            _firestoreABM = firestoreABM;
         }
 
         private void Principal_Load(object sender, EventArgs e)
@@ -36,6 +36,11 @@ namespace ParcialLabo2
             MainScreen formMainScreen = new MainScreen();
             formMainScreen.MdiParent = this;
             formMainScreen.Show();
+
+            if (currentUser.Role == "Administrador")
+            {
+                btnSeeUsers.Visible = true;
+            }
         }
 
         private Color SelectThemeColor()
@@ -85,7 +90,7 @@ namespace ParcialLabo2
         {
             ActivateButton(sender);
             lblTitle.Text = "Perfiles";
-            Profiles formProfiles = new Profiles();
+            Profiles formProfiles = new Profiles(currentUser);
             formProfiles.MdiParent = this;
             formProfiles.Show();
         }
@@ -94,7 +99,7 @@ namespace ParcialLabo2
         {
             ActivateButton(sender);
             lblTitle.Text = "Donar";
-            Donation formDonation = new Donation();
+            Donation formDonation = new Donation(currentUser, _connection, _firestoreABM);
             formDonation.MdiParent = this;
             formDonation.Show();
         }
@@ -121,9 +126,18 @@ namespace ParcialLabo2
         {
             ActivateButton(sender);
             lblTitle.Text = "Cuenta";
-            Account formAccount = new Account(currentUser);
+            Account formAccount = new Account(currentUser, _connection, _firestoreABM);
             formAccount.MdiParent = this;
             formAccount.Show();
+        }
+
+        private void btnSeeUsers_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            lblTitle.Text = "Ver usuarios";
+            SeeUsers formSeeUsers = new SeeUsers(_connection);
+            formSeeUsers.MdiParent = this;
+            formSeeUsers.Show();
         }
 
         private void Principal_StyleChanged(object sender, EventArgs e)

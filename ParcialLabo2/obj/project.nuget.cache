@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sVHclJ4nUeO5XAYr+Nh7OWVqiiLyR8sdO+S7N7WaegpdobQnqZIpXLYKqjrREZmzN0SkcEF6PaQF98r4yLkG+Q==",
+  "dgSpecHash": "ALyl00JdR7j2dzt4lM9Py6m+9LIvBxH5XQdXtGpB9eicWAdnkjxyc/O+jLgg37/25kpwLv6BB0dgv5IyBXyxXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\RepoFiore\\ParcialLabo2\\ParcialLabo2.csproj",
+  "projectFilePath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\ParcialLabo2\\ParcialLabo2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fiore\\.nuget\\packages\\google.api.commonprotos\\2.7.0\\google.api.commonprotos.2.7.0.nupkg.sha512",
     "C:\\Users\\fiore\\.nuget\\packages\\google.api.gax\\4.3.1\\google.api.gax.4.3.1.nupkg.sha512",

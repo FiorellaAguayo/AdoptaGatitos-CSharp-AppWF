@@ -31,6 +31,7 @@
             panButtonSelected = new Panel();
             lblTitle = new Label();
             panButtons = new Panel();
+            btnSeeUsers = new Button();
             btnAccount = new Button();
             btnContact = new Button();
             btnBePart = new Button();
@@ -68,6 +69,7 @@
             // panButtons
             // 
             panButtons.BackColor = Color.IndianRed;
+            panButtons.Controls.Add(btnSeeUsers);
             panButtons.Controls.Add(btnAccount);
             panButtons.Controls.Add(btnContact);
             panButtons.Controls.Add(btnBePart);
@@ -77,8 +79,28 @@
             panButtons.Dock = DockStyle.Left;
             panButtons.Location = new Point(0, 0);
             panButtons.Name = "panButtons";
-            panButtons.Size = new Size(193, 499);
+            panButtons.Size = new Size(193, 521);
             panButtons.TabIndex = 16;
+            // 
+            // btnSeeUsers
+            // 
+            btnSeeUsers.Dock = DockStyle.Top;
+            btnSeeUsers.FlatAppearance.BorderSize = 0;
+            btnSeeUsers.FlatStyle = FlatStyle.Flat;
+            btnSeeUsers.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSeeUsers.ForeColor = Color.White;
+            btnSeeUsers.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSeeUsers.Location = new Point(0, 450);
+            btnSeeUsers.Name = "btnSeeUsers";
+            btnSeeUsers.Padding = new Padding(12, 0, 0, 0);
+            btnSeeUsers.Size = new Size(193, 70);
+            btnSeeUsers.TabIndex = 22;
+            btnSeeUsers.Text = "  Ver usuarios";
+            btnSeeUsers.TextAlign = ContentAlignment.MiddleLeft;
+            btnSeeUsers.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSeeUsers.UseVisualStyleBackColor = true;
+            btnSeeUsers.Visible = false;
+            btnSeeUsers.Click += btnSeeUsers_Click;
             // 
             // btnAccount
             // 
@@ -198,7 +220,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 499);
+            ClientSize = new Size(800, 521);
             Controls.Add(panButtonSelected);
             Controls.Add(panButtons);
             IsMdiContainer = true;
@@ -227,5 +249,6 @@
         private Button btnProfiles;
         private Panel panLogo;
         private Label lblLogo;
+        private Button btnSeeUsers;
     }
 }

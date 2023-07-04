@@ -122,5 +122,10 @@ namespace ParcialLabo2
                     break;
             }
         }
+
+        private void SeePassword_Click(object sender, EventArgs e)
+        {
+            txbPassword.UseSystemPasswordChar = !txbPassword.UseSystemPasswordChar;
+        }
     }
 }

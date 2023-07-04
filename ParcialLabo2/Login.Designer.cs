@@ -40,10 +40,12 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            SeePassword = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)SeePassword).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -174,12 +176,23 @@
             pictureBox1.TabIndex = 36;
             pictureBox1.TabStop = false;
             // 
+            // SeePassword
+            // 
+            SeePassword.Image = Properties.Resources.hide;
+            SeePassword.Location = new Point(239, 147);
+            SeePassword.Name = "SeePassword";
+            SeePassword.Size = new Size(27, 22);
+            SeePassword.TabIndex = 37;
+            SeePassword.TabStop = false;
+            SeePassword.Click += SeePassword_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 192, 255);
             ClientSize = new Size(620, 273);
+            Controls.Add(SeePassword);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
@@ -201,6 +214,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)SeePassword).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -218,5 +232,6 @@
         private PictureBox pictureBox1;
         private Label label3;
         private PictureBox pictureBox3;
+        private PictureBox SeePassword;
     }
 }

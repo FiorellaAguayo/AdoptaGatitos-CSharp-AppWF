@@ -75,7 +75,7 @@ namespace ParcialLabo2
             string password = txbPassword.Text;
             User user = new User(username, password);
 
-            switch (await UserManager.ValidateExistingUser(user, _connection, _firestoreabm))
+            switch (await UserManager.ValidateExistingUser(user, _connection))
             {
                 case UserLoginError.Error:
                     MessageBox.Show("Complete los campos correctamente");
@@ -102,6 +102,11 @@ namespace ParcialLabo2
 
             signUp.Location = this.Location;
             signUp.Show();
+        }
+
+        private void SeePassword_Click(object sender, EventArgs e)
+        {
+            txbPassword.UseSystemPasswordChar = !txbPassword.UseSystemPasswordChar;
         }
     }
 }

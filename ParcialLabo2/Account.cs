@@ -14,12 +14,16 @@ namespace ParcialLabo2
 {
     public partial class Account : Form
     {
-        private static User user;
+        private User user;
+        private FirestoreConnection _connection;
+        private FirestoreABM _firestoreabm;
 
-        public Account(User currentUser)
+        public Account(User currentUser, FirestoreConnection connection, FirestoreABM firestoreABM)
         {
             InitializeComponent();
             user = currentUser;
+            _connection = connection;
+            _firestoreabm = firestoreABM;
 
             lblId.Text = currentUser.Id.ToString();
             lblUserName.Text = currentUser.UserName;
@@ -31,6 +35,7 @@ namespace ParcialLabo2
         private void Account_Load(object sender, EventArgs e)
         {
             this.Dock = DockStyle.Fill;
+
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -43,7 +48,16 @@ namespace ParcialLabo2
 
         private async void btnDelete_Click(object sender, EventArgs e)
         {
-            FirestoreABM.
+            DialogResult resultado = MessageBox.Show("Tu cuenta se borrará de forma permanente. ¿Desea continuar?", "Eliminar cuenta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                await UserManager.DeleteUserAsync(user, _connection, _firestoreabm);
+                MessageBox.Show("La cuenta se ha borrado.");
+                this.MdiParent.Hide();
+                Login login = new Login();
+                login.Show();
+            }
         }
     }
 }

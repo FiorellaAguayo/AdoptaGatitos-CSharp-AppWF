@@ -36,16 +36,18 @@
             btnSignUp = new Button();
             label1 = new Label();
             panel1 = new Panel();
+            label3 = new Label();
+            pictureBox4 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            label3 = new Label();
-            pictureBox4 = new PictureBox();
+            SeePassword = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)SeePassword).BeginInit();
             SuspendLayout();
             // 
             // btnBack
@@ -137,6 +139,27 @@
             panel1.Size = new Size(161, 273);
             panel1.TabIndex = 32;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe Script", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(26, 151);
+            label3.Name = "label3";
+            label3.Size = new Size(111, 20);
+            label3.TabIndex = 40;
+            label3.Text = "Patitas Suaves";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(26, 66);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(111, 95);
+            pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox4.TabIndex = 39;
+            pictureBox4.TabStop = false;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.userSignUp;
@@ -167,26 +190,15 @@
             pictureBox3.TabIndex = 35;
             pictureBox3.TabStop = false;
             // 
-            // label3
+            // SeePassword
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe Script", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(26, 151);
-            label3.Name = "label3";
-            label3.Size = new Size(111, 20);
-            label3.TabIndex = 40;
-            label3.Text = "Patitas Suaves";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(26, 66);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(111, 95);
-            pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox4.TabIndex = 39;
-            pictureBox4.TabStop = false;
+            SeePassword.Image = Properties.Resources.hide;
+            SeePassword.Location = new Point(240, 181);
+            SeePassword.Name = "SeePassword";
+            SeePassword.Size = new Size(27, 26);
+            SeePassword.TabIndex = 36;
+            SeePassword.TabStop = false;
+            SeePassword.Click += SeePassword_Click;
             // 
             // SignUp
             // 
@@ -194,6 +206,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 255);
             ClientSize = new Size(620, 273);
+            Controls.Add(SeePassword);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -213,10 +226,11 @@
             Load += SignUp_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)SeePassword).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -235,5 +249,6 @@
         private PictureBox pictureBox3;
         private Label label3;
         private PictureBox pictureBox4;
+        private PictureBox SeePassword;
     }
 }

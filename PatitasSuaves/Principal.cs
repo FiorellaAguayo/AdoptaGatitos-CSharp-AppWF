@@ -87,7 +87,6 @@ namespace PatitasSuaves
             //OpenForm<Profiles>("Ver perfiles");
 
             lblTitle.Text = "Ver perfiles";
-
             Profiles form = new Profiles();
             form.MdiParent = this;
             form.Show();

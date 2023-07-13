@@ -79,9 +79,6 @@ namespace Entities
         {
             Id = id;
             Role = role;
-            Email = email;
-            UserName = userName;
-            Password = password;
         }
 
         public User(string id, string email, string userName, string role)

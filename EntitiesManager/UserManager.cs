@@ -1,9 +1,6 @@
 ﻿using Firestore;
 using Entities;
 using Validations;
-using Google.Cloud.Location;
-using System.Data;
-using System.Numerics;
 
 namespace EntitiesManager
 {

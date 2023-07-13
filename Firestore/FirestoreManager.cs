@@ -27,10 +27,5 @@ namespace Firestore
         {
             return await FieldExistsAsync(field, value);
         }
-
-        public async Task<List<T>> GetByFieldValueAsync(string field, string value)
-        {
-            return await GetByFieldValueAsync<T>(field, value);
-        }
     }
 }

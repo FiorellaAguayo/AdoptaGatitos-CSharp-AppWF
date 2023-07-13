@@ -1,9 +1,6 @@
 ﻿using Entities;
-
 using EntitiesManager;
-
 using LogData;
-
 using static EntitiesManager.UserManager;
 
 namespace PatitasSuaves
@@ -23,13 +20,9 @@ namespace PatitasSuaves
             this.Dock = DockStyle.Fill;
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            login.Show();
-            this.Close();
-        }
-
+        /// <summary>
+        /// Registra un usuario si las claves son válidas y muestra un mensaje en cada caso.
+        /// </summary>
         private async void btnSignUp_Click(object sender, EventArgs e)
         {
             try
@@ -72,11 +65,27 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// LLeva al usuario al form de inicio de sesión.
+        /// </summary>
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
+
+        /// <summary>
+        /// Cambia la visibilidad de la contraseña de oculta a visible y visceversa.
+        /// </summary>
         private void SeePassword_Click(object sender, EventArgs e)
         {
             txbPassword.UseSystemPasswordChar = !txbPassword.UseSystemPasswordChar;
         }
 
+        /// <summary>
+        /// Deja el espacio libre para escribir.
+        /// </summary>
         private void txbEmail_Enter(object sender, EventArgs e)
         {
             if (txbEmail.Text == "EMAIL")
@@ -86,6 +95,9 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Si no hay nada escrito, muestra "USUARIO".
+        /// </summary>
         private void txbEmail_Leave(object sender, EventArgs e)
         {
             if (txbEmail.Text == string.Empty)
@@ -95,6 +107,9 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Deja el espacio libre para escribir.
+        /// </summary>
         private void txbUser_Enter(object sender, EventArgs e)
         {
             if (txbUser.Text == "USUARIO")
@@ -104,6 +119,9 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Si no hay nada escrito, muestra "USUARIO".
+        /// </summary>
         private void txbUser_Leave(object sender, EventArgs e)
         {
             if (txbUser.Text == string.Empty)
@@ -113,6 +131,9 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Deja el espacio libre para escribir.
+        /// </summary>
         private void txbPassword_Enter(object sender, EventArgs e)
         {
             if (txbPassword.Text == "CONTRASEÑA")
@@ -123,6 +144,9 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Si no hay nada escrito, muestra "CONTRASEÑA".
+        /// </summary>
         private void txbPassword_Leave(object sender, EventArgs e)
         {
             if (txbPassword.Text == string.Empty)

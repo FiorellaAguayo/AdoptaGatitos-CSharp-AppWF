@@ -1,8 +1,4 @@
-﻿using System.Data;
-using System.Numerics;
-using Google.Cloud.Firestore;
-
-using static Google.Cloud.Firestore.V1.StructuredAggregationQuery.Types.Aggregation.Types;
+﻿using Google.Cloud.Firestore;
 
 namespace Entities
 {
@@ -24,11 +20,17 @@ namespace Entities
         [FirestoreProperty]
         public string IsSterilized { get; set; }
 
+        /// <summary>
+        /// Constructor vaico de la clase Cat.
+        /// </summary>
         public Cat() 
         { 
         
         }
 
+        /// <summary>
+        /// Asigna los valores de los parámetros a las propiedades de la clase 
+        /// </summary>
         public Cat(string name, string age, string weight, string urlImage, string furColor, string race, string isSterilized)
         {
             Name = name;

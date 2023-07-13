@@ -33,16 +33,16 @@
             // 
             // flpCats
             // 
-            flpCats.Location = new Point(12, 12);
+            flpCats.Location = new Point(0, 4);
             flpCats.Name = "flpCats";
-            flpCats.Size = new Size(776, 426);
+            flpCats.Size = new Size(801, 454);
             flpCats.TabIndex = 0;
             // 
             // Profiles
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(810, 460);
             Controls.Add(flpCats);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Profiles";

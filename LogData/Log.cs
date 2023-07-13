@@ -10,6 +10,10 @@ namespace LogData
     {
         private static readonly string PathLog = "AppLog.txt";
 
+        /// <summary>
+        /// Escribe una línea de registro en el archivo de registro de la aplicación.
+        /// </summary>
+        /// <param name="text"></param>
         public static void WriteLog(string text)
         {
             var logText = $"{DateTime.Now}: {text}\n";

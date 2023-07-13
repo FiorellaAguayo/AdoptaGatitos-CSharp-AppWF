@@ -1,8 +1,6 @@
 ﻿using Entities;
 using Firestore;
 
-using ParcialLabo2;
-
 namespace PatitasSuaves
 {
     public partial class Profiles : Form
@@ -15,12 +13,19 @@ namespace PatitasSuaves
             _catManager = new FirestoreManager<Cat>("cats");
         }
 
+        /// <summary>
+        /// Carga los perfiles de gatos al formulario.
+        /// </summary>
         private async void Profiles_Load(object sender, EventArgs e)
         {
             var cats = await _catManager.GetAll();
             ShowCatList(cats);
         }
 
+        /// <summary>
+        /// Muestra una lista de gatos en el control flpCats.
+        /// </summary>
+        /// <param name="cats"></param> lista de gatos.
         public void ShowCatList(List<Cat> cats)
         {
             flpCats.Controls.Clear();
@@ -32,6 +37,11 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Crea un panel para un gato específico.
+        /// </summary>
+        /// <param name="cat"></param>
+        /// <returns></returns> Objeto cat.
         private Panel CreatePanelCats(Cat cat)
         {
             var panel = new Panel
@@ -53,6 +63,11 @@ namespace PatitasSuaves
             return panel;
         }
 
+        /// <summary>
+        /// Crea la iamgen del gato desde una dirección de google.
+        /// </summary>
+        /// <param name="cat"></param>
+        /// <returns></returns>
         private PictureBox CreatePictureBoxCat(Cat cat)
         {
             var picture = new PictureBox
@@ -108,6 +123,11 @@ namespace PatitasSuaves
             return picture;
         }
 
+        /// <summary>
+        /// Crea un label con el nombre del gato.
+        /// </summary>
+        /// <param name="cat"></param>
+        /// <returns></returns>Label creado.
         private Label CreateLabelNameGato(Cat cat)
         {
             var nombre = cat.Name;
@@ -127,6 +147,11 @@ namespace PatitasSuaves
             return labelNombre;
         }
 
+        /// <summary>
+        /// Crea un boton de adopción.
+        /// </summary>
+        /// <param name="cat"></param> Objeto gato seleccionado.
+        /// <returns></returns> Boton creado.
         private Button CreateButtonAdopt(Cat cat)
         {
             var button = new Button
@@ -148,6 +173,10 @@ namespace PatitasSuaves
             return button;
         }
 
+        /// <summary>
+        /// Elimina al gato de la lista de gatos.
+        /// </summary>
+        /// <param name="cat"></param> Objeto gato adoptado.
         private async Task RemoveCatFromAdoptionList(Cat cat)
         {
             try

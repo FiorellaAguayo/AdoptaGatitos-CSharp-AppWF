@@ -1,9 +1,6 @@
 ﻿using Entities;
-
 using EntitiesManager;
-
 using LogData;
-
 using Validations;
 
 namespace PatitasSuaves
@@ -21,6 +18,9 @@ namespace PatitasSuaves
             user = actualUser;
         }
 
+        /// <summary>
+        /// Valida los campos del formulario de contacto y muestra mensajes segun el resultado de la validación.
+        /// </summary>
         private void btnSend_Click(object sender, EventArgs e)
         {
             string name = txbName.Text;
@@ -53,12 +53,18 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Muestra un mensaje indicando que se ha enviado la petición y registra un log.
+        /// </summary>
         private void btnBePart_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hemos enviado la petición. El administrador se comunicará pronto.");
             Log.WriteLog($"El usuario {user.UserName} ha enviado una petición de Ser Parte.");
         }
 
+        /// <summary>
+        /// Muestra un mensaje indicando que se ha cancelado la petición y registra un log.
+        /// </summary>
         private void btnCancelBePart_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Cancelaste la petición.");

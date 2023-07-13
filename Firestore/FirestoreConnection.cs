@@ -4,8 +4,15 @@ namespace Firestore
 {
     public class FirestoreConnection
     {
+        /// <summary>
+        /// Objeto de FirestoreDb para establecer la conexión con Firestore.
+        /// </summary>
         private static FirestoreDb _firestoreDb;
 
+        /// <summary>
+        /// Obtiene una instancia de FirestoreDb para interactuar con Firestore.
+        /// </summary>
+        /// <returns></returns>
         public static FirestoreDb getFirestoreInstance()
         {
             if (_firestoreDb == null)

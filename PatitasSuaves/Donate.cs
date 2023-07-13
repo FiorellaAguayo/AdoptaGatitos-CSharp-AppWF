@@ -1,11 +1,7 @@
 ﻿using System.Data;
-
 using Entities;
-
 using EntitiesManager;
-
 using LogData;
-
 using Validations;
 
 namespace PatitasSuaves
@@ -23,6 +19,9 @@ namespace PatitasSuaves
             _manager = new UserManager();
         }
 
+        /// <summary>
+        /// Carga la ventana de donaciones y los datos de los usuarios.
+        /// </summary>
         private async void Donate_Load(object sender, EventArgs e)
         {
             Dock = DockStyle.Fill;
@@ -31,6 +30,10 @@ namespace PatitasSuaves
             LoadData(users);
         }
 
+        /// <summary>
+        /// Carga los datos de los usuarios en un DataTable y muestra la información en un control DataGridView.
+        /// </summary>
+        /// <param name="users"></param>
         private void LoadData(List<User> users)
         {
             DataTable table = new DataTable();
@@ -56,22 +59,12 @@ namespace PatitasSuaves
             dgvDonations.DataSource = table;
         }
 
+        /// <summary>
+        /// Valida los datos ingresados, actualiza los datos del usuario y muestra un mensaje de confirmación.
+        /// </summary>
         private async void btnDonate_Click(object sender, EventArgs e)
         {
-            string paymentMethod = " ";
-            if (rbMastercard.Checked)
-            {
-                paymentMethod = rbMastercard.Text;
-            }
-            else if (rbMp.Checked)
-            {
-                paymentMethod = rbMp.Text;
-            }
-            else
-            {
-                paymentMethod = rbPayPal.Text;
-            }
-
+            string paymentMethod = GetSelectedPaymentMethod();
             string email = txbEmail.Text;
             string userName = txbUser.Text;
             string lastDonation = numAmount.Value.ToString();
@@ -92,18 +85,43 @@ namespace PatitasSuaves
             }
             else
             {
-                // Actualizar los datos del usuario
                 existingUser.PaymentMethod = paymentMethod;
                 existingUser.LastDonation = lastDonation;
+                existingUser.Message = message;
 
-                // Guardar los cambios en Firestore
                 await _manager.UpdateUser(existingUser, existingUser.UserName);
                 LoadData(users);
+
                 MessageBox.Show("Hemos recibido su donación. Gracias por colaborar!!!", "Donación recibida");
                 Log.WriteLog($"El usuario {existingUser.UserName} ha donado.");
             }
         }
 
+        private string GetSelectedPaymentMethod()
+        {
+            if (rbMastercard.Checked)
+            {
+                return rbMastercard.Text;
+            }
+            else if(rbMp.Checked)
+            {
+                return rbMp.Text;
+            }
+            else if(rbPayPal.Checked)
+            {
+                return rbPayPal.Text;
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        /// <summary>
+        /// Carga nuevamente los datos de los usuarios y muestra un mensaje si no hay registros.        
+        /// /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void Donate_Activated(object sender, EventArgs e)
         {
             var users = await _manager.GetUsers();

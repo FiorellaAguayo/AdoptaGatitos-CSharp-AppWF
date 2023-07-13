@@ -12,7 +12,6 @@ namespace PatitasSuaves
         private Random _random;
         private int _temporalIndex;
         private Button _currentButton;
-
         private Profiles formProfiles;
         private Donate formDonate;
         private Contact formContact;
@@ -28,6 +27,9 @@ namespace PatitasSuaves
             _currentUser = user;
         }
 
+        /// <summary>
+        /// LLeva al usuario al form principal y si el usuaio es ADMINISTRADOR se muestran unos botones.
+        /// </summary>
         private async void Principal_Load(object sender, EventArgs e)
         {
             MainPage formMainPage = new MainPage();
@@ -43,6 +45,9 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// LLeva al usuario al form de perfiles y registra la acción.
+        /// </summary>
         private void btnProfiles_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -60,6 +65,9 @@ namespace PatitasSuaves
             Log.WriteLog($"El usuario {_currentUser.UserName} está mirando perfiles.");
         }
 
+        /// <summary>
+        /// LLeva al usuario al form de donaciones y registra la acción.
+        /// </summary>
         private void btnDonate_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -77,6 +85,9 @@ namespace PatitasSuaves
             Log.WriteLog($"El usuario {_currentUser.UserName} está mirando donaciones.");
         }
 
+        /// <summary>
+        /// LLeva al usuario al form de contacto y registra la acción.
+        /// </summary>
         private void btnContact_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -94,6 +105,9 @@ namespace PatitasSuaves
             Log.WriteLog($"El usuario {_currentUser.UserName} está mirando contacto.");
         }
 
+        /// <summary>
+        /// LLeva al usuario al form de cuenta y registra la acción.
+        /// </summary>
         private void btnAccount_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -111,6 +125,9 @@ namespace PatitasSuaves
             Log.WriteLog($"El usuario {_currentUser.UserName} está mirando cuenta.");
         }
 
+        /// <summary>
+        /// LLeva al usuario al form de ver usuarios y registra la acción.
+        /// </summary>
         private void btnSeeUsers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -129,6 +146,9 @@ namespace PatitasSuaves
             Log.WriteLog($"El usuario {_currentUser.UserName} está mirando administracion de usuarios.");
         }
 
+        /// <summary>
+        /// LLeva al usuario al form de ver gatos y registra la acción.
+        /// </summary>
         private void btnSeePets_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -147,6 +167,10 @@ namespace PatitasSuaves
             Log.WriteLog($"El usuario {_currentUser.UserName} está mirando administracion de gatos.");
         }
 
+        /// <summary>
+        /// Selecciona el tema del color.
+        /// </summary>
+        /// <returns></returns>
         private Color SelectThemeColor()
         {
             int index = _random.Next(ThemeColor.ColorList.Count);
@@ -159,6 +183,9 @@ namespace PatitasSuaves
             return ColorTranslator.FromHtml(color);
         }
 
+        /// <summary>
+        /// Activa el boton de la categoría y cambia su color.
+        /// </summary>
         private void ActivateButton(object buttonSender)
         {
             if (buttonSender != null)
@@ -177,6 +204,9 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Guarda el color previo.
+        /// </summary>
         private void DisableButton()
         {
             foreach (Control previousButton in panButtons.Controls)

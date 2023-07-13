@@ -3,9 +3,15 @@ using Entities;
 
 namespace Tests
 {
+    /// <summary>
+    /// Clase de pruebas unitarias para la validación de usuarios.
+    /// </summary>
     [TestClass]
     public class UserValidationTests
     {
+        /// <summary>
+        /// Prueba para validar un correo electrónico válido.
+        /// </summary>
         [TestMethod]
         public void ValidateEmail_ValidData_ReturnsTrue()
         {
@@ -19,6 +25,9 @@ namespace Tests
             Assert.IsTrue(result); // espera
         }
 
+        /// <summary>
+        /// Prueba para validar un correo electrónico inválido.
+        /// </summary>
         [TestMethod]
         public void ValidateEmail_InvalidData_ReturnsFalse()
         {
@@ -32,6 +41,9 @@ namespace Tests
             Assert.IsFalse(result);
         }
 
+        /// <summary>
+        /// Clase de pruebas unitarias para la validación de gatos.
+        /// </summary>
         [TestMethod]
         public async Task ValidateRequiredFields_ValidCat_ReturnsTrue()
         {

@@ -13,6 +13,12 @@ namespace Graphics
                                                                  "#6B8E23",
                                                                  "#FFA500"};
 
+        /// <summary>
+        /// Cambia la luminosidad de un color dado según un factor de corrección.
+        /// </summary>
+        /// <param name="color"></param>
+        /// <param name="correctionFactor"></param>
+        /// <returns></returns>
         public static Color ChangeColorBrightness(Color color, double correctionFactor)
         {
             double red = color.R;

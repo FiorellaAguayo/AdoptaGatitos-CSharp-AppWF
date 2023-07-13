@@ -19,6 +19,10 @@ namespace PatitasSuaves
             _userManager = new UserManager();
         }
 
+        /// <summary>
+        /// Carga el formulario de ver mascotas, llena las listas de opciones, obtiene la lista de usuarios 
+        /// y carga los datos en el DataGridView.
+        /// </summary>
         private async void SeeUsers_Load(object sender, EventArgs e)
         {
             this.Dock = DockStyle.Fill;
@@ -27,6 +31,10 @@ namespace PatitasSuaves
             LoadData(users);
         }
 
+        /// <summary>
+        ///  Carga los datos de los usuarios en un DataTable y los muestra en el DataGridView.
+        /// </summary>
+        /// <param name="users"></param>
         private void LoadData(List<User> users)
         {
             DataTable table = new DataTable();
@@ -48,6 +56,10 @@ namespace PatitasSuaves
             dgvUsers.DataSource = table;
         }
 
+        /// <summary>
+        /// Crea un nuevo objeto User con los datos ingresados, lo añade a la lista de usuarios y muestra un mensaje segun
+        /// el resultado.
+        /// </summary>
         private async void btnAdd_Click(object sender, EventArgs e)
         {
             User user = new User(txbId.Text, txbUser.Text, txbRole.Text, txbEmail.Text, txbDonation.Text, txbPassword.Text, txbPhone.Text);
@@ -78,6 +90,10 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Crea un nuevo objeto User con los datos ingresados, valida los campos requeridos y actualiza 
+        /// el gato existente con los nuevos datos, muestra un mensaje según ek resultado.
+        /// </summary>
         private async void btnModify_Click(object sender, EventArgs e)
         {
             User user = new User(txbId.Text, txbUser.Text, txbRole.Text, txbEmail.Text, txbDonation.Text, txbPassword.Text, txbPhone.Text);
@@ -105,6 +121,10 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        ///  Solicita confirmación al usuario y si confirma, elimina el usuauio seleccionado de la lista 
+        ///  y muestra un mensaje. Registra un log de la acción.
+        /// </summary
         private async void btnDelete_Click(object sender, EventArgs e)
         {
             User user = new User(txbId.Text, txbUser.Text, txbRole.Text, txbEmail.Text, txbDonation.Text, txbPassword.Text, txbPassword.Text);
@@ -130,42 +150,10 @@ namespace PatitasSuaves
             }
         }
 
-        private void dgvUsers_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow selectedRow = dgvUsers.Rows[e.RowIndex];
-                txbId.Text = selectedRow.Cells["Id"].Value.ToString();
-                txbRole.Text = selectedRow.Cells["Rol"].Value.ToString();
-                txbUser.Text = selectedRow.Cells["Usuario"].Value.ToString();
-                txbEmail.Text = selectedRow.Cells["Email"].Value.ToString();
-                txbPassword.Text = selectedRow.Cells["Contraseña"].Value.ToString();
-                txbDonation.Text = selectedRow.Cells["Ultima donación"].Value.ToString();
-                txbPhone.Text = selectedRow.Cells["Teléfono"].Value.ToString();
-            }
-        }
-
-        private async void SeeUsers_Activated(object sender, EventArgs e)
-        {
-            // Recargar los datos en el DataGridView
-            var users = await _userManager.GetUsers();
-            LoadData(users);
-        }
-
-        private void dgvUsers_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dgvUsers.SelectedRows.Count > 0)
-            {
-                btnDelete.Enabled = true;
-                btnModify.Enabled = true;
-            }
-            else
-            {
-                btnDelete.Enabled = false;
-                btnModify.Enabled = false;
-            }
-        }
-
+        /// <summary>
+        /// Exporta la lista de usuarios a un archivo JSON y muestra un mensaje según el caso. 
+        /// Registra un log.
+        /// </summary>
         private async void btnJSON_Click(object sender, EventArgs e)
         {
             var users = await _userManager.GetUsers();
@@ -183,6 +171,10 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Exporta la lista de usuarios a un archivo CSV y muestra un mensaje según el caso. 
+        /// Registra un log.
+        /// </summary>
         private async void btnCSV_Click(object sender, EventArgs e)
         {
             var users = await _userManager.GetUsers();
@@ -200,6 +192,10 @@ namespace PatitasSuaves
             }
         }
 
+        /// <summary>
+        /// Exporta la lista de usuarios a un archivo PDF y muestra un mensaje según el caso. 
+        /// Registra un log.
+        /// </summary>
         private async void btnPDF_Click(object sender, EventArgs e)
         {
             var users = await _userManager.GetUsers();
@@ -214,6 +210,44 @@ namespace PatitasSuaves
             catch (Exception ex)
             {
                 MessageBox.Show("Ocurrió un error durante la exportación a pdf: " + ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Añade el valor de las celdas del DataGridView a los TextBox.
+        /// </summary>
+        private void dgvUsers_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow selectedRow = dgvUsers.Rows[e.RowIndex];
+                txbId.Text = selectedRow.Cells["Id"].Value.ToString();
+                txbRole.Text = selectedRow.Cells["Rol"].Value.ToString();
+                txbUser.Text = selectedRow.Cells["Usuario"].Value.ToString();
+                txbEmail.Text = selectedRow.Cells["Email"].Value.ToString();
+                txbPassword.Text = selectedRow.Cells["Contraseña"].Value.ToString();
+                txbDonation.Text = selectedRow.Cells["Ultima donación"].Value.ToString();
+                txbPhone.Text = selectedRow.Cells["Teléfono"].Value.ToString();
+            }
+        }
+
+        private async void SeeUsers_Activated(object sender, EventArgs e)
+        {
+            var users = await _userManager.GetUsers();
+            LoadData(users);
+        }
+
+        private void dgvUsers_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvUsers.SelectedRows.Count > 0)
+            {
+                btnDelete.Enabled = true;
+                btnModify.Enabled = true;
+            }
+            else
+            {
+                btnDelete.Enabled = false;
+                btnModify.Enabled = false;
             }
         }
     }

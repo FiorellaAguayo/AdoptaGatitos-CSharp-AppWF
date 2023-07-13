@@ -82,7 +82,7 @@
             panButtons.Dock = DockStyle.Left;
             panButtons.Location = new Point(0, 0);
             panButtons.Name = "panButtons";
-            panButtons.Size = new Size(193, 552);
+            panButtons.Size = new Size(193, 568);
             panButtons.TabIndex = 18;
             // 
             // btnSeePets
@@ -238,7 +238,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1015, 552);
+            ClientSize = new Size(1015, 568);
             Controls.Add(panButtonSelected);
             Controls.Add(panButtons);
             FormBorderStyle = FormBorderStyle.None;

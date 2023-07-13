@@ -4,8 +4,18 @@ using iTextSharp.text.pdf;
 
 namespace EntitiesManager
 {
+    /// <summary>
+    /// Clase que exporta los datos a un archivo PDF.
+    /// </summary>
+    /// <typeparam name="T">Tipo de datos a exportar.</typeparam>
     public class PdfExporter<T> : IExporter<T>
     {
+        /// <summary>
+        /// Exporta los datos a un archivo PDF en la ubicación especificada.
+        /// </summary>
+        /// <param name="data">La lista de datos a exportar.</param>
+        /// <param name="path">La ubicación del archivo PDF de destino.</param>
+        /// <returns>Una tarea que representa la finalización de la exportación.</returns>
         public Task ExportData(List<T> data, string path)
         {
             return Task.Run(() =>

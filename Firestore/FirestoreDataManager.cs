@@ -19,12 +19,19 @@ namespace Firestore
 
         // objects
 
+
+        /// <summary>
+        /// Crea un objeto en Firestore.
+        /// </summary>
         protected async Task<bool> CreateObjectAsync<T>(T entity, string idDoc)
         {
             await CreateDocumentAsync(entity, idDoc);
             return true;
         }
 
+        /// <summary>
+        /// Actualiza un objeto en Firestore.
+        /// </summary>
         protected virtual async Task<bool> UpdateObjectAsync<T>(T entity, string id)
         {
             if (!await ExistsAsync(id))
@@ -35,6 +42,9 @@ namespace Firestore
             return true;
         }
 
+        /// <summary>
+        /// Elimina un objeto en Firestore.
+        /// </summary>
         protected virtual async Task<bool> DeleteObjectAsync(string id)
         {
             if (!await ExistsAsync(id))
@@ -45,6 +55,9 @@ namespace Firestore
             return true;
         }
 
+        /// <summary>
+        /// obtiene un objeto de Firestore por su id.
+        /// </summary>
         protected async Task<T> GetObjectAsync<T>(string id) where T : class
         {
             var docSnapshot = await GetDocumentAsync(id);
@@ -58,6 +71,9 @@ namespace Firestore
             }
         }
 
+        /// <summary>
+        /// Obtiene todos los objetos de una colección en Firestore.
+        /// </summary>
         protected virtual async Task<List<T>> GetAllObjectsAsync<T>()
         {
             var EntitySnapshot = await Collection.GetSnapshotAsync();
@@ -74,6 +90,9 @@ namespace Firestore
             return entityList;
         }
 
+        /// <summary>
+        /// Verifica si existe un campo con un determinado valor en Firestore.
+        /// </summary>
         public async Task<bool> FieldExistsAsync(string field, string value)
         {
             var query = Collection.WhereEqualTo(field, value).Limit(1);
@@ -81,20 +100,11 @@ namespace Firestore
             return querySnapshot.Documents.Count > 0;
         }
 
-        protected async Task<List<T>> GetByFieldValueAsync<T>(string field, string value) where T : class
-        {
-            QuerySnapshot snapshot = await Collection.WhereEqualTo(field, value).GetSnapshotAsync();
-            return snapshot.Documents.Select(document =>
-            {
-                var diccionario = document.ToDictionary();
-                var json = JsonConvert.SerializeObject(diccionario);
-                var prod = JsonConvert.DeserializeObject<T>(json);
-                return prod;
-            }).ToList();
-        }
-
         // documents
 
+        /// <summary>
+        /// Crea un documumento en Firestore.
+        /// </summary>
         protected async Task<string> CreateDocumentAsync<T>(T entity, string docId)
         {
             DocumentReference docRef;
@@ -112,24 +122,37 @@ namespace Firestore
             return docRef.Id;
         }
 
+        /// <summary>
+        /// Actualiza un documumento en Firestore.
+        /// </summary>
         protected async Task UpdateDocumentAsync(string id, object entity)
         {
             var docRef = Collection.Document(id);
             await docRef.SetAsync(entity);
         }
 
+        /// <summary>
+        /// Actualiza un documumento en Firestore.
+
+        /// </summary>
         protected async Task DeleteDocumentAsync(string id)
         {
             var docRef = Collection.Document(id);
             await docRef.DeleteAsync();
         }
 
+        /// <summary>
+        /// Obtiene un documumento de Firestore.
+        /// </summary>
         protected async Task<DocumentSnapshot> GetDocumentAsync(string id)
         {
             var docRef = Collection.Document(id);
             return await docRef.GetSnapshotAsync();
         }
 
+        /// <summary>
+        /// Verifica si existe el documumento en Firestore mediante su ID.
+        /// </summary>
         public async Task<bool> ExistsAsync(string id)
         {
             var document = await GetDocumentAsync(id);

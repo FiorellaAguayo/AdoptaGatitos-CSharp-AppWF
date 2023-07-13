@@ -469,6 +469,22 @@
           "bin/placeholder/LogData.dll": {}
         }
       },
+      "Reports/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CsvHelper": "30.0.1",
+          "Entities": "1.0.0",
+          "Newtonsoft.Json": "13.0.3",
+          "iTextSharp": "5.5.13.3"
+        },
+        "compile": {
+          "bin/placeholder/Reports.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reports.dll": {}
+        }
+      },
       "Validations/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1082,6 +1098,11 @@
       "path": "../LogData/LogData.csproj",
       "msbuildProject": "../LogData/LogData.csproj"
     },
+    "Reports/1.0.0": {
+      "type": "project",
+      "path": "../Reports/Reports.csproj",
+      "msbuildProject": "../Reports/Reports.csproj"
+    },
     "Validations/1.0.0": {
       "type": "project",
       "path": "../Validations/Validations.csproj",
@@ -1095,6 +1116,7 @@
       "Firestore >= 1.0.0",
       "Graphics >= 1.0.0",
       "LogData >= 1.0.0",
+      "Reports >= 1.0.0",
       "Validations >= 1.0.0"
     ]
   },
@@ -1139,6 +1161,9 @@
             },
             "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\LogData\\LogData.csproj": {
               "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\LogData\\LogData.csproj"
+            },
+            "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Reports\\Reports.csproj": {
+              "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Reports\\Reports.csproj"
             },
             "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Validations\\Validations.csproj": {
               "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Validations\\Validations.csproj"

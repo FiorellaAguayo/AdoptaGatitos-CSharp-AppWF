@@ -1,0 +1,7 @@
+Id,Phone,Email,UserName,Password,Role,Message,PaymentMethod,LastDonation
+4561,,admin@gmail.com,admin,123,Administrador,,,
+4521,4352353,andrea@gmail.com,andrea,111,Visitante,,MasterCard,100
+4001,5435332,bere@gmail.com,bere,888,Visitante,,,1000
+2759,42320550,irli@gmail.com,irli,456,Visitante,,,100
+5678,34253252,jose@gmail.com,jose,111,Visitante,,,900
+2312,3453325,juan@gmail.com,juan,123,Visitante,,,900

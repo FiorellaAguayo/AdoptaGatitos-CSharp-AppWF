@@ -92,12 +92,14 @@ C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-win
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\Firestore.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\Graphics.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\LogData.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\Reports.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\Validations.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\EntitiesManager.pdb
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\Entities.pdb
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\Firestore.pdb
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\Graphics.pdb
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\LogData.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\Reports.pdb
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\bin\Debug\net6.0-windows\Validations.pdb
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\obj\Debug\net6.0-windows\PatitasSuaves.csproj.AssemblyReference.cache
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\PatitasSuaves\obj\Debug\net6.0-windows\PatitasSuaves.Account.resources

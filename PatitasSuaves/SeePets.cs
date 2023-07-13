@@ -2,9 +2,9 @@
 using Entities;
 using EntitiesManager;
 using static EntitiesManager.CatManager;
-
 using Validations;
 using LogData;
+using Reports;
 
 namespace PatitasSuaves
 {

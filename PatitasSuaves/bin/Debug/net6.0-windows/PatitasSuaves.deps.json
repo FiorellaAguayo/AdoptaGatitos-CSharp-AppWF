@@ -13,6 +13,7 @@
           "Firestore": "1.0.0",
           "Graphics": "1.0.0",
           "LogData": "1.0.0",
+          "Reports": "1.0.0",
           "Validations": "1.0.0"
         },
         "runtime": {
@@ -316,6 +317,17 @@
           "LogData.dll": {}
         }
       },
+      "Reports/1.0.0": {
+        "dependencies": {
+          "CsvHelper": "30.0.1",
+          "Entities": "1.0.0",
+          "Newtonsoft.Json": "13.0.3",
+          "iTextSharp": "5.5.13.3"
+        },
+        "runtime": {
+          "Reports.dll": {}
+        }
+      },
       "Validations/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0"
@@ -535,6 +547,11 @@
       "sha512": ""
     },
     "LogData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reports/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

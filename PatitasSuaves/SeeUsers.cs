@@ -4,8 +4,7 @@ using Validations;
 using System.Data;
 using static EntitiesManager.UserManager;
 using LogData;
-using System.Windows.Forms;
-using System.Xml.Linq;
+using Reports;
 
 namespace PatitasSuaves
 {

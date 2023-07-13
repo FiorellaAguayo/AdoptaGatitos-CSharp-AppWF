@@ -1,4 +1,4 @@
-﻿namespace PatitasSuaves
+﻿namespace Reports
 {
     /// <summary>
     /// Interfaz para exportar datos a un archivo.

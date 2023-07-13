@@ -14,6 +14,7 @@
     <ProjectReference Include="..\Firestore\Firestore.csproj" />
     <ProjectReference Include="..\Graphics\Graphics.csproj" />
     <ProjectReference Include="..\LogData\LogData.csproj" />
+    <ProjectReference Include="..\Reports\Reports.csproj" />
     <ProjectReference Include="..\Validations\Validations.csproj" />
   </ItemGroup>
 

@@ -1,8 +1,6 @@
-﻿using Entities;
-using PatitasSuaves;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace EntitiesManager
+namespace Reports
 {
     /// <summary>
     /// Clase que implementa la interfaz IExporter<T> para exportar datos en formato JSON.

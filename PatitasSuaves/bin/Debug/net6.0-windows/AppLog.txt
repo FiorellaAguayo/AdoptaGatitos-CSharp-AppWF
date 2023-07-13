@@ -68,3 +68,12 @@
 13/7/2023 16:36:32: El usuario admin está mirando cuenta.
 13/7/2023 16:36:33: El usuario admin está mirando contacto.
 13/7/2023 16:36:35: El usuario admin está mirando donaciones.
+13/7/2023 17:14:11: El usuario admin ha iniciado sesión
+13/7/2023 17:14:14: El usuario admin está mirando administracion de usuarios.
+13/7/2023 17:14:21: Se exportó una lista de usuarios a json.
+13/7/2023 17:14:24: Se exportó una lista de usuarios a csv.
+13/7/2023 17:14:26: Se exportó una lista de usuarios a pdf.
+13/7/2023 17:14:28: El usuario admin está mirando administracion de gatos.
+13/7/2023 17:14:30: Se exportó una lista de gatos a json.
+13/7/2023 17:14:31: Se exportó una lista de gatos a csv.
+13/7/2023 17:14:33: Se exportó una lista de gatos a pdf.

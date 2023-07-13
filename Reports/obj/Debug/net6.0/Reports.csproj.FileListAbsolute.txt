@@ -1,0 +1,15 @@
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\bin\Debug\net6.0\Reports.deps.json
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\bin\Debug\net6.0\Reports.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\bin\Debug\net6.0\Reports.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\bin\Debug\net6.0\Entities.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\bin\Debug\net6.0\Entities.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\Reports.csproj.AssemblyReference.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\Reports.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\Reports.AssemblyInfoInputs.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\Reports.AssemblyInfo.cs
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\Reports.csproj.CoreCompileInputs.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\Reports.csproj.CopyComplete
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\Reports.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\refint\Reports.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\Reports.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Reports\obj\Debug\net6.0\ref\Reports.dll

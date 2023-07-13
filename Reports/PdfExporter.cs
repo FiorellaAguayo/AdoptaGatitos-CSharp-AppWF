@@ -1,8 +1,7 @@
-﻿using PatitasSuaves;
-using iTextSharp.text;
+﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
 
-namespace EntitiesManager
+namespace Reports
 {
     /// <summary>
     /// Clase que exporta los datos a un archivo PDF.

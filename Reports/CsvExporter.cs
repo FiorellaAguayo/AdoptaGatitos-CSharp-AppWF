@@ -1,8 +1,7 @@
-﻿using PatitasSuaves;
-using CsvHelper;
+﻿using CsvHelper;
 using System.Globalization;
 
-namespace EntitiesManager
+namespace Reports
 {
     /// <summary>
     /// Clase encargada de exportar datos a un archivo CSV.

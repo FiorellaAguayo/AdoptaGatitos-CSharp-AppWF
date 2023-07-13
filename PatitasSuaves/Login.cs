@@ -9,7 +9,16 @@ namespace PatitasSuaves
     {
         private readonly UserManager _userManager;
 
+        /// <summary>
+        /// Delegado que representa el evento de éxito de inicio de sesión.
+        /// </summary>
+        /// <param name="username">El nombre de usuario que inició sesión.</param>
         public delegate void LoginSuccessDelegate(string username);
+
+
+        /// <summary>
+        /// Evento que se desencadena cuando se inicia sesión correctamente.
+        /// </summary>
         public event LoginSuccessDelegate LoginSuccess;
 
         public Login()
@@ -55,9 +64,10 @@ namespace PatitasSuaves
         }
 
         /// <summary>
-        /// 
+        /// Maneja el evento de éxito de inicio de sesión.
+        /// Muestra un mensaje de bienvenida al usuario.
         /// </summary>
-        /// <param name="username"></param>
+        /// <param name="username">El nombre de usuario que inició sesión.</param>
         private void LoginSuccessHandler(string username)
         {
             MessageBox.Show("¡Bienvenido/a a Patitas Suaves, " + username + "!");
@@ -149,6 +159,12 @@ namespace PatitasSuaves
                 txbPassword.ForeColor = SystemColors.WindowFrame;
                 txbPassword.UseSystemPasswordChar = false;
             }
+        }
+
+        private void btnAutocomplete_Click(object sender, EventArgs e)
+        {
+            txbUser.Text = "pepito";
+            txbPassword.Text = "123";
         }
     }
 }

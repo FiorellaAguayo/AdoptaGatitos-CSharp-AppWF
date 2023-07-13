@@ -1,7 +1,11 @@
 ﻿using System.Data;
+
 using Entities;
+
 using EntitiesManager;
+
 using LogData;
+
 using Validations;
 
 namespace PatitasSuaves
@@ -103,11 +107,11 @@ namespace PatitasSuaves
             {
                 return rbMastercard.Text;
             }
-            else if(rbMp.Checked)
+            else if (rbMp.Checked)
             {
                 return rbMp.Text;
             }
-            else if(rbPayPal.Checked)
+            else if (rbPayPal.Checked)
             {
                 return rbPayPal.Text;
             }
@@ -131,6 +135,15 @@ namespace PatitasSuaves
             {
                 dgvDonations.Rows.Add("No se ha ingresado mensajes");
             }
+        }
+
+        private void btnAutocomplete_Click(object sender, EventArgs e)
+        {
+            txbEmail.Text = "pepito@gmail.com";
+            txbUser.Text = "pepito";
+            numAmount.Value = 800;
+            rbMastercard.Checked = true;
+            txbMessage.Text = "quiero donar porque amo a los gatitos";
         }
     }
 }

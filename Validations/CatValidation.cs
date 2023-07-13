@@ -31,11 +31,6 @@ namespace Validations
             return isValid;
         }
 
-        /*
-         Disparar una acción específica: Puedes asociar una acción específica a la validación exitosa utilizando el evento. Por ejemplo, puedes definir una acción que se ejecute cuando se valide correctamente un objeto Cat, 
-        como guardar los datos en una base de datos, enviar una notificación por correo electrónico, etc.
-         */
-
         /// <summary>
         /// Llama al evento CatValidationSuccess cuando se valida con éxito un objeto Cat.
         /// </summary>

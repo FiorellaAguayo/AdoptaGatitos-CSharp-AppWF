@@ -41,6 +41,7 @@
             txbUser = new TextBox();
             btnLogin = new Button();
             label1 = new Label();
+            btnAutocomplete = new Button();
             ((System.ComponentModel.ISupportInitialize)SeePassword).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -186,12 +187,24 @@
             label1.TabIndex = 42;
             label1.Text = "LOGIN";
             // 
+            // btnAutocomplete
+            // 
+            btnAutocomplete.ForeColor = SystemColors.ActiveCaptionText;
+            btnAutocomplete.Location = new Point(488, 12);
+            btnAutocomplete.Name = "btnAutocomplete";
+            btnAutocomplete.Size = new Size(120, 27);
+            btnAutocomplete.TabIndex = 49;
+            btnAutocomplete.Text = "Autocompletar";
+            btnAutocomplete.UseVisualStyleBackColor = true;
+            btnAutocomplete.Click += btnAutocomplete_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 192, 255);
             ClientSize = new Size(620, 273);
+            Controls.Add(btnAutocomplete);
             Controls.Add(SeePassword);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
@@ -232,5 +245,6 @@
         public TextBox txbUser;
         private Button btnLogin;
         private Label label1;
+        private Button btnAutocomplete;
     }
 }

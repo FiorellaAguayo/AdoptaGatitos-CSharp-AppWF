@@ -154,7 +154,5 @@ namespace EntitiesManager
             Error,
             NoChanges
         }
-
-
     }
 }

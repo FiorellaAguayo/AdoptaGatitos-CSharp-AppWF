@@ -1,6 +1,9 @@
 ﻿using Entities;
+
 using EntitiesManager;
+
 using LogData;
+
 using static EntitiesManager.UserManager;
 
 namespace PatitasSuaves
@@ -155,6 +158,13 @@ namespace PatitasSuaves
                 txbPassword.ForeColor = SystemColors.WindowFrame;
                 txbPassword.UseSystemPasswordChar = false;
             }
+        }
+
+        private void btnAutocomplete_Click(object sender, EventArgs e)
+        {
+            txbEmail.Text = "pepito@gmail.com";
+            txbUser.Text = "pepito";
+            txbPassword.Text = "123";
         }
     }
 }

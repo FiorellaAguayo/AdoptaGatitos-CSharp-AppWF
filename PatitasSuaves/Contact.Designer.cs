@@ -41,6 +41,7 @@
             btnBePart = new Button();
             btnCancelBePart = new Button();
             pictureBox1 = new PictureBox();
+            btnAutocomplete = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -100,58 +101,67 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(380, 61);
+            label3.Font = new Font("MV Boli", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Firebrick;
+            label3.Location = new Point(378, 61);
             label3.Name = "label3";
-            label3.Size = new Size(51, 15);
+            label3.Size = new Size(63, 20);
             label3.TabIndex = 6;
             label3.Text = "Nombre";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(380, 127);
+            label4.Font = new Font("MV Boli", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Firebrick;
+            label4.Location = new Point(393, 127);
             label4.Name = "label4";
-            label4.Size = new Size(36, 15);
+            label4.Size = new Size(46, 20);
             label4.TabIndex = 7;
             label4.Text = "Email";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(380, 195);
+            label5.Font = new Font("MV Boli", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Firebrick;
+            label5.Location = new Point(378, 195);
             label5.Name = "label5";
-            label5.Size = new Size(51, 15);
+            label5.Size = new Size(62, 20);
             label5.TabIndex = 8;
             label5.Text = "Mensaje";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(31, 333);
+            label6.Font = new Font("Century Gothic", 9.75F, FontStyle.Italic, GraphicsUnit.Point);
+            label6.ForeColor = Color.DarkSlateBlue;
+            label6.Location = new Point(31, 319);
             label6.Name = "label6";
-            label6.Size = new Size(328, 34);
+            label6.Size = new Size(413, 48);
             label6.TabIndex = 9;
-            label6.Text = "¿Querés ser parte? \r\nHaz click aquí y le llegará la petición al administrador";
+            label6.Text = "¿Querés ser parte? \r\n\r\nHaz click  en \"Ser Parte\" y le llegará la petición al administrador";
             // 
             // btnBePart
             // 
-            btnBePart.Location = new Point(31, 386);
+            btnBePart.BackColor = Color.SlateBlue;
+            btnBePart.Location = new Point(31, 383);
             btnBePart.Name = "btnBePart";
-            btnBePart.Size = new Size(151, 30);
+            btnBePart.Size = new Size(151, 46);
             btnBePart.TabIndex = 10;
             btnBePart.Text = "Ser Parte";
-            btnBePart.UseVisualStyleBackColor = true;
+            btnBePart.UseVisualStyleBackColor = false;
             btnBePart.Click += btnBePart_Click;
             // 
             // btnCancelBePart
             // 
-            btnCancelBePart.Location = new Point(188, 386);
+            btnCancelBePart.BackColor = Color.SlateBlue;
+            btnCancelBePart.Location = new Point(188, 383);
             btnCancelBePart.Name = "btnCancelBePart";
-            btnCancelBePart.Size = new Size(151, 30);
+            btnCancelBePart.Size = new Size(151, 46);
             btnCancelBePart.TabIndex = 11;
             btnCancelBePart.Text = "Cancelar petición";
-            btnCancelBePart.UseVisualStyleBackColor = true;
+            btnCancelBePart.UseVisualStyleBackColor = false;
             btnCancelBePart.Click += btnCancelBePart_Click;
             // 
             // pictureBox1
@@ -163,12 +173,23 @@
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
             // 
+            // btnAutocomplete
+            // 
+            btnAutocomplete.Location = new Point(462, 12);
+            btnAutocomplete.Name = "btnAutocomplete";
+            btnAutocomplete.Size = new Size(120, 27);
+            btnAutocomplete.TabIndex = 50;
+            btnAutocomplete.Text = "Autocompletar";
+            btnAutocomplete.UseVisualStyleBackColor = true;
+            btnAutocomplete.Click += btnAutocomplete_Click;
+            // 
             // Contact
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Plum;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAutocomplete);
             Controls.Add(pictureBox1);
             Controls.Add(btnCancelBePart);
             Controls.Add(btnBePart);
@@ -205,5 +226,6 @@
         private Button btnBePart;
         private Button btnCancelBePart;
         private PictureBox pictureBox1;
+        private Button btnAutocomplete;
     }
 }

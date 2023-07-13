@@ -1,6 +1,9 @@
 ﻿using Entities;
+
 using EntitiesManager;
+
 using LogData;
+
 using Validations;
 
 namespace PatitasSuaves
@@ -69,6 +72,13 @@ namespace PatitasSuaves
         {
             MessageBox.Show("Cancelaste la petición.");
             Log.WriteLog($"El usuario {user.UserName} ha cancelado la petición de Ser Parte.");
+        }
+
+        private void btnAutocomplete_Click(object sender, EventArgs e)
+        {
+            txbEmail.Text = "pepito@gmail.com";
+            txbName.Text = "pepito";
+            txbMessage.Text = "Me gustaría ser parte del refugio lo antes posible, voy a mandar una petición.";
         }
     }
 }

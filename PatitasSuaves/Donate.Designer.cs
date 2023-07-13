@@ -44,6 +44,7 @@
             rbMastercard = new RadioButton();
             numAmount = new NumericUpDown();
             btnDonate = new Button();
+            btnAutocomplete = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvDonations).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numAmount).BeginInit();
             SuspendLayout();
@@ -202,12 +203,23 @@
             btnDonate.UseVisualStyleBackColor = false;
             btnDonate.Click += btnDonate_Click;
             // 
+            // btnAutocomplete
+            // 
+            btnAutocomplete.Location = new Point(352, 306);
+            btnAutocomplete.Name = "btnAutocomplete";
+            btnAutocomplete.Size = new Size(120, 27);
+            btnAutocomplete.TabIndex = 49;
+            btnAutocomplete.Text = "Autocompletar";
+            btnAutocomplete.UseVisualStyleBackColor = true;
+            btnAutocomplete.Click += btnAutocomplete_Click;
+            // 
             // Donate
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGoldenrod;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAutocomplete);
             Controls.Add(btnDonate);
             Controls.Add(numAmount);
             Controls.Add(rbMastercard);
@@ -253,5 +265,6 @@
         private RadioButton rbMastercard;
         private NumericUpDown numAmount;
         private Button btnDonate;
+        private Button btnAutocomplete;
     }
 }

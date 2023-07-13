@@ -42,6 +42,7 @@
             txbEmail = new TextBox();
             btnSignUp = new Button();
             label1 = new Label();
+            btnAutocomplete = new Button();
             ((System.ComponentModel.ISupportInitialize)SeePassword).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -124,12 +125,13 @@
             // 
             // btnBack
             // 
+            btnBack.BackColor = SystemColors.ActiveCaption;
             btnBack.Location = new Point(182, 12);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(75, 23);
+            btnBack.Size = new Size(90, 27);
             btnBack.TabIndex = 42;
             btnBack.Text = "Login";
-            btnBack.UseVisualStyleBackColor = true;
+            btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
             // txbPassword
@@ -200,12 +202,23 @@
             label1.TabIndex = 37;
             label1.Text = "SIGN UP";
             // 
+            // btnAutocomplete
+            // 
+            btnAutocomplete.Location = new Point(488, 12);
+            btnAutocomplete.Name = "btnAutocomplete";
+            btnAutocomplete.Size = new Size(120, 27);
+            btnAutocomplete.TabIndex = 48;
+            btnAutocomplete.Text = "Autocompletar";
+            btnAutocomplete.UseVisualStyleBackColor = true;
+            btnAutocomplete.Click += btnAutocomplete_Click;
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 255);
             ClientSize = new Size(620, 273);
+            Controls.Add(btnAutocomplete);
             Controls.Add(SeePassword);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -248,5 +261,6 @@
         private TextBox txbEmail;
         private Button btnSignUp;
         private Label label1;
+        private Button btnAutocomplete;
     }
 }

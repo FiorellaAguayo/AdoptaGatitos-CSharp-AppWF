@@ -38,17 +38,20 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btnBePart = new Button();
+            btnCancelBePart = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(43, 32);
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = Color.MediumVioletRed;
+            label1.Location = new Point(73, 32);
             label1.Name = "label1";
-            label1.Size = new Size(117, 25);
+            label1.Size = new Size(134, 30);
             label1.TabIndex = 0;
             label1.Text = "Contáctenos";
             // 
@@ -87,12 +90,12 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point);
             label2.Location = new Point(43, 89);
             label2.Name = "label2";
-            label2.Size = new Size(146, 140);
+            label2.Size = new Size(275, 189);
             label2.TabIndex = 5;
-            label2.Text = "Nuestra direccion es:\r\ndireccion:\r\ntelefono:\r\n\r\nRedes sociales\r\nFacebook\r\nInstagram\r\n";
+            label2.Text = "Puede visitarnos en:\r\nCalle 123, Ciudad Gatuna\r\n\r\ntelefono: 1123303770\r\n\r\nRedes sociales\r\nFacebook: Patitas Suaves Adopcion \r\nInstagram: @patitas_suaves_adopcion\r\n\r\n";
             // 
             // label3
             // 
@@ -124,37 +127,51 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(43, 323);
+            label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(31, 333);
             label6.Name = "label6";
-            label6.Size = new Size(286, 30);
+            label6.Size = new Size(328, 34);
             label6.TabIndex = 9;
             label6.Text = "¿Querés ser parte? \r\nHaz click aquí y le llegará la petición al administrador";
             // 
-            // button1
+            // btnBePart
             // 
-            button1.Location = new Point(46, 386);
-            button1.Name = "button1";
-            button1.Size = new Size(115, 30);
-            button1.TabIndex = 10;
-            button1.Text = "Ser Parte";
-            button1.UseVisualStyleBackColor = true;
+            btnBePart.Location = new Point(31, 386);
+            btnBePart.Name = "btnBePart";
+            btnBePart.Size = new Size(151, 30);
+            btnBePart.TabIndex = 10;
+            btnBePart.Text = "Ser Parte";
+            btnBePart.UseVisualStyleBackColor = true;
+            btnBePart.Click += btnBePart_Click;
             // 
-            // button2
+            // btnCancelBePart
             // 
-            button2.Location = new Point(167, 386);
-            button2.Name = "button2";
-            button2.Size = new Size(115, 30);
-            button2.TabIndex = 11;
-            button2.Text = "Cancelar petición";
-            button2.UseVisualStyleBackColor = true;
+            btnCancelBePart.Location = new Point(188, 386);
+            btnCancelBePart.Name = "btnCancelBePart";
+            btnCancelBePart.Size = new Size(151, 30);
+            btnCancelBePart.TabIndex = 11;
+            btnCancelBePart.Text = "Cancelar petición";
+            btnCancelBePart.UseVisualStyleBackColor = true;
+            btnCancelBePart.Click += btnCancelBePart_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.happy__1_;
+            pictureBox1.Location = new Point(46, 36);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(33, 26);
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
             // Contact
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Plum;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(pictureBox1);
+            Controls.Add(btnCancelBePart);
+            Controls.Add(btnBePart);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -168,7 +185,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Contact";
             Text = "Contact";
-            Load += Contact_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -185,7 +202,8 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Button button1;
-        private Button button2;
+        private Button btnBePart;
+        private Button btnCancelBePart;
+        private PictureBox pictureBox1;
     }
 }

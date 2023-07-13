@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             panButtonSelected = new Panel();
             lblTitle = new Label();
             panButtons = new Panel();
@@ -38,10 +39,12 @@
             btnDonate = new Button();
             btnProfiles = new Button();
             panLogo = new Panel();
-            lblLogo = new Label();
+            label3 = new Label();
+            pictureBox3 = new PictureBox();
             panButtonSelected.SuspendLayout();
             panButtons.SuspendLayout();
             panLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // panButtonSelected
@@ -201,21 +204,35 @@
             // panLogo
             // 
             panLogo.BackColor = Color.Salmon;
-            panLogo.Controls.Add(lblLogo);
+            panLogo.Controls.Add(label3);
+            panLogo.Controls.Add(pictureBox3);
             panLogo.Dock = DockStyle.Top;
             panLogo.Location = new Point(0, 0);
             panLogo.Name = "panLogo";
             panLogo.Size = new Size(193, 94);
             panLogo.TabIndex = 15;
             // 
-            // lblLogo
+            // label3
             // 
-            lblLogo.AutoSize = true;
-            lblLogo.Location = new Point(51, 50);
-            lblLogo.Name = "lblLogo";
-            lblLogo.Size = new Size(76, 15);
-            lblLogo.TabIndex = 0;
-            lblLogo.Text = "logoEmpresa";
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe Script", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(37, 71);
+            label3.Name = "label3";
+            label3.Size = new Size(111, 20);
+            label3.TabIndex = 40;
+            label3.Text = "Patitas Suaves";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(37, 0);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(105, 85);
+            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox3.TabIndex = 39;
+            pictureBox3.TabStop = false;
             // 
             // Principal
             // 
@@ -237,6 +254,7 @@
             panButtons.ResumeLayout(false);
             panLogo.ResumeLayout(false);
             panLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -252,6 +270,7 @@
         private Button btnDonate;
         private Button btnProfiles;
         private Panel panLogo;
-        private Label lblLogo;
+        private Label label3;
+        private PictureBox pictureBox3;
     }
 }

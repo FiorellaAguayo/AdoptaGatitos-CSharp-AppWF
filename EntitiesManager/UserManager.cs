@@ -124,7 +124,6 @@ namespace EntitiesManager
                     userToUpdate.Email = user.Email;
                     userToUpdate.Password = user.Password;
                     userToUpdate.LastDonation = user.LastDonation;
-                    userToUpdate.TotalDonation = user.TotalDonation;
                     userToUpdate.Phone = user.Phone;
 
                     await UpdateUser(userToUpdate, userToUpdate.UserName);

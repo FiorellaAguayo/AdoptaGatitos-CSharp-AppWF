@@ -17,5 +17,10 @@ namespace PatitasSuaves
             InitializeComponent();
             this.Dock = DockStyle.Fill;
         }
+
+        private void MainPage_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Load("https://ohmaigat.com.co/sites/default/files/inline-images/banner-tiposdegatos.jpg");
+        }
     }
 }

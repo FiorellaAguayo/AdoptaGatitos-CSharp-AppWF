@@ -21,11 +21,6 @@ namespace PatitasSuaves
             user = actualUser;
         }
 
-        private async void Contact_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSend_Click(object sender, EventArgs e)
         {
             string name = txbName.Text;
@@ -56,6 +51,18 @@ namespace PatitasSuaves
                     MessageBox.Show("Error desconocido.");
                     break;
             }
+        }
+
+        private void btnBePart_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hemos enviado la petición. El administrador se comunicará pronto.");
+            Log.WriteLog($"El usuario {user.UserName} ha enviado una petición de Ser Parte.");
+        }
+
+        private void btnCancelBePart_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cancelaste la petición.");
+            Log.WriteLog($"El usuario {user.UserName} ha cancelado la petición de Ser Parte.");
         }
     }
 }

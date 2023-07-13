@@ -55,7 +55,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(364, 385);
+            label7.Location = new Point(322, 382);
             label7.Name = "label7";
             label7.Size = new Size(52, 15);
             label7.TabIndex = 35;
@@ -64,7 +64,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(349, 345);
+            label6.Location = new Point(305, 347);
             label6.Name = "label6";
             label6.Size = new Size(69, 15);
             label6.TabIndex = 34;
@@ -73,7 +73,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(349, 314);
+            label5.Location = new Point(307, 311);
             label5.Name = "label5";
             label5.Size = new Size(67, 15);
             label5.TabIndex = 33;
@@ -82,7 +82,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(112, 416);
+            label4.Location = new Point(70, 413);
             label4.Name = "label4";
             label4.Size = new Size(36, 15);
             label4.TabIndex = 32;
@@ -90,28 +90,28 @@
             // 
             // txbId
             // 
-            txbId.Location = new Point(156, 347);
+            txbId.Location = new Point(114, 344);
             txbId.Name = "txbId";
             txbId.Size = new Size(167, 23);
             txbId.TabIndex = 31;
             // 
             // txbEmail
             // 
-            txbEmail.Location = new Point(156, 413);
+            txbEmail.Location = new Point(114, 410);
             txbEmail.Name = "txbEmail";
             txbEmail.Size = new Size(167, 23);
             txbEmail.TabIndex = 30;
             // 
             // txbRole
             // 
-            txbRole.Location = new Point(156, 377);
+            txbRole.Location = new Point(114, 374);
             txbRole.Name = "txbRole";
             txbRole.Size = new Size(167, 23);
             txbRole.TabIndex = 29;
             // 
             // txbUser
             // 
-            txbUser.Location = new Point(156, 311);
+            txbUser.Location = new Point(114, 308);
             txbUser.Name = "txbUser";
             txbUser.Size = new Size(167, 23);
             txbUser.TabIndex = 28;
@@ -119,7 +119,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(124, 385);
+            label3.Location = new Point(82, 382);
             label3.Name = "label3";
             label3.Size = new Size(24, 15);
             label3.TabIndex = 27;
@@ -128,7 +128,7 @@
             // lblId
             // 
             lblId.AutoSize = true;
-            lblId.Location = new Point(124, 347);
+            lblId.Location = new Point(82, 344);
             lblId.Name = "lblId";
             lblId.Size = new Size(17, 15);
             lblId.TabIndex = 26;
@@ -137,7 +137,7 @@
             // lblUser
             // 
             lblUser.AutoSize = true;
-            lblUser.Location = new Point(118, 314);
+            lblUser.Location = new Point(76, 311);
             lblUser.Name = "lblUser";
             lblUser.Size = new Size(30, 15);
             lblUser.TabIndex = 25;
@@ -145,103 +145,110 @@
             // 
             // txbPhone
             // 
-            txbPhone.Location = new Point(422, 377);
+            txbPhone.Location = new Point(392, 374);
             txbPhone.Name = "txbPhone";
             txbPhone.Size = new Size(167, 23);
             txbPhone.TabIndex = 24;
             // 
             // txbDonation
             // 
-            txbDonation.Location = new Point(424, 341);
+            txbDonation.Location = new Point(392, 341);
             txbDonation.Name = "txbDonation";
             txbDonation.Size = new Size(167, 23);
             txbDonation.TabIndex = 23;
             // 
             // txbPassword
             // 
-            txbPassword.Location = new Point(424, 301);
+            txbPassword.Location = new Point(392, 308);
             txbPassword.Name = "txbPassword";
             txbPassword.Size = new Size(167, 23);
             txbPassword.TabIndex = 22;
             // 
             // btnDelete
             // 
+            btnDelete.BackColor = Color.IndianRed;
             btnDelete.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDelete.Location = new Point(702, 392);
+            btnDelete.Location = new Point(662, 391);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(133, 28);
+            btnDelete.Size = new Size(133, 40);
             btnDelete.TabIndex = 21;
             btnDelete.Text = "Eliminar";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
             // btnModify
             // 
+            btnModify.BackColor = Color.Orange;
             btnModify.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnModify.Location = new Point(702, 354);
+            btnModify.Location = new Point(662, 345);
             btnModify.Name = "btnModify";
-            btnModify.Size = new Size(133, 27);
+            btnModify.Size = new Size(133, 40);
             btnModify.TabIndex = 20;
             btnModify.Text = "Modificar";
-            btnModify.UseVisualStyleBackColor = true;
+            btnModify.UseVisualStyleBackColor = false;
             btnModify.Click += btnModify_Click;
             // 
             // btnAdd
             // 
+            btnAdd.BackColor = Color.GreenYellow;
             btnAdd.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAdd.Location = new Point(702, 311);
+            btnAdd.Location = new Point(662, 297);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(133, 28);
+            btnAdd.Size = new Size(133, 40);
             btnAdd.TabIndex = 19;
             btnAdd.Text = "Agregar";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 
             // dgvUsers
             // 
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsers.Location = new Point(36, 32);
+            dgvUsers.Location = new Point(26, 22);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.RowTemplate.Height = 25;
-            dgvUsers.Size = new Size(667, 244);
+            dgvUsers.Size = new Size(635, 244);
             dgvUsers.TabIndex = 18;
             dgvUsers.CellClick += dgvUsers_CellClick;
             dgvUsers.SelectionChanged += dgvUsers_SelectionChanged;
             // 
             // btnJSON
             // 
-            btnJSON.Location = new Point(735, 52);
+            btnJSON.BackColor = Color.CadetBlue;
+            btnJSON.Location = new Point(685, 22);
             btnJSON.Name = "btnJSON";
-            btnJSON.Size = new Size(100, 34);
+            btnJSON.Size = new Size(110, 34);
             btnJSON.TabIndex = 36;
             btnJSON.Text = "Exportar JSON";
-            btnJSON.UseVisualStyleBackColor = true;
+            btnJSON.UseVisualStyleBackColor = false;
             btnJSON.Click += btnJSON_Click;
             // 
             // btnPDF
             // 
-            btnPDF.Location = new Point(735, 158);
+            btnPDF.BackColor = Color.CadetBlue;
+            btnPDF.Location = new Point(685, 126);
             btnPDF.Name = "btnPDF";
-            btnPDF.Size = new Size(100, 34);
+            btnPDF.Size = new Size(110, 34);
             btnPDF.TabIndex = 37;
             btnPDF.Text = "Exportar PDF";
-            btnPDF.UseVisualStyleBackColor = true;
+            btnPDF.UseVisualStyleBackColor = false;
             btnPDF.Click += btnPDF_Click;
             // 
             // btnCSV
             // 
-            btnCSV.Location = new Point(735, 105);
+            btnCSV.BackColor = Color.CadetBlue;
+            btnCSV.Location = new Point(685, 73);
             btnCSV.Name = "btnCSV";
-            btnCSV.Size = new Size(100, 34);
+            btnCSV.Size = new Size(110, 34);
             btnCSV.TabIndex = 38;
             btnCSV.Text = "Exportar CSV";
-            btnCSV.UseVisualStyleBackColor = true;
+            btnCSV.UseVisualStyleBackColor = false;
             btnCSV.Click += btnCSV_Click;
             // 
             // SeeUsers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(865, 476);
             Controls.Add(btnCSV);
             Controls.Add(btnPDF);

@@ -4,7 +4,7 @@ using Entities;
 namespace Tests
 {
     [TestClass]
-    public class UserValidatin
+    public class UserValidationTests
     {
         [TestMethod]
         public void ValidateEmail_ValidData_ReturnsTrue()
@@ -16,7 +16,7 @@ namespace Tests
             bool result = UserValidation.ValidateEmail(email);
 
             // Assert
-            Assert.IsTrue(result);
+            Assert.IsTrue(result); // espera
         }
 
         [TestMethod]

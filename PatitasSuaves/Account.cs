@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-using EntitiesManager;
+﻿using EntitiesManager;
 using Entities;
 using LogData;
 
@@ -42,7 +32,11 @@ namespace PatitasSuaves
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-
+            this.MdiParent.Close();
+            Login login = new Login();
+            login.Show();
+            MessageBox.Show("Cerraste sesión.");
+            Log.WriteLog($"El usuario {user.UserName} cerró sesión.");
         }
 
         private async void btnDeleteAccount_Click(object sender, EventArgs e)

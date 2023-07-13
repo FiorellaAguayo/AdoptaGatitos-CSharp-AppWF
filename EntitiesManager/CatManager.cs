@@ -25,12 +25,6 @@ namespace EntitiesManager
 
         public async Task<List<Cat>> GetCats() => await GetAll();
 
-        private async Task<bool> CatExists(string id)
-        {
-            var cat = await Get(id);
-            return cat != null ? true : false;
-        }
-
         public async Task<bool> FieldExists(string field, string value)
         {
             return await FieldExistsAsync(field, value);

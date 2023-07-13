@@ -1,1 +1,316 @@
 12/7/2023 23:43:40: El usuario wi ha iniciado sesión
+13/7/2023 00:18:24: El usuario wi ha iniciado sesión
+13/7/2023 00:26:08: El usuario wi ha iniciado sesión
+13/7/2023 00:26:09: El usuario wi está mirando perfiles.
+13/7/2023 00:26:11: El usuario wi está mirando perfiles.
+13/7/2023 00:26:13: El usuario wi está mirando donaciones.
+13/7/2023 00:26:13: El usuario wi está mirando contacto.
+13/7/2023 00:26:14: El usuario wi está mirando donaciones.
+13/7/2023 00:26:14: El usuario wi está mirando perfiles.
+13/7/2023 00:26:15: El usuario wi está mirando donaciones.
+13/7/2023 00:26:15: El usuario wi está mirando contacto.
+13/7/2023 00:26:16: El usuario wi está mirando cuenta.
+13/7/2023 00:26:16: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:26:17: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:26:18: El usuario wi está mirando cuenta.
+13/7/2023 00:26:19: El usuario wi está mirando perfiles.
+13/7/2023 00:30:22: El usuario wi ha iniciado sesión
+13/7/2023 00:30:29: El usuario wi está mirando perfiles.
+13/7/2023 00:30:33: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:30:35: El usuario wi está mirando perfiles.
+13/7/2023 00:30:36: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:30:37: El usuario wi está mirando perfiles.
+13/7/2023 00:30:37: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:30:40: El usuario wi está mirando perfiles.
+13/7/2023 00:30:41: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:30:41: El usuario wi está mirando perfiles.
+13/7/2023 00:30:43: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:30:45: El usuario wi está mirando perfiles.
+13/7/2023 00:30:49: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:30:50: El usuario wi está mirando perfiles.
+13/7/2023 00:30:50: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:35:34: El usuario wi ha iniciado sesión
+13/7/2023 00:35:35: El usuario wi está mirando perfiles.
+13/7/2023 00:35:41: El usuario wi está mirando administracion de usuarios.
+13/7/2023 00:35:44: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:35:46: El usuario wi está mirando administracion de usuarios.
+13/7/2023 00:35:46: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:35:48: El usuario wi está mirando administracion de usuarios.
+13/7/2023 00:35:49: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:35:51: El usuario wi está mirando administracion de usuarios.
+13/7/2023 00:35:54: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:35:55: El usuario wi está mirando cuenta.
+13/7/2023 00:35:57: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:35:58: El usuario wi está mirando cuenta.
+13/7/2023 00:35:58: El usuario wi está mirando contacto.
+13/7/2023 00:35:59: El usuario wi está mirando donaciones.
+13/7/2023 00:35:59: El usuario wi está mirando perfiles.
+13/7/2023 00:36:00: El usuario wi está mirando donaciones.
+13/7/2023 00:36:01: El usuario wi está mirando perfiles.
+13/7/2023 00:36:02: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:36:13: El usuario wi ha iniciado sesión
+13/7/2023 00:36:15: El usuario wi está mirando cuenta.
+13/7/2023 00:36:18: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:36:24: El usuario wi está mirando perfiles.
+13/7/2023 00:36:27: El usuario wi está mirando administracion de gatos.
+13/7/2023 00:46:57: El usuario wi ha iniciado sesión
+13/7/2023 00:46:58: El usuario wi está mirando perfiles.
+13/7/2023 00:59:51: El usuario wi ha iniciado sesión
+13/7/2023 00:59:54: El usuario wi está mirando perfiles.
+13/7/2023 01:05:40: El usuario wi ha iniciado sesión
+13/7/2023 01:05:50: El usuario wi está mirando cuenta.
+13/7/2023 01:05:52: El usuario wi está mirando perfiles.
+13/7/2023 01:05:56: El usuario wi está mirando administracion de gatos.
+13/7/2023 01:05:58: El usuario wi está mirando perfiles.
+13/7/2023 01:05:59: El usuario wi está mirando cuenta.
+13/7/2023 01:06:03: El usuario wi está mirando donaciones.
+13/7/2023 01:06:04: El usuario wi está mirando perfiles.
+13/7/2023 01:06:04: El usuario wi está mirando contacto.
+13/7/2023 01:06:06: El usuario wi está mirando perfiles.
+13/7/2023 01:06:09: El usuario wi está mirando contacto.
+13/7/2023 01:06:09: El usuario wi está mirando perfiles.
+13/7/2023 01:06:10: El usuario wi está mirando contacto.
+13/7/2023 01:06:10: El usuario wi está mirando perfiles.
+13/7/2023 01:06:12: El usuario wi está mirando donaciones.
+13/7/2023 01:29:26: El usuario wi ha iniciado sesión
+13/7/2023 01:29:28: El usuario wi está mirando perfiles.
+13/7/2023 01:29:31: El usuario wi está mirando donaciones.
+13/7/2023 01:30:07: El usuario wi ha iniciado sesión
+13/7/2023 01:30:09: El usuario wi está mirando perfiles.
+13/7/2023 01:30:12: El usuario wi está mirando donaciones.
+13/7/2023 01:30:15: El usuario wi está mirando contacto.
+13/7/2023 01:30:16: El usuario wi está mirando cuenta.
+13/7/2023 01:30:18: El usuario wi está mirando administracion de gatos.
+13/7/2023 01:30:21: El usuario wi está mirando administracion de usuarios.
+13/7/2023 01:30:27: El usuario wi está mirando perfiles.
+13/7/2023 01:30:29: El usuario wi está mirando donaciones.
+13/7/2023 01:30:30: El usuario wi está mirando perfiles.
+13/7/2023 01:30:37: El usuario wi está mirando donaciones.
+13/7/2023 01:30:40: El usuario wi está mirando perfiles.
+13/7/2023 01:30:43: El usuario wi está mirando donaciones.
+13/7/2023 01:30:46: El usuario wi está mirando contacto.
+13/7/2023 01:30:48: El usuario wi está mirando cuenta.
+13/7/2023 01:30:50: El usuario wi está mirando administracion de gatos.
+13/7/2023 01:30:53: El usuario wi está mirando administracion de usuarios.
+13/7/2023 01:30:57: El usuario wi está mirando contacto.
+13/7/2023 01:30:57: El usuario wi está mirando donaciones.
+13/7/2023 01:30:58: El usuario wi está mirando perfiles.
+13/7/2023 01:30:58: El usuario wi está mirando contacto.
+13/7/2023 01:30:59: El usuario wi está mirando cuenta.
+13/7/2023 01:30:59: El usuario wi está mirando administracion de gatos.
+13/7/2023 01:33:44: El usuario wi ha iniciado sesión
+13/7/2023 01:33:44: El usuario wi está mirando administracion de usuarios.
+13/7/2023 01:33:50: El usuario wi está mirando administracion de gatos.
+13/7/2023 01:33:51: El usuario wi está mirando cuenta.
+13/7/2023 01:33:52: El usuario wi está mirando contacto.
+13/7/2023 01:33:53: El usuario wi está mirando donaciones.
+13/7/2023 01:44:43: El usuario wi ha iniciado sesión
+13/7/2023 01:44:44: El usuario wi está mirando administracion de usuarios.
+13/7/2023 01:47:16: El usuario wi ha iniciado sesión
+13/7/2023 01:47:17: El usuario wi está mirando administracion de usuarios.
+13/7/2023 01:49:53: El usuario wi ha iniciado sesión
+13/7/2023 01:50:00: El usuario wi está mirando administracion de gatos.
+13/7/2023 01:50:02: El usuario wi está mirando cuenta.
+13/7/2023 01:50:03: El usuario wi está mirando contacto.
+13/7/2023 01:50:05: El usuario wi está mirando donaciones.
+13/7/2023 01:50:27: El usuario wi está mirando cuenta.
+13/7/2023 01:50:27: El usuario wi está mirando contacto.
+13/7/2023 01:50:28: El usuario wi está mirando donaciones.
+13/7/2023 01:50:29: El usuario wi está mirando perfiles.
+13/7/2023 02:07:37: El usuario wi ha iniciado sesión
+13/7/2023 02:07:39: El usuario wi está mirando perfiles.
+13/7/2023 02:10:04: El usuario admin se ha registrado con éxito.
+13/7/2023 02:10:44: El usuario admin ha iniciado sesión
+13/7/2023 02:10:46: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:15:04: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:16:58: Se agregó un gato.
+13/7/2023 02:17:01: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:17:02: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:17:12: Se eliminó un gato del sistema.
+13/7/2023 02:17:20: Se agregó un gato.
+13/7/2023 02:17:21: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:17:22: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:18:45: Se agregó un gato.
+13/7/2023 02:18:46: El usuario admin está mirando cuenta.
+13/7/2023 02:18:47: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:19:57: Se agregó un gato.
+13/7/2023 02:19:58: El usuario admin está mirando cuenta.
+13/7/2023 02:19:59: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:20:59: Se agregó un gato.
+13/7/2023 02:21:00: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:21:01: El usuario admin está mirando cuenta.
+13/7/2023 02:21:01: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:21:10: El usuario admin está mirando perfiles.
+13/7/2023 02:21:41: El usuario admin está mirando donaciones.
+13/7/2023 02:21:42: El usuario admin está mirando contacto.
+13/7/2023 02:21:43: El usuario admin está mirando contacto.
+13/7/2023 02:21:43: El usuario admin está mirando cuenta.
+13/7/2023 02:21:43: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:21:44: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:21:45: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:21:46: El usuario admin está mirando cuenta.
+13/7/2023 02:21:48: El usuario admin está mirando contacto.
+13/7/2023 02:23:26: El usuario admin ha iniciado sesión
+13/7/2023 02:23:27: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:23:29: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:23:30: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:23:32: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:23:32: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:23:33: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:23:34: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:23:34: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:23:35: El usuario admin está mirando cuenta.
+13/7/2023 02:23:40: El usuario admin está mirando contacto.
+13/7/2023 02:23:41: El usuario admin está mirando donaciones.
+13/7/2023 02:23:43: El usuario admin está mirando contacto.
+13/7/2023 02:23:43: El usuario admin está mirando donaciones.
+13/7/2023 02:23:44: El usuario admin está mirando perfiles.
+13/7/2023 02:23:44: El usuario admin está mirando donaciones.
+13/7/2023 02:23:47: El usuario admin está mirando perfiles.
+13/7/2023 02:23:47: El usuario admin está mirando donaciones.
+13/7/2023 02:23:47: El usuario admin está mirando contacto.
+13/7/2023 02:23:48: El usuario admin está mirando donaciones.
+13/7/2023 02:23:51: El usuario admin está mirando perfiles.
+13/7/2023 02:23:55: El usuario admin está mirando donaciones.
+13/7/2023 02:26:03: El usuario admin ha iniciado sesión
+13/7/2023 02:26:05: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:26:06: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:26:06: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:26:07: El usuario admin está mirando cuenta.
+13/7/2023 02:26:07: El usuario admin está mirando cuenta.
+13/7/2023 02:26:08: El usuario admin está mirando contacto.
+13/7/2023 02:26:10: El usuario admin está mirando donaciones.
+13/7/2023 02:26:12: El usuario admin está mirando perfiles.
+13/7/2023 02:26:15: El usuario admin está mirando donaciones.
+13/7/2023 02:26:17: El usuario admin está mirando perfiles.
+13/7/2023 02:26:27: El usuario admin está mirando donaciones.
+13/7/2023 02:26:28: El usuario admin está mirando contacto.
+13/7/2023 02:26:29: El usuario admin está mirando cuenta.
+13/7/2023 02:27:38: El usuario admin ha iniciado sesión
+13/7/2023 02:27:39: El usuario admin está mirando perfiles.
+13/7/2023 02:27:42: El usuario admin está mirando donaciones.
+13/7/2023 02:27:45: El usuario admin está mirando contacto.
+13/7/2023 02:27:46: El usuario admin está mirando cuenta.
+13/7/2023 02:27:48: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:27:49: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:27:49: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:27:50: El usuario admin está mirando cuenta.
+13/7/2023 02:27:51: El usuario admin está mirando contacto.
+13/7/2023 02:27:54: El usuario admin está mirando donaciones.
+13/7/2023 02:28:01: El usuario admin está mirando perfiles.
+13/7/2023 02:38:00: El usuario admin ha iniciado sesión
+13/7/2023 02:38:01: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:38:02: El usuario admin está mirando cuenta.
+13/7/2023 02:38:03: El usuario admin está mirando contacto.
+13/7/2023 02:43:37: El usuario admin ha iniciado sesión
+13/7/2023 02:43:38: El usuario admin está mirando donaciones.
+13/7/2023 02:43:39: El usuario admin está mirando donaciones.
+13/7/2023 02:43:39: El usuario admin está mirando cuenta.
+13/7/2023 02:43:40: El usuario admin está mirando administracion de usuarios.
+13/7/2023 02:43:42: El usuario admin está mirando administracion de gatos.
+13/7/2023 02:43:44: El usuario admin está mirando cuenta.
+13/7/2023 02:43:46: El usuario admin está mirando contacto.
+13/7/2023 02:43:48: El usuario admin está mirando donaciones.
+13/7/2023 02:43:51: El usuario admin está mirando perfiles.
+13/7/2023 02:53:46: El usuario admin ha iniciado sesión
+13/7/2023 02:53:48: El usuario admin está mirando cuenta.
+13/7/2023 02:54:50: El usuario andrea ha iniciado sesión
+13/7/2023 02:54:52: El usuario andrea está mirando cuenta.
+13/7/2023 02:54:55: El usuario andrea está mirando contacto.
+13/7/2023 02:54:56: El usuario andrea está mirando donaciones.
+13/7/2023 02:55:09: El usuario andrea está mirando perfiles.
+13/7/2023 02:55:14: El usuario andrea está mirando donaciones.
+13/7/2023 02:55:16: El usuario andrea está mirando contacto.
+13/7/2023 02:55:18: El usuario andrea está mirando donaciones.
+13/7/2023 02:55:19: El usuario andrea está mirando donaciones.
+13/7/2023 02:55:19: El usuario andrea está mirando perfiles.
+13/7/2023 02:55:21: El usuario andrea está mirando cuenta.
+13/7/2023 03:02:08: El usuario admin ha iniciado sesión
+13/7/2023 03:02:10: El usuario admin está mirando perfiles.
+13/7/2023 03:02:13: El usuario admin está mirando donaciones.
+13/7/2023 03:02:17: El usuario admin está mirando contacto.
+13/7/2023 03:02:21: El usuario admin está mirando cuenta.
+13/7/2023 03:02:29: El usuario admin está mirando administracion de gatos.
+13/7/2023 03:08:08: El usuario admin ha iniciado sesión
+13/7/2023 03:08:12: El usuario admin está mirando perfiles.
+13/7/2023 03:08:16: El usuario admin está mirando donaciones.
+13/7/2023 03:08:18: El usuario admin está mirando contacto.
+13/7/2023 03:08:19: El usuario admin está mirando cuenta.
+13/7/2023 03:08:20: El usuario admin está mirando administracion de gatos.
+13/7/2023 03:08:29: Se exportó una lista de gatos a json.
+13/7/2023 03:09:09: El usuario admin ha iniciado sesión
+13/7/2023 03:09:10: El usuario admin está mirando administracion de usuarios.
+13/7/2023 03:09:14: El usuario admin está mirando administracion de gatos.
+13/7/2023 03:09:15: El usuario admin está mirando cuenta.
+13/7/2023 03:09:16: El usuario admin está mirando contacto.
+13/7/2023 03:12:06: El usuario andrea ha iniciado sesión
+13/7/2023 03:12:09: El usuario andrea está mirando cuenta.
+13/7/2023 03:12:14: El usuario andrea está mirando perfiles.
+13/7/2023 03:12:17: El usuario andrea está mirando contacto.
+13/7/2023 03:12:18: El usuario andrea está mirando donaciones.
+13/7/2023 03:12:49: El usuario andrea ha donado.
+13/7/2023 03:12:56: El usuario andrea ha donado.
+13/7/2023 03:12:58: El usuario andrea ha donado.
+13/7/2023 03:13:01: El usuario andrea está mirando contacto.
+13/7/2023 03:13:02: El usuario andrea está mirando donaciones.
+13/7/2023 03:13:10: El usuario andrea está mirando perfiles.
+13/7/2023 03:13:15: El usuario andrea está mirando contacto.
+13/7/2023 03:13:45: El usuario andrea ha enviado un mensaje al administrador.
+13/7/2023 03:13:47: El usuario andrea ha enviado una petición de Ser Parte.
+13/7/2023 03:13:49: El usuario andrea está mirando cuenta.
+13/7/2023 03:19:24: El usuario admin ha iniciado sesión
+13/7/2023 03:19:26: El usuario admin está mirando administracion de usuarios.
+13/7/2023 03:19:27: El usuario admin está mirando administracion de gatos.
+13/7/2023 03:19:29: Se exportó una lista de gatos a csv.
+13/7/2023 03:22:25: El usuario admin ha iniciado sesión
+13/7/2023 03:22:26: El usuario admin está mirando perfiles.
+13/7/2023 03:22:30: El usuario admin está mirando donaciones.
+13/7/2023 03:22:37: El usuario admin está mirando contacto.
+13/7/2023 03:22:38: El usuario admin está mirando cuenta.
+13/7/2023 03:22:40: El usuario admin está mirando administracion de gatos.
+13/7/2023 03:22:41: El usuario admin está mirando administracion de usuarios.
+13/7/2023 03:22:42: El usuario admin está mirando donaciones.
+13/7/2023 03:22:42: El usuario admin está mirando contacto.
+13/7/2023 03:22:43: El usuario admin está mirando cuenta.
+13/7/2023 03:22:44: El usuario admin está mirando administracion de gatos.
+13/7/2023 03:22:45: El usuario admin está mirando perfiles.
+13/7/2023 03:27:06: El usuario admin ha iniciado sesión
+13/7/2023 03:27:07: El usuario admin está mirando administracion de usuarios.
+13/7/2023 03:27:08: El usuario admin está mirando perfiles.
+13/7/2023 03:32:03: El usuario admin ha iniciado sesión
+13/7/2023 03:32:04: El usuario admin está mirando perfiles.
+13/7/2023 03:32:43: El usuario admin ha iniciado sesión
+13/7/2023 03:32:45: El usuario admin está mirando perfiles.
+13/7/2023 03:33:23: El usuario admin ha iniciado sesión
+13/7/2023 03:33:24: El usuario admin está mirando perfiles.
+13/7/2023 03:51:57: El usuario admin ha iniciado sesión
+13/7/2023 03:54:31: El usuario admin ha iniciado sesión
+13/7/2023 03:55:15: El usuario admin ha iniciado sesión
+13/7/2023 03:57:44: El usuario admin ha iniciado sesión
+13/7/2023 03:57:52: El usuario admin está mirando perfiles.
+13/7/2023 03:57:56: El usuario admin está mirando donaciones.
+13/7/2023 03:57:56: El usuario admin está mirando donaciones.
+13/7/2023 03:57:57: El usuario admin está mirando perfiles.
+13/7/2023 03:57:58: El usuario admin está mirando contacto.
+13/7/2023 03:57:58: El usuario admin está mirando cuenta.
+13/7/2023 03:57:59: El usuario admin está mirando administracion de gatos.
+13/7/2023 03:58:00: El usuario admin está mirando administracion de usuarios.
+13/7/2023 03:58:59: El usuario admin ha iniciado sesión
+13/7/2023 03:59:04: El usuario admin está mirando perfiles.
+13/7/2023 03:59:07: El usuario admin está mirando perfiles.
+13/7/2023 03:59:09: El usuario admin está mirando donaciones.
+13/7/2023 03:59:11: El usuario admin está mirando contacto.
+13/7/2023 03:59:13: El usuario admin está mirando cuenta.
+13/7/2023 03:59:16: El usuario admin está mirando administracion de gatos.
+13/7/2023 03:59:21: El usuario admin está mirando administracion de usuarios.
+13/7/2023 04:05:48: El usuario admin ha iniciado sesión
+13/7/2023 04:05:53: El usuario admin está mirando perfiles.
+13/7/2023 04:05:59: El usuario admin está mirando donaciones.
+13/7/2023 04:06:05: El usuario admin está mirando contacto.
+13/7/2023 04:06:06: El usuario admin está mirando cuenta.
+13/7/2023 04:06:09: El usuario admin está mirando administracion de gatos.
+13/7/2023 04:06:11: El usuario admin está mirando administracion de usuarios.
+13/7/2023 04:06:13: El usuario admin está mirando administracion de gatos.
+13/7/2023 04:06:15: El usuario admin está mirando administracion de usuarios.
+13/7/2023 04:06:16: El usuario admin está mirando administracion de gatos.
+13/7/2023 04:06:19: El usuario admin está mirando administracion de usuarios.

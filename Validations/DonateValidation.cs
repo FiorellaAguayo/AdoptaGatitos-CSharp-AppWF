@@ -10,14 +10,14 @@ namespace Validations
 {
     public class DonateValidation
     {
-        public static bool ValidateDonation(User currentUser, string email, string userName, decimal amount)
+        public static bool ValidateDonation(User currentUser, string email, string userName, string lastDonation)
         {
             if (currentUser == null || currentUser.Email != email || currentUser.UserName != userName)
             {
                 return false;
             }
 
-            if (amount <= 0)
+            if (int.Parse(lastDonation) <= 0)
             {
                 return false;
             }

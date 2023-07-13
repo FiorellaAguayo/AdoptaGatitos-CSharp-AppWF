@@ -5,9 +5,6 @@ namespace Entities
     [FirestoreData]
     public class User
     {
-
-        [FirestoreProperty]
-        public double TotalDonation { get; set; }
         [FirestoreProperty]
         public string Id { get; set; }
         [FirestoreProperty]

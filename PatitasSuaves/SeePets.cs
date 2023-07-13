@@ -10,13 +10,30 @@ namespace PatitasSuaves
 {
     public partial class SeePets : Form
     {
+        private static SeePets instance;
         private CatManager _catManager;
         List<Cat> cats;
         private IExporter<Cat> _exporter;
+
         public SeePets()
         {
             InitializeComponent();
             _catManager = new CatManager();
+        }
+
+        public static SeePets GetInstance()
+        {
+            if (instance == null)
+            {
+                instance = new SeePets();
+            }
+
+            return instance;
+        }
+
+        private SeePets(SeePets other)
+        {
+
         }
 
         private async void SeePets_Load(object sender, EventArgs e)
@@ -223,28 +240,51 @@ namespace PatitasSuaves
         private async void btnJSON_Click(object sender, EventArgs e)
         {
             var cats = await _catManager.GetCats();
-
-            _exporter = new JsonExporter<Cat>();
-            await _exporter.ExportData(cats, "ListCats.json");
-            Log.WriteLog("Se exportó una lista de gatos a json.");
+            try
+            {
+                _exporter = new JsonExporter<Cat>();
+                await _exporter.ExportData(cats, "ListCats.json");
+                MessageBox.Show("Se exportó una lista de gatos a json.");
+                Log.WriteLog("Se exportó una lista de gatos a json.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error durante la exportación a json: " + ex.Message);
+            }
         }
 
         private async void btnCSV_Click(object sender, EventArgs e)
         {
             var cats = await _catManager.GetCats();
 
-            _exporter = new CsvExporter<Cat>();
-            await _exporter.ExportData(cats, "ListCats.csv");
-            Log.WriteLog("Se exportó una lista de gatos a csv.");
+            try
+            {
+                _exporter = new CsvExporter<Cat>();
+                await _exporter.ExportData(cats, "ListCats.csv");
+                Log.WriteLog("Se exportó una lista de gatos a csv.");
+                MessageBox.Show("Se exportó una lista de gatos a csv.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error durante la exportación a csv: " + ex.Message);
+            }
         }
 
         private async void btnPDF_Click(object sender, EventArgs e)
         {
             var cats = await _catManager.GetCats();
-            
-            _exporter = new PdfExporter<Cat>();
-            await _exporter.ExportData(cats, "ListCats.pdf");
-            Log.WriteLog("Se exportó una lista de gatos a pdf.");
+
+            try
+            {
+                _exporter = new PdfExporter<Cat>();
+                await _exporter.ExportData(cats, "ListCats.pdf");
+                Log.WriteLog("Se exportó una lista de gatos a pdf.");
+                MessageBox.Show("Se exportó una lista de gatos a pdf.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error durante la exportación a pdf: " + ex.Message);
+            }
         }
     }
 }

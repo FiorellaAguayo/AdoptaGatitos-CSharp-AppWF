@@ -55,7 +55,7 @@
             // lblIsEsterilized
             // 
             lblIsEsterilized.AutoSize = true;
-            lblIsEsterilized.Location = new Point(482, 396);
+            lblIsEsterilized.Location = new Point(482, 382);
             lblIsEsterilized.Name = "lblIsEsterilized";
             lblIsEsterilized.Size = new Size(100, 15);
             lblIsEsterilized.TabIndex = 52;
@@ -64,7 +64,7 @@
             // lblWeight
             // 
             lblWeight.AutoSize = true;
-            lblWeight.Location = new Point(78, 382);
+            lblWeight.Location = new Point(78, 368);
             lblWeight.Name = "lblWeight";
             lblWeight.Size = new Size(32, 15);
             lblWeight.TabIndex = 51;
@@ -73,7 +73,7 @@
             // lblCoatColor
             // 
             lblCoatColor.AutoSize = true;
-            lblCoatColor.Location = new Point(296, 296);
+            lblCoatColor.Location = new Point(296, 282);
             lblCoatColor.Name = "lblCoatColor";
             lblCoatColor.Size = new Size(70, 15);
             lblCoatColor.TabIndex = 50;
@@ -81,7 +81,7 @@
             // 
             // txbName
             // 
-            txbName.Location = new Point(117, 298);
+            txbName.Location = new Point(117, 284);
             txbName.Name = "txbName";
             txbName.Size = new Size(120, 23);
             txbName.TabIndex = 46;
@@ -89,7 +89,7 @@
             // lblRace
             // 
             lblRace.AutoSize = true;
-            lblRace.Location = new Point(476, 296);
+            lblRace.Location = new Point(476, 282);
             lblRace.Name = "lblRace";
             lblRace.Size = new Size(31, 15);
             lblRace.TabIndex = 45;
@@ -98,7 +98,7 @@
             // lblAge
             // 
             lblAge.AutoSize = true;
-            lblAge.Location = new Point(78, 342);
+            lblAge.Location = new Point(78, 328);
             lblAge.Name = "lblAge";
             lblAge.Size = new Size(33, 15);
             lblAge.TabIndex = 44;
@@ -107,7 +107,7 @@
             // lblName
             // 
             lblName.AutoSize = true;
-            lblName.Location = new Point(60, 301);
+            lblName.Location = new Point(60, 287);
             lblName.Name = "lblName";
             lblName.Size = new Size(51, 15);
             lblName.TabIndex = 43;
@@ -115,44 +115,47 @@
             // 
             // btnDelete
             // 
+            btnDelete.BackColor = Color.IndianRed;
             btnDelete.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDelete.Location = new Point(694, 405);
+            btnDelete.Location = new Point(662, 397);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(133, 33);
+            btnDelete.Size = new Size(133, 40);
             btnDelete.TabIndex = 39;
             btnDelete.Text = "Eliminar";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
             // btnModify
             // 
+            btnModify.BackColor = Color.Orange;
             btnModify.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnModify.Location = new Point(694, 367);
+            btnModify.Location = new Point(662, 351);
             btnModify.Name = "btnModify";
-            btnModify.Size = new Size(133, 32);
+            btnModify.Size = new Size(133, 40);
             btnModify.TabIndex = 38;
             btnModify.Text = "Modificar";
-            btnModify.UseVisualStyleBackColor = true;
+            btnModify.UseVisualStyleBackColor = false;
             btnModify.Click += btnModify_Click;
             // 
             // btnAdd
             // 
+            btnAdd.BackColor = Color.GreenYellow;
             btnAdd.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAdd.Location = new Point(694, 324);
+            btnAdd.Location = new Point(662, 308);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(133, 33);
+            btnAdd.Size = new Size(133, 40);
             btnAdd.TabIndex = 37;
             btnAdd.Text = "Agregar";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 
             // dgvCats
             // 
             dgvCats.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCats.Location = new Point(44, 32);
+            dgvCats.Location = new Point(30, 27);
             dgvCats.Name = "dgvCats";
             dgvCats.RowTemplate.Height = 25;
-            dgvCats.Size = new Size(666, 244);
+            dgvCats.Size = new Size(635, 244);
             dgvCats.TabIndex = 36;
             dgvCats.CellClick += dgvCats_CellClick;
             dgvCats.SelectionChanged += dgvCats_SelectionChanged;
@@ -161,7 +164,7 @@
             // 
             lbxRace.FormattingEnabled = true;
             lbxRace.ItemHeight = 15;
-            lbxRace.Location = new Point(476, 314);
+            lbxRace.Location = new Point(476, 300);
             lbxRace.Name = "lbxRace";
             lbxRace.Size = new Size(130, 64);
             lbxRace.TabIndex = 54;
@@ -170,14 +173,14 @@
             // 
             lbxFurColor.FormattingEnabled = true;
             lbxFurColor.ItemHeight = 15;
-            lbxFurColor.Location = new Point(296, 314);
+            lbxFurColor.Location = new Point(296, 300);
             lbxFurColor.Name = "lbxFurColor";
             lbxFurColor.Size = new Size(130, 64);
             lbxFurColor.TabIndex = 58;
             // 
             // txbURLImage
             // 
-            txbURLImage.Location = new Point(155, 421);
+            txbURLImage.Location = new Point(155, 407);
             txbURLImage.Name = "txbURLImage";
             txbURLImage.Size = new Size(252, 23);
             txbURLImage.TabIndex = 59;
@@ -185,7 +188,7 @@
             // lblURLImagen
             // 
             lblURLImagen.AutoSize = true;
-            lblURLImagen.Location = new Point(78, 424);
+            lblURLImagen.Location = new Point(78, 410);
             lblURLImagen.Name = "lblURLImagen";
             lblURLImagen.Size = new Size(71, 15);
             lblURLImagen.TabIndex = 60;
@@ -193,14 +196,14 @@
             // 
             // txbAge
             // 
-            txbAge.Location = new Point(117, 339);
+            txbAge.Location = new Point(117, 325);
             txbAge.Name = "txbAge";
             txbAge.Size = new Size(120, 23);
             txbAge.TabIndex = 61;
             // 
             // txbWeight
             // 
-            txbWeight.Location = new Point(117, 379);
+            txbWeight.Location = new Point(117, 365);
             txbWeight.Name = "txbWeight";
             txbWeight.Size = new Size(120, 23);
             txbWeight.TabIndex = 62;
@@ -209,45 +212,49 @@
             // 
             lbxIsSterelized.FormattingEnabled = true;
             lbxIsSterelized.ItemHeight = 15;
-            lbxIsSterelized.Location = new Point(482, 421);
+            lbxIsSterelized.Location = new Point(482, 407);
             lbxIsSterelized.Name = "lbxIsSterelized";
             lbxIsSterelized.Size = new Size(124, 34);
             lbxIsSterelized.TabIndex = 63;
             // 
             // btnCSV
             // 
-            btnCSV.Location = new Point(727, 116);
+            btnCSV.BackColor = Color.CadetBlue;
+            btnCSV.Location = new Point(685, 80);
             btnCSV.Name = "btnCSV";
-            btnCSV.Size = new Size(100, 34);
+            btnCSV.Size = new Size(110, 34);
             btnCSV.TabIndex = 66;
             btnCSV.Text = "Exportar CSV";
-            btnCSV.UseVisualStyleBackColor = true;
+            btnCSV.UseVisualStyleBackColor = false;
             btnCSV.Click += btnCSV_Click;
             // 
             // btnPDF
             // 
-            btnPDF.Location = new Point(727, 169);
+            btnPDF.BackColor = Color.CadetBlue;
+            btnPDF.Location = new Point(685, 133);
             btnPDF.Name = "btnPDF";
-            btnPDF.Size = new Size(100, 34);
+            btnPDF.Size = new Size(110, 34);
             btnPDF.TabIndex = 65;
             btnPDF.Text = "Exportar PDF";
-            btnPDF.UseVisualStyleBackColor = true;
+            btnPDF.UseVisualStyleBackColor = false;
             btnPDF.Click += btnPDF_Click;
             // 
             // btnJSON
             // 
-            btnJSON.Location = new Point(727, 63);
+            btnJSON.BackColor = Color.CadetBlue;
+            btnJSON.Location = new Point(685, 27);
             btnJSON.Name = "btnJSON";
-            btnJSON.Size = new Size(100, 34);
+            btnJSON.Size = new Size(110, 34);
             btnJSON.TabIndex = 64;
             btnJSON.Text = "Exportar JSON";
-            btnJSON.UseVisualStyleBackColor = true;
+            btnJSON.UseVisualStyleBackColor = false;
             btnJSON.Click += btnJSON_Click;
             // 
             // SeePets
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(880, 488);
             Controls.Add(btnCSV);
             Controls.Add(btnPDF);

@@ -1,6 +1,8 @@
 ﻿using Entities;
 using Firestore;
 
+using ParcialLabo2;
+
 namespace PatitasSuaves
 {
     public partial class Profiles : Form
@@ -15,7 +17,6 @@ namespace PatitasSuaves
 
         private async void Profiles_Load(object sender, EventArgs e)
         {
-            this.Dock = DockStyle.Fill;
             var cats = await _catManager.GetAll();
             ShowCatList(cats);
         }
@@ -59,7 +60,8 @@ namespace PatitasSuaves
                 Width = 150,
                 Height = 150,
                 Location = new Point(20, 15),
-                BackgroundImageLayout = ImageLayout.Zoom
+                BackgroundImageLayout = ImageLayout.Zoom,
+                SizeMode = PictureBoxSizeMode.Zoom
             };
 
             string imageUrl;
@@ -91,6 +93,18 @@ namespace PatitasSuaves
                 MessageBox.Show("Error al cargar la imagen: " + ex.Message);
             }
 
+            picture.Paint += (sender, e) =>
+            {
+                var image = ((PictureBox)sender).Image;
+                if (image != null)
+                {
+                    // Calcula las coordenadas para centrar la imagen verticalmente
+                    int x = ((PictureBox)sender).Width / 2 - image.Width / 2;
+                    int y = ((PictureBox)sender).Height / 2 - image.Height / 2;
+                    e.Graphics.DrawImage(image, new Point(x, y));
+                }
+            };
+
             return picture;
         }
 
@@ -118,14 +132,35 @@ namespace PatitasSuaves
             var button = new Button
             {
                 Text = "Adoptar",
-                BackColor = Color.Gray,
-                ForeColor = Color.FromArgb(20, 25, 25),
+                BackColor = Color.Wheat,
+                ForeColor = Color.Black,
                 Location = new Point(20, 215),
-                Width = 150,
-                Height = 40,
-                Font = new Font("Segoe UI", 12, FontStyle.Bold)
+                Width = 148,
+                Height = 33,
+                Font = new Font("Segoe UI Emoji", 10, FontStyle.Italic)
             };
+
+            button.Click += async (s, e) =>
+            {
+                await RemoveCatFromAdoptionList(cat);
+            };
+
             return button;
+        }
+
+        private async Task RemoveCatFromAdoptionList(Cat cat)
+        {
+            try
+            {
+                await _catManager.Delete(cat.Name);
+                MessageBox.Show("El gato ha sido adoptado, gracias y cuidelo bien!.");
+                var updatedCats = await _catManager.GetAll();
+                ShowCatList(updatedCats);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al adoptar al gato: " + ex.Message);
+            }
         }
     }
 }

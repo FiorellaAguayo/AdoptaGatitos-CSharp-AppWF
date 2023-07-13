@@ -35,12 +35,12 @@ namespace PatitasSuaves
             table.Columns.Add("Usuario");
             table.Columns.Add("Email");
             table.Columns.Add("Contraseña");
-            table.Columns.Add("Donaciones");
+            table.Columns.Add("Ultima donación");
             table.Columns.Add("Teléfono");
 
             foreach (User user in users)
             {
-                table.Rows.Add(user.Id, user.Role, user.UserName, user.Email, user.Password, user.TotalDonation, user.Phone);
+                table.Rows.Add(user.Id, user.Role, user.UserName, user.Email, user.Password, user.LastDonation, user.Phone);
             }
 
             DataView dataView = table.DefaultView;
@@ -140,7 +140,7 @@ namespace PatitasSuaves
                 txbUser.Text = selectedRow.Cells["Usuario"].Value.ToString();
                 txbEmail.Text = selectedRow.Cells["Email"].Value.ToString();
                 txbPassword.Text = selectedRow.Cells["Contraseña"].Value.ToString();
-                txbDonation.Text = selectedRow.Cells["Donaciones"].Value.ToString();
+                txbDonation.Text = selectedRow.Cells["Ultima donación"].Value.ToString();
                 txbPhone.Text = selectedRow.Cells["Teléfono"].Value.ToString();
             }
         }
@@ -170,27 +170,51 @@ namespace PatitasSuaves
         {
             var users = await _userManager.GetUsers();
 
-            _exporter = new JsonExporter<User>();
-            await _exporter.ExportData(users, "ListUsers.json");
-            Log.WriteLog($"Se exportó una lista de usuarios a json.");
+            try
+            {
+                _exporter = new JsonExporter<User>();
+                await _exporter.ExportData(users, "ListUsers.json");
+                Log.WriteLog($"Se exportó una lista de usuarios a json.");
+                MessageBox.Show("Se exportó una lista de usuarios a json.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error durante la exportación a json: " + ex.Message);
+            }
         }
 
         private async void btnCSV_Click(object sender, EventArgs e)
         {
             var users = await _userManager.GetUsers();
 
-            _exporter = new CsvExporter<User>();
-            await _exporter.ExportData(users, "ListUsers.csv");
-            Log.WriteLog($"Se exportó una lista de usuarios a csv.");
+            try
+            {
+                _exporter = new CsvExporter<User>();
+                await _exporter.ExportData(users, "ListUsers.csv");
+                Log.WriteLog($"Se exportó una lista de usuarios a csv.");
+                MessageBox.Show("Se exportó una lista de usuarios a csv.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error durante la exportación a csv: " + ex.Message);
+            }
         }
 
         private async void btnPDF_Click(object sender, EventArgs e)
         {
             var users = await _userManager.GetUsers();
 
-            _exporter = new PdfExporter<User>();
-            await _exporter.ExportData(users, "ListUsers.pdf");
-            Log.WriteLog($"Se exportó una lista de usuarios a pdf.");
+            try
+            {
+                _exporter = new PdfExporter<User>();
+                await _exporter.ExportData(users, "ListUsers.pdf");
+                Log.WriteLog($"Se exportó una lista de usuarios a pdf.");
+                MessageBox.Show("Se exportó una lista de usuarios a pdf.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error durante la exportación a pdf: " + ex.Message);
+            }
         }
     }
 }

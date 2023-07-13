@@ -1,5 +1,7 @@
 ﻿using System.Data;
+
 using Entities;
+
 using EntitiesManager;
 
 using LogData;
@@ -19,7 +21,6 @@ namespace PatitasSuaves
             InitializeComponent();
             _actualUser = actualUser;
             _manager = new UserManager();
-
         }
 
         private async void Donate_Load(object sender, EventArgs e)
@@ -41,8 +42,8 @@ namespace PatitasSuaves
             {
                 table.Rows.InsertAt(table.NewRow(), 0);  // Insertar una nueva fila al inicio de la tabla
                 table.Rows[0]["Usuario"] = user.UserName;
-               table.Rows[0]["Donación"] = user.LastDonation;
-               table.Rows[0]["Mensaje"] = user.Message;
+                table.Rows[0]["Donación"] = user.LastDonation;
+                table.Rows[0]["Mensaje"] = user.Message;
             }
 
             if (table.Rows.Count == 0)
@@ -73,10 +74,10 @@ namespace PatitasSuaves
 
             string email = txbEmail.Text;
             string userName = txbUser.Text;
-            decimal amount = numAmount.Value;
+            string lastDonation = numAmount.Value.ToString();
             string message = txbMessage.Text;
 
-            if (!DonateValidation.ValidateDonation(_actualUser, email, userName, amount))
+            if (!DonateValidation.ValidateDonation(_actualUser, email, userName, lastDonation))
             {
                 MessageBox.Show("Verifique los datos ingresados.");
                 return;
@@ -93,12 +94,12 @@ namespace PatitasSuaves
             {
                 // Actualizar los datos del usuario
                 existingUser.PaymentMethod = paymentMethod;
-                existingUser.LastDonation = amount.ToString();
-                existingUser.Message = message;
+                existingUser.LastDonation = lastDonation;
 
                 // Guardar los cambios en Firestore
                 await _manager.UpdateUser(existingUser, existingUser.UserName);
                 LoadData(users);
+                MessageBox.Show("Hemos recibido su donación. Gracias por colaborar!!!", "Donación recibida");
                 Log.WriteLog($"El usuario {existingUser.UserName} ha donado.");
             }
         }

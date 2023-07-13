@@ -51,9 +51,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(43, 41);
+            label1.BackColor = Color.PaleGoldenrod;
+            label1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = Color.Chocolate;
+            label1.Location = new Point(26, 31);
             label1.Name = "label1";
-            label1.Size = new Size(292, 45);
+            label1.Size = new Size(385, 60);
             label1.TabIndex = 0;
             label1.Text = "¿Querés colaborar?\r\nCompleta este formulario y sé parte de Patitas Suaves,\r\n tu ayuda será registrada con la de los demás usuarios \r\n";
             // 
@@ -69,9 +72,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(43, 130);
+            label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(79, 122);
             label2.Name = "label2";
-            label2.Size = new Size(36, 15);
+            label2.Size = new Size(40, 17);
             label2.TabIndex = 2;
             label2.Text = "Email";
             // 
@@ -86,66 +90,70 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(43, 219);
+            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(70, 210);
             label4.Name = "label4";
-            label4.Size = new Size(43, 15);
+            label4.Size = new Size(49, 17);
             label4.TabIndex = 4;
             label4.Text = "Monto";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(43, 264);
+            label5.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(19, 247);
             label5.Name = "label5";
-            label5.Size = new Size(87, 15);
+            label5.Size = new Size(100, 17);
             label5.TabIndex = 5;
             label5.Text = "Medio de pago";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(43, 315);
+            label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(47, 307);
             label6.Name = "label6";
-            label6.Size = new Size(51, 15);
+            label6.Size = new Size(58, 17);
             label6.TabIndex = 6;
             label6.Text = "Mensaje";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(43, 174);
+            label7.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(65, 166);
             label7.Name = "label7";
-            label7.Size = new Size(47, 15);
+            label7.Size = new Size(54, 17);
             label7.TabIndex = 7;
             label7.Text = "Usuario";
             // 
             // txbEmail
             // 
-            txbEmail.Location = new Point(103, 122);
+            txbEmail.Location = new Point(136, 122);
             txbEmail.Name = "txbEmail";
             txbEmail.Size = new Size(197, 23);
             txbEmail.TabIndex = 8;
             // 
             // txbUser
             // 
-            txbUser.Location = new Point(103, 166);
+            txbUser.Location = new Point(136, 166);
             txbUser.Name = "txbUser";
             txbUser.Size = new Size(197, 23);
             txbUser.TabIndex = 9;
             // 
             // txbMessage
             // 
-            txbMessage.Location = new Point(100, 318);
+            txbMessage.Location = new Point(126, 309);
             txbMessage.Multiline = true;
             txbMessage.Name = "txbMessage";
-            txbMessage.Size = new Size(193, 72);
+            txbMessage.Size = new Size(193, 91);
             txbMessage.TabIndex = 10;
             txbMessage.Text = "\r\n\r\n\r\n\r\n\r\n\r\n";
             // 
             // rbMp
             // 
             rbMp.AutoSize = true;
-            rbMp.Location = new Point(136, 264);
+            rbMp.Location = new Point(136, 247);
             rbMp.Name = "rbMp";
             rbMp.Size = new Size(102, 19);
             rbMp.TabIndex = 11;
@@ -156,7 +164,7 @@
             // rbPayPal
             // 
             rbPayPal.AutoSize = true;
-            rbPayPal.Location = new Point(136, 289);
+            rbPayPal.Location = new Point(136, 272);
             rbPayPal.Name = "rbPayPal";
             rbPayPal.Size = new Size(60, 19);
             rbPayPal.TabIndex = 12;
@@ -167,7 +175,7 @@
             // rbMastercard
             // 
             rbMastercard.AutoSize = true;
-            rbMastercard.Location = new Point(244, 264);
+            rbMastercard.Location = new Point(244, 247);
             rbMastercard.Name = "rbMastercard";
             rbMastercard.Size = new Size(86, 19);
             rbMastercard.TabIndex = 13;
@@ -177,25 +185,28 @@
             // 
             // numAmount
             // 
-            numAmount.Location = new Point(108, 217);
+            numAmount.Location = new Point(135, 210);
             numAmount.Name = "numAmount";
             numAmount.Size = new Size(150, 23);
             numAmount.TabIndex = 14;
             // 
             // btnDonate
             // 
-            btnDonate.Location = new Point(347, 342);
+            btnDonate.BackColor = Color.Chocolate;
+            btnDonate.Font = new Font("Yu Gothic UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDonate.Location = new Point(352, 352);
             btnDonate.Name = "btnDonate";
-            btnDonate.Size = new Size(111, 48);
+            btnDonate.Size = new Size(124, 48);
             btnDonate.TabIndex = 15;
             btnDonate.Text = "Donar";
-            btnDonate.UseVisualStyleBackColor = true;
+            btnDonate.UseVisualStyleBackColor = false;
             btnDonate.Click += btnDonate_Click;
             // 
             // Donate
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PaleGoldenrod;
             ClientSize = new Size(800, 450);
             Controls.Add(btnDonate);
             Controls.Add(numAmount);

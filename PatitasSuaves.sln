@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatitasSuaves", "PatitasSuaves\PatitasSuaves.csproj", "{A3D58A2C-3A75-49AD-9FC5-FF1823577747}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatitasSuaves", "PatitasSuaves\PatitasSuaves.csproj", "{A3D58A2C-3A75-49AD-9FC5-FF1823577747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firestore", "Firestore\Firestore.csproj", "{B642145E-EB50-46F9-8C6B-729F2FF62F04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firestore", "Firestore\Firestore.csproj", "{B642145E-EB50-46F9-8C6B-729F2FF62F04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{C4D68AC4-DCF3-4122-9CF0-B5E67CE3A15A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{C4D68AC4-DCF3-4122-9CF0-B5E67CE3A15A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesManager", "EntitiesManager\EntitiesManager.csproj", "{AE3BF8E1-BC45-43D4-B3AB-A6B9F437DB3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntitiesManager", "EntitiesManager\EntitiesManager.csproj", "{AE3BF8E1-BC45-43D4-B3AB-A6B9F437DB3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validations", "Validations\Validations.csproj", "{12F6FAC2-DFC1-4B32-987A-D34478869714}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validations", "Validations\Validations.csproj", "{12F6FAC2-DFC1-4B32-987A-D34478869714}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics", "Graphics\Graphics.csproj", "{329888BC-9108-4284-B75B-776CCD12D802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphics", "Graphics\Graphics.csproj", "{329888BC-9108-4284-B75B-776CCD12D802}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{BBDF0EB0-54F1-498D-996E-4B829F500669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogData", "LogData\LogData.csproj", "{5855121B-67C5-4E3C-ADC3-261A57E86B65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{329888BC-9108-4284-B75B-776CCD12D802}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{329888BC-9108-4284-B75B-776CCD12D802}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{329888BC-9108-4284-B75B-776CCD12D802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDF0EB0-54F1-498D-996E-4B829F500669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDF0EB0-54F1-498D-996E-4B829F500669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDF0EB0-54F1-498D-996E-4B829F500669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDF0EB0-54F1-498D-996E-4B829F500669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5855121B-67C5-4E3C-ADC3-261A57E86B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5855121B-67C5-4E3C-ADC3-261A57E86B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5855121B-67C5-4E3C-ADC3-261A57E86B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5855121B-67C5-4E3C-ADC3-261A57E86B65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

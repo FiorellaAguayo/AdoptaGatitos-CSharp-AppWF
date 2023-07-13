@@ -1,0 +1,12 @@
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\bin\Debug\net6.0\LogData.deps.json
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\bin\Debug\net6.0\LogData.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\bin\Debug\net6.0\LogData.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\obj\Debug\net6.0\LogData.csproj.AssemblyReference.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\obj\Debug\net6.0\LogData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\obj\Debug\net6.0\LogData.AssemblyInfoInputs.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\obj\Debug\net6.0\LogData.AssemblyInfo.cs
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\obj\Debug\net6.0\LogData.csproj.CoreCompileInputs.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\obj\Debug\net6.0\LogData.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\obj\Debug\net6.0\refint\LogData.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\obj\Debug\net6.0\LogData.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\LogData\obj\Debug\net6.0\ref\LogData.dll

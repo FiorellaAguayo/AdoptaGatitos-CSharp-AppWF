@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Firestore
 {
-    public class FirestoreManager<T> : FirestoreBaseManager, IDataBaseRepository<T> where T : class
+    public class FirestoreManager<T> : FirestoreDataManager, IDataBaseRepository<T> where T : class
     {
         public FirestoreManager(string collectionName) : base(collectionName)
         {

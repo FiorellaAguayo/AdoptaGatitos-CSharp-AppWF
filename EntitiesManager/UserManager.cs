@@ -115,7 +115,7 @@ namespace EntitiesManager
 
             if (userToUpdate != null)
             {
-                bool changesMade = (userToUpdate.Id != user.Id) || (userToUpdate.Role != user.Role) || (userToUpdate.Email != user.Email) || (userToUpdate.Password != user.Password) || (userToUpdate.Amount != user.Amount) || (userToUpdate.Phone != user.Phone);
+                bool changesMade = (userToUpdate.Id != user.Id) || (userToUpdate.Role != user.Role) || (userToUpdate.Email != user.Email) || (userToUpdate.Password != user.Password) || (userToUpdate.LastDonation != user.LastDonation) || (userToUpdate.Phone != user.Phone);
 
                 if (changesMade)
                 {
@@ -123,7 +123,8 @@ namespace EntitiesManager
                     userToUpdate.Role = user.Role;
                     userToUpdate.Email = user.Email;
                     userToUpdate.Password = user.Password;
-                    userToUpdate.Amount = user.Amount;
+                    userToUpdate.LastDonation = user.LastDonation;
+                    userToUpdate.TotalDonation = user.TotalDonation;
                     userToUpdate.Phone = user.Phone;
 
                     await UpdateUser(userToUpdate, userToUpdate.UserName);

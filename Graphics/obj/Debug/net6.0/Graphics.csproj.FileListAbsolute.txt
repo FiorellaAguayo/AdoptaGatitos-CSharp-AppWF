@@ -10,3 +10,15 @@ C:\Users\fiore\source\repos\PatitasSuaves\Graphics\obj\Debug\net6.0\Graphics.dll
 C:\Users\fiore\source\repos\PatitasSuaves\Graphics\obj\Debug\net6.0\refint\Graphics.dll
 C:\Users\fiore\source\repos\PatitasSuaves\Graphics\obj\Debug\net6.0\Graphics.pdb
 C:\Users\fiore\source\repos\PatitasSuaves\Graphics\obj\Debug\net6.0\ref\Graphics.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\bin\Debug\net6.0\Graphics.deps.json
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\bin\Debug\net6.0\Graphics.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\bin\Debug\net6.0\Graphics.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\obj\Debug\net6.0\Graphics.csproj.AssemblyReference.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\obj\Debug\net6.0\Graphics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\obj\Debug\net6.0\Graphics.AssemblyInfoInputs.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\obj\Debug\net6.0\Graphics.AssemblyInfo.cs
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\obj\Debug\net6.0\Graphics.csproj.CoreCompileInputs.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\obj\Debug\net6.0\Graphics.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\obj\Debug\net6.0\refint\Graphics.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\obj\Debug\net6.0\Graphics.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Graphics\obj\Debug\net6.0\ref\Graphics.dll

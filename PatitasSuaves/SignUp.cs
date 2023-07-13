@@ -2,6 +2,8 @@
 
 using EntitiesManager;
 
+using LogData;
+
 using static EntitiesManager.UserManager;
 
 namespace PatitasSuaves
@@ -60,6 +62,7 @@ namespace PatitasSuaves
                         break;
                     case UserAddError.NoError:
                         MessageBox.Show("Usuario registrado con éxito.");
+                        Log.WriteLog($"El usuario {user.UserName} se ha registrado con éxito.");
                         break;
                 }
             }

@@ -4,9 +4,6 @@
     <Compile Update="Account.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="BePart.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Contact.cs">
       <SubType>Form</SubType>
     </Compile>

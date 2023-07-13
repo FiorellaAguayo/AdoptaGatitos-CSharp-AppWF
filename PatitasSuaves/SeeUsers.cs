@@ -3,6 +3,7 @@ using Entities;
 using Validations;
 using System.Data;
 using static EntitiesManager.UserManager;
+using LogData;
 
 namespace PatitasSuaves
 {
@@ -10,6 +11,7 @@ namespace PatitasSuaves
     {
         private UserManager _userManager;
         List<User> users;
+        private IExporter<User> _exporter;
 
         public SeeUsers()
         {
@@ -38,17 +40,17 @@ namespace PatitasSuaves
 
             foreach (User user in users)
             {
-                table.Rows.Add(user.Id, user.Role, user.UserName, user.Email, user.Password, user.Amount, user.Phone);
+                table.Rows.Add(user.Id, user.Role, user.UserName, user.Email, user.Password, user.TotalDonation, user.Phone);
             }
 
             DataView dataView = table.DefaultView;
             dataView.Sort = "Usuario ASC";
-            dgvPets.DataSource = table;
+            dgvUsers.DataSource = table;
         }
 
         private async void btnAdd_Click(object sender, EventArgs e)
         {
-            User user = new User(txbId.Text, txb.Text, txbRole.Text, txbEmail.Text, double.Parse(txbDonation.Text), txbPassword.Text, txbPassword.Text);
+            User user = new User(txbId.Text, txbUser.Text, txbRole.Text, txbEmail.Text, txbDonation.Text, txbPassword.Text, txbPhone.Text);
             UserAddError result = await _userManager.CreateNewUser(user);
 
             switch (result)
@@ -78,7 +80,7 @@ namespace PatitasSuaves
 
         private async void btnModify_Click(object sender, EventArgs e)
         {
-            User user = new User(txbId.Text, txb.Text, txbRole.Text, txbEmail.Text, double.Parse(txbDonation.Text), txbPassword.Text, txbPhone.Text);
+            User user = new User(txbId.Text, txbUser.Text, txbRole.Text, txbEmail.Text, txbDonation.Text, txbPassword.Text, txbPhone.Text);
 
             if (!UserValidation.ValidateRequiredFields(user))
             {
@@ -105,18 +107,18 @@ namespace PatitasSuaves
 
         private async void btnDelete_Click(object sender, EventArgs e)
         {
-            User user = new User(txbId.Text, txb.Text, txbRole.Text, txbEmail.Text, double.Parse(txbDonation.Text), txbPassword.Text, txbPassword.Text);
+            User user = new User(txbId.Text, txbUser.Text, txbRole.Text, txbEmail.Text, txbDonation.Text, txbPassword.Text, txbPassword.Text);
             DialogResult result = MessageBox.Show("¿Estás seguro de eliminar este usuario?", "Eliminar usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
-                if (dgvPets.SelectedRows.Count > 0)
+                if (dgvUsers.SelectedRows.Count > 0)
                 {
-                    DataGridViewRow selectedRow = dgvPets.SelectedRows[0];
+                    DataGridViewRow selectedRow = dgvUsers.SelectedRows[0];
                     string username = selectedRow.Cells["Usuario"].Value.ToString();
                     await _userManager.DeleteUser(username);
 
-                    dgvPets.Rows.Remove(selectedRow);
+                    dgvUsers.Rows.Remove(selectedRow);
                     btnDelete.Enabled = false;
 
                     MessageBox.Show("El usuario se ha eliminado correctamente.");
@@ -132,10 +134,10 @@ namespace PatitasSuaves
         {
             if (e.RowIndex >= 0)
             {
-                DataGridViewRow selectedRow = dgvPets.Rows[e.RowIndex];
+                DataGridViewRow selectedRow = dgvUsers.Rows[e.RowIndex];
                 txbId.Text = selectedRow.Cells["Id"].Value.ToString();
                 txbRole.Text = selectedRow.Cells["Rol"].Value.ToString();
-                txb.Text = selectedRow.Cells["Usuario"].Value.ToString();
+                txbUser.Text = selectedRow.Cells["Usuario"].Value.ToString();
                 txbEmail.Text = selectedRow.Cells["Email"].Value.ToString();
                 txbPassword.Text = selectedRow.Cells["Contraseña"].Value.ToString();
                 txbDonation.Text = selectedRow.Cells["Donaciones"].Value.ToString();
@@ -152,7 +154,7 @@ namespace PatitasSuaves
 
         private void dgvUsers_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvPets.SelectedRows.Count > 0)
+            if (dgvUsers.SelectedRows.Count > 0)
             {
                 btnDelete.Enabled = true;
                 btnModify.Enabled = true;
@@ -162,6 +164,33 @@ namespace PatitasSuaves
                 btnDelete.Enabled = false;
                 btnModify.Enabled = false;
             }
+        }
+
+        private async void btnJSON_Click(object sender, EventArgs e)
+        {
+            var users = await _userManager.GetUsers();
+
+            _exporter = new JsonExporter<User>();
+            await _exporter.ExportData(users, "ListUsers.json");
+            Log.WriteLog($"Se exportó una lista de usuarios a json.");
+        }
+
+        private async void btnCSV_Click(object sender, EventArgs e)
+        {
+            var users = await _userManager.GetUsers();
+
+            _exporter = new CsvExporter<User>();
+            await _exporter.ExportData(users, "ListUsers.csv");
+            Log.WriteLog($"Se exportó una lista de usuarios a csv.");
+        }
+
+        private async void btnPDF_Click(object sender, EventArgs e)
+        {
+            var users = await _userManager.GetUsers();
+
+            _exporter = new PdfExporter<User>();
+            await _exporter.ExportData(users, "ListUsers.pdf");
+            Log.WriteLog($"Se exportó una lista de usuarios a pdf.");
         }
     }
 }

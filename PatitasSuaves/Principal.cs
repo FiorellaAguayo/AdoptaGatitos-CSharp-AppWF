@@ -1,6 +1,8 @@
 ﻿using EntitiesManager;
 using Entities;
 using Graphics;
+using Microsoft.VisualBasic.ApplicationServices;
+using LogData;
 
 namespace PatitasSuaves
 {
@@ -19,6 +21,7 @@ namespace PatitasSuaves
             _random = new Random();
             _currentUser = user;
         }
+
 
         private async void Principal_Load(object sender, EventArgs e)
         {
@@ -81,49 +84,77 @@ namespace PatitasSuaves
         private void btnProfiles_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenForm<Profiles>("Ver perfiles");
+            //OpenForm<Profiles>("Ver perfiles");
+
+            lblTitle.Text = "Ver perfiles";
+
+            Profiles form = new Profiles();
+            form.MdiParent = this;
+            form.Show();
+            Log.WriteLog($"El usuario {_currentUser.UserName} está mirando perfiles.");
         }
 
         private void btnDonate_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenForm<Donate>("Donaciones");
-        }
+            //OpenForm<Donate>("Donaciones");
+            lblTitle.Text = "Ver usuarios";
 
-        private void btnBePart_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            OpenForm<BePart>("¿Querés ser parte?");
+            Donate form = new Donate(_currentUser);
+            form.MdiParent = this;
+            form.Show();
+            Log.WriteLog($"El usuario {_currentUser.UserName} está mirando donaciones.");
         }
 
         private void btnContact_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenForm<Contact>("Contacto");
+            //OpenForm<Contact>("Contacto");
+            lblTitle.Text = "Contacto";
+
+            Contact form = new Contact(_currentUser);
+            form.MdiParent = this;
+            form.Show();
+            Log.WriteLog($"El usuario {_currentUser.UserName} está mirando contacto.");
         }
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenForm<Account>("Cuenta");
+            // OpenForm<Account>("Cuenta");
+            lblTitle.Text = "Cuenta";
+
+            Account form = new Account(_currentUser);
+            form.MdiParent = this;
+            form.Show();
+            Log.WriteLog($"El usuario {_currentUser.UserName} está mirando cuenta.");
         }
 
         private void btnSeeUsers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            // OpenForm<SeeUsers>("Ver usuarios");
+            //OpenForm<SeeUsers>("Ver usuarios");
 
             lblTitle.Text = "Ver usuarios";
 
             SeeUsers form = new SeeUsers();
             form.MdiParent = this;
             form.Show();
+            Log.WriteLog($"El usuario {_currentUser.UserName} está mirando administracion de usuarios.");
         }
 
         private void btnSeePets_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenForm<SeePets>("Ver mascotas");
+            // OpenForm<SeePets>("Ver mascotas");
+
+            lblTitle.Text = "Ver gatos";
+
+            SeePets form = new SeePets();
+            form.MdiParent = this;
+            form.Show();
+            Log.WriteLog($"El usuario {_currentUser.UserName} está mirando administracion de gatos.");
+            // OpenChildForm<SeePets>("Ver gatos", typeof(SeePets));
         }
 
         private void OpenForm<T>(string title) where T : Form, new()
@@ -134,6 +165,23 @@ namespace PatitasSuaves
             form.MdiParent = this;
             form.Show();
         }
+
+        //private void OpenChildForm<T>(string title, Type formType) where T : Form, new()
+        //{
+        //    lblTitle.Text = title;
+
+        //    Form existingForm = MdiChildren.FirstOrDefault(f => f.GetType() == formType);
+        //    if (existingForm == null)
+        //    {
+        //        T form = new T();
+        //        form.MdiParent = this;
+        //        form.Show();
+        //    }
+        //    else
+        //    {
+        //        existingForm.BringToFront();
+        //    }
+        //}
 
         private void Principal_StyleChanged(object sender, EventArgs e)
         {
@@ -156,5 +204,7 @@ namespace PatitasSuaves
                 }
             }
         }
+
+
     }
 }

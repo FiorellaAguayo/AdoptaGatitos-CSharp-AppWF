@@ -20,7 +20,11 @@ namespace Validations
 
         public static bool ValidateRequiredFields(User user)
         {
-            return !string.IsNullOrEmpty(user.Id) && !string.IsNullOrEmpty(user.Role) && !string.IsNullOrEmpty(user.UserName) && !string.IsNullOrEmpty(user.Email) && !string.IsNullOrEmpty(user.Password);
+            return !string.IsNullOrEmpty(user.Id) && 
+                !string.IsNullOrEmpty(user.Role) && 
+                !string.IsNullOrEmpty(user.UserName) && 
+                !string.IsNullOrEmpty(user.Email) && 
+                !string.IsNullOrEmpty(user.Password);
         }
 
         public static bool ValidateUserFields(string id, string role, string username, string email, string password)

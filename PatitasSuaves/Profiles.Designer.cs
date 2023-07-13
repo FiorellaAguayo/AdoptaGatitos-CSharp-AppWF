@@ -28,19 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            flpCats = new FlowLayoutPanel();
             SuspendLayout();
+            // 
+            // flpCats
+            // 
+            flpCats.Location = new Point(12, 12);
+            flpCats.Name = "flpCats";
+            flpCats.Size = new Size(776, 426);
+            flpCats.TabIndex = 0;
             // 
             // Profiles
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(flpCats);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Profiles";
             Text = "Profiles";
+            Load += Profiles_Load;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private FlowLayoutPanel flpCats;
     }
 }

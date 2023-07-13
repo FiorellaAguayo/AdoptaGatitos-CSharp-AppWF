@@ -1,16 +1,22 @@
 using EntitiesManager;
 using Entities;
 using static EntitiesManager.UserManager;
+using LogData;
 
 namespace PatitasSuaves
 {
     public partial class Login : Form
     {
         private readonly UserManager _userManager;
+
+        public delegate void LoginSuccessDelegate(string username);
+        public event LoginSuccessDelegate LoginSuccess;
+
         public Login()
         {
             InitializeComponent();
             _userManager = new UserManager();
+            LoginSuccess += LoginSuccessHandler;
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
@@ -32,7 +38,8 @@ namespace PatitasSuaves
                         MessageBox.Show("La contraseña es incorrecta");
                         break;
                     case UserLoginError.NoError:
-                        MessageBox.Show("Bienvenido/a a Patitas Suaves");
+                        LoginSuccess?.Invoke(user.UserName);
+                        Log.WriteLog($"El usuario {user.UserName} ha iniciado sesión");
                         OpenTheApp(user);
                         break;
                 }
@@ -40,7 +47,13 @@ namespace PatitasSuaves
             catch (Exception ex)
             {
                 MessageBox.Show("Ocurrió un error durante el inicio de sesión: " + ex.Message);
+                Log.WriteLog($"Hubo un error al intentar iniciar sesión.");
             }
+        }
+
+        private void LoginSuccessHandler(string username)
+        {
+            MessageBox.Show("¡Bienvenido/a a Patitas Suaves, " + username + "!");
         }
 
         private void llSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -108,7 +121,5 @@ namespace PatitasSuaves
                 MessageBox.Show("Ha ocurrido un error al iniciar la aplicación.");
             }
         }
-
-
     }
 }

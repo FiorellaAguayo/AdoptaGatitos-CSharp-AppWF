@@ -35,7 +35,6 @@
             btnSeeUsers = new Button();
             btnAccount = new Button();
             btnContact = new Button();
-            btnBePart = new Button();
             btnDonate = new Button();
             btnProfiles = new Button();
             panLogo = new Panel();
@@ -74,7 +73,6 @@
             panButtons.Controls.Add(btnSeeUsers);
             panButtons.Controls.Add(btnAccount);
             panButtons.Controls.Add(btnContact);
-            panButtons.Controls.Add(btnBePart);
             panButtons.Controls.Add(btnDonate);
             panButtons.Controls.Add(btnProfiles);
             panButtons.Controls.Add(panLogo);
@@ -92,7 +90,7 @@
             btnSeePets.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnSeePets.ForeColor = Color.White;
             btnSeePets.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSeePets.Location = new Point(0, 451);
+            btnSeePets.Location = new Point(0, 391);
             btnSeePets.Name = "btnSeePets";
             btnSeePets.Padding = new Padding(12, 0, 0, 0);
             btnSeePets.Size = new Size(193, 60);
@@ -112,7 +110,7 @@
             btnSeeUsers.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnSeeUsers.ForeColor = Color.White;
             btnSeeUsers.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSeeUsers.Location = new Point(0, 391);
+            btnSeeUsers.Location = new Point(0, 331);
             btnSeeUsers.Name = "btnSeeUsers";
             btnSeeUsers.Padding = new Padding(12, 0, 0, 0);
             btnSeeUsers.Size = new Size(193, 60);
@@ -132,7 +130,7 @@
             btnAccount.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnAccount.ForeColor = Color.White;
             btnAccount.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAccount.Location = new Point(0, 334);
+            btnAccount.Location = new Point(0, 274);
             btnAccount.Name = "btnAccount";
             btnAccount.Padding = new Padding(12, 0, 0, 0);
             btnAccount.Size = new Size(193, 57);
@@ -151,7 +149,7 @@
             btnContact.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnContact.ForeColor = Color.White;
             btnContact.ImageAlign = ContentAlignment.MiddleLeft;
-            btnContact.Location = new Point(0, 274);
+            btnContact.Location = new Point(0, 214);
             btnContact.Name = "btnContact";
             btnContact.Padding = new Padding(12, 0, 0, 0);
             btnContact.Size = new Size(193, 60);
@@ -161,25 +159,6 @@
             btnContact.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnContact.UseVisualStyleBackColor = true;
             btnContact.Click += btnContact_Click;
-            // 
-            // btnBePart
-            // 
-            btnBePart.Dock = DockStyle.Top;
-            btnBePart.FlatAppearance.BorderSize = 0;
-            btnBePart.FlatStyle = FlatStyle.Flat;
-            btnBePart.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnBePart.ForeColor = Color.White;
-            btnBePart.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBePart.Location = new Point(0, 214);
-            btnBePart.Name = "btnBePart";
-            btnBePart.Padding = new Padding(12, 0, 0, 0);
-            btnBePart.Size = new Size(193, 60);
-            btnBePart.TabIndex = 19;
-            btnBePart.Text = "  ¿Querés ser parte?";
-            btnBePart.TextAlign = ContentAlignment.MiddleLeft;
-            btnBePart.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnBePart.UseVisualStyleBackColor = true;
-            btnBePart.Click += btnBePart_Click;
             // 
             // btnDonate
             // 
@@ -270,7 +249,6 @@
         private Button btnSeeUsers;
         private Button btnAccount;
         private Button btnContact;
-        private Button btnBePart;
         private Button btnDonate;
         private Button btnProfiles;
         private Panel panLogo;

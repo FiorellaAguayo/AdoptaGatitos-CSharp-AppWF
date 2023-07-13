@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "BouncyCastle/1.8.9": {
+        "type": "package",
+        "compile": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "CsvHelper/30.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Google.Api.CommonProtos/2.7.0": {
         "type": "package",
         "dependencies": {
@@ -255,6 +277,18 @@
           }
         }
       },
+      "iTextSharp/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
         "compile": {
@@ -297,7 +331,7 @@
           }
         }
       },
-      "Newtonsoft.Json/13.0.2": {
+      "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -387,9 +421,12 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "CsvHelper": "30.0.1",
           "Entities": "1.0.0",
           "Firestore": "1.0.0",
-          "Validations": "1.0.0"
+          "Newtonsoft.Json": "13.0.3",
+          "Validations": "1.0.0",
+          "iTextSharp": "5.5.13.3"
         },
         "compile": {
           "bin/placeholder/EntitiesManager.dll": {}
@@ -422,6 +459,16 @@
           "bin/placeholder/Graphics.dll": {}
         }
       },
+      "LogData/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LogData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogData.dll": {}
+        }
+      },
       "Validations/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -438,6 +485,43 @@
     }
   },
   "libraries": {
+    "BouncyCastle/1.8.9": {
+      "sha512": "axnBgvdD5n+FnEG6efk/tfKuMFru7R/EoISH9zjh319yb3HD24TEHSAbNN/lTRT2ulOGRxDgOsCjkuk08iwWPg==",
+      "type": "package",
+      "path": "bouncycastle/1.8.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "bouncycastle.1.8.9.nupkg.sha512",
+        "bouncycastle.nuspec",
+        "lib/BouncyCastle.Crypto.dll"
+      ]
+    },
+    "CsvHelper/30.0.1": {
+      "sha512": "rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
+      "type": "package",
+      "path": "csvhelper/30.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.30.0.1.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
     "Google.Api.CommonProtos/2.7.0": {
       "sha512": "Wpg4yRGJxX8FE3Ife+Gsj556MDHuki4KqVlZ1jOvvFX6yianI/hbScgvGUlteM9uu7vzbfCyKLc0Sv5/53M3hg==",
       "type": "package",
@@ -770,6 +854,22 @@
         "packageIcon.png"
       ]
     },
+    "iTextSharp/5.5.13.3": {
+      "sha512": "vtnMhTEJdZFCkLqaQLjD8aqTBIVKHPrSFuSXnxbLEJlvE/j/l88fvG9wtsejXTmhtErMo0lA9T2LdfdfbwplYw==",
+      "type": "package",
+      "path": "itextsharp/5.5.13.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "gnu-agpl-v3.0.md",
+        "itextsharp.5.5.13.3.nupkg.sha512",
+        "itextsharp.nuspec",
+        "lib/iTextSharp.xml",
+        "lib/itextsharp.dll",
+        "notice.txt"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
       "sha512": "UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
       "type": "package",
@@ -830,10 +930,10 @@
         "microsoft.extensions.logging.abstractions.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.2": {
-      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.2",
+      "path": "newtonsoft.json/13.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -855,7 +955,7 @@
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -977,6 +1077,11 @@
       "path": "../Graphics/Graphics.csproj",
       "msbuildProject": "../Graphics/Graphics.csproj"
     },
+    "LogData/1.0.0": {
+      "type": "project",
+      "path": "../LogData/LogData.csproj",
+      "msbuildProject": "../LogData/LogData.csproj"
+    },
     "Validations/1.0.0": {
       "type": "project",
       "path": "../Validations/Validations.csproj",
@@ -989,6 +1094,7 @@
       "EntitiesManager >= 1.0.0",
       "Firestore >= 1.0.0",
       "Graphics >= 1.0.0",
+      "LogData >= 1.0.0",
       "Validations >= 1.0.0"
     ]
   },
@@ -1031,6 +1137,9 @@
             "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Graphics\\Graphics.csproj": {
               "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Graphics\\Graphics.csproj"
             },
+            "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\LogData\\LogData.csproj": {
+              "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\LogData\\LogData.csproj"
+            },
             "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Validations\\Validations.csproj": {
               "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Validations\\Validations.csproj"
             }
@@ -1068,5 +1177,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"BouncyCastle 1.8.9\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"iTextSharp 5.5.13.3\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "iTextSharp",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

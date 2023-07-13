@@ -166,5 +166,11 @@ namespace PatitasSuaves
             txbUser.Text = "pepito";
             txbPassword.Text = "123";
         }
+
+        private void btnAutocompleteAdmin_Click(object sender, EventArgs e)
+        {
+            txbUser.Text = "admin";
+            txbPassword.Text = "123";
+        }
     }
 }

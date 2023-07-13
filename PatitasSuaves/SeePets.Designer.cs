@@ -49,33 +49,37 @@
             btnCSV = new Button();
             btnPDF = new Button();
             btnJSON = new Button();
+            btnAutocomplete = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvCats).BeginInit();
             SuspendLayout();
             // 
             // lblIsEsterilized
             // 
             lblIsEsterilized.AutoSize = true;
+            lblIsEsterilized.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblIsEsterilized.Location = new Point(482, 382);
             lblIsEsterilized.Name = "lblIsEsterilized";
-            lblIsEsterilized.Size = new Size(100, 15);
+            lblIsEsterilized.Size = new Size(114, 17);
             lblIsEsterilized.TabIndex = 52;
             lblIsEsterilized.Text = "¿Está esterilizado?";
             // 
             // lblWeight
             // 
             lblWeight.AutoSize = true;
+            lblWeight.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblWeight.Location = new Point(78, 368);
             lblWeight.Name = "lblWeight";
-            lblWeight.Size = new Size(32, 15);
+            lblWeight.Size = new Size(33, 17);
             lblWeight.TabIndex = 51;
             lblWeight.Text = "Peso";
             // 
             // lblCoatColor
             // 
             lblCoatColor.AutoSize = true;
+            lblCoatColor.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblCoatColor.Location = new Point(296, 282);
             lblCoatColor.Name = "lblCoatColor";
-            lblCoatColor.Size = new Size(70, 15);
+            lblCoatColor.Size = new Size(72, 17);
             lblCoatColor.TabIndex = 50;
             lblCoatColor.Text = "Color pelaje";
             // 
@@ -89,27 +93,30 @@
             // lblRace
             // 
             lblRace.AutoSize = true;
+            lblRace.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblRace.Location = new Point(476, 282);
             lblRace.Name = "lblRace";
-            lblRace.Size = new Size(31, 15);
+            lblRace.Size = new Size(34, 17);
             lblRace.TabIndex = 45;
             lblRace.Text = "Raza";
             // 
             // lblAge
             // 
             lblAge.AutoSize = true;
+            lblAge.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblAge.Location = new Point(78, 328);
             lblAge.Name = "lblAge";
-            lblAge.Size = new Size(33, 15);
+            lblAge.Size = new Size(35, 17);
             lblAge.TabIndex = 44;
             lblAge.Text = "Edad";
             // 
             // lblName
             // 
             lblName.AutoSize = true;
+            lblName.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblName.Location = new Point(60, 287);
             lblName.Name = "lblName";
-            lblName.Size = new Size(51, 15);
+            lblName.Size = new Size(50, 17);
             lblName.TabIndex = 43;
             lblName.Text = "Nombre";
             // 
@@ -188,9 +195,10 @@
             // lblURLImagen
             // 
             lblURLImagen.AutoSize = true;
+            lblURLImagen.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblURLImagen.Location = new Point(78, 410);
             lblURLImagen.Name = "lblURLImagen";
-            lblURLImagen.Size = new Size(71, 15);
+            lblURLImagen.Size = new Size(75, 17);
             lblURLImagen.TabIndex = 60;
             lblURLImagen.Text = "URL imagen";
             // 
@@ -250,12 +258,24 @@
             btnJSON.UseVisualStyleBackColor = false;
             btnJSON.Click += btnJSON_Click;
             // 
+            // btnAutocomplete
+            // 
+            btnAutocomplete.ForeColor = SystemColors.ActiveCaptionText;
+            btnAutocomplete.Location = new Point(685, 233);
+            btnAutocomplete.Name = "btnAutocomplete";
+            btnAutocomplete.Size = new Size(118, 38);
+            btnAutocomplete.TabIndex = 67;
+            btnAutocomplete.Text = "Autocompletar";
+            btnAutocomplete.UseVisualStyleBackColor = true;
+            btnAutocomplete.Click += btnAutocomplete_Click;
+            // 
             // SeePets
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(880, 488);
+            Controls.Add(btnAutocomplete);
             Controls.Add(btnCSV);
             Controls.Add(btnPDF);
             Controls.Add(btnJSON);
@@ -312,5 +332,6 @@
         private Button btnCSV;
         private Button btnPDF;
         private Button btnJSON;
+        private Button btnAutocomplete;
     }
 }

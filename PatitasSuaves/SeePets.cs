@@ -318,5 +318,16 @@ namespace PatitasSuaves
         {
 
         }
+
+        private void btnAutocomplete_Click(object sender, EventArgs e)
+        {
+            txbName.Text = "Minino";
+            txbAge.Text = "1";
+            txbWeight.Text = "2";
+            txbURLImage.Text = "https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-1248x770@Las%20Provincias.jpg";
+            lbxFurColor.Text = "Marrón";
+            lbxRace.Text = "No tiene";
+            lbxIsSterelized.Text = "No";
+        }
     }
 }

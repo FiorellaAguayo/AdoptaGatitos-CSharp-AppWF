@@ -49,42 +49,47 @@
             btnJSON = new Button();
             btnPDF = new Button();
             btnCSV = new Button();
+            btnAutocomplete = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             SuspendLayout();
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(322, 382);
+            label7.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(332, 380);
             label7.Name = "label7";
-            label7.Size = new Size(52, 15);
+            label7.Size = new Size(55, 17);
             label7.TabIndex = 35;
             label7.Text = "Telefono";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(305, 347);
+            label6.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(315, 345);
             label6.Name = "label6";
-            label6.Size = new Size(69, 15);
+            label6.Size = new Size(67, 17);
             label6.TabIndex = 34;
             label6.Text = "Donaciones";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(307, 311);
+            label5.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(317, 309);
             label5.Name = "label5";
-            label5.Size = new Size(67, 15);
+            label5.Size = new Size(69, 17);
             label5.TabIndex = 33;
             label5.Text = "Contraseña";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(70, 413);
             label4.Name = "label4";
-            label4.Size = new Size(36, 15);
+            label4.Size = new Size(37, 17);
             label4.TabIndex = 32;
             label4.Text = "Email";
             // 
@@ -119,27 +124,30 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(82, 382);
             label3.Name = "label3";
-            label3.Size = new Size(24, 15);
+            label3.Size = new Size(25, 17);
             label3.TabIndex = 27;
             label3.Text = "Rol";
             // 
             // lblId
             // 
             lblId.AutoSize = true;
+            lblId.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblId.Location = new Point(82, 344);
             lblId.Name = "lblId";
-            lblId.Size = new Size(17, 15);
+            lblId.Size = new Size(19, 17);
             lblId.TabIndex = 26;
             lblId.Text = "Id";
             // 
             // lblUser
             // 
             lblUser.AutoSize = true;
+            lblUser.Font = new Font("MV Boli", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblUser.Location = new Point(76, 311);
             lblUser.Name = "lblUser";
-            lblUser.Size = new Size(30, 15);
+            lblUser.Size = new Size(32, 17);
             lblUser.TabIndex = 25;
             lblUser.Text = "User";
             // 
@@ -244,12 +252,24 @@
             btnCSV.UseVisualStyleBackColor = false;
             btnCSV.Click += btnCSV_Click;
             // 
+            // btnAutocomplete
+            // 
+            btnAutocomplete.ForeColor = SystemColors.ActiveCaptionText;
+            btnAutocomplete.Location = new Point(417, 413);
+            btnAutocomplete.Name = "btnAutocomplete";
+            btnAutocomplete.Size = new Size(118, 38);
+            btnAutocomplete.TabIndex = 50;
+            btnAutocomplete.Text = "Autocompletar";
+            btnAutocomplete.UseVisualStyleBackColor = true;
+            btnAutocomplete.Click += btnAutocomplete_Click;
+            // 
             // SeeUsers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(865, 476);
+            Controls.Add(btnAutocomplete);
             Controls.Add(btnCSV);
             Controls.Add(btnPDF);
             Controls.Add(btnJSON);
@@ -304,5 +324,6 @@
         private Button btnJSON;
         private Button btnPDF;
         private Button btnCSV;
+        private Button btnAutocomplete;
     }
 }

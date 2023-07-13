@@ -4,6 +4,8 @@ using Validations;
 using System.Data;
 using static EntitiesManager.UserManager;
 using LogData;
+using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace PatitasSuaves
 {
@@ -249,6 +251,17 @@ namespace PatitasSuaves
                 btnDelete.Enabled = false;
                 btnModify.Enabled = false;
             }
+        }
+
+        private void btnAutocomplete_Click(object sender, EventArgs e)
+        {
+            txbUser.Text = "juan";
+            txbEmail.Text = "juan@gmail.com";
+            txbId.Text = "2312";
+            txbRole.Text = "Visitante";
+            txbPassword.Text = "123";
+            txbPhone.Text = "23124113";
+            txbDonation.Text = "900";
         }
     }
 }

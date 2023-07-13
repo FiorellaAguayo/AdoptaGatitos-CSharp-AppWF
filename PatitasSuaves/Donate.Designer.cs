@@ -187,6 +187,7 @@
             // numAmount
             // 
             numAmount.Location = new Point(135, 210);
+            numAmount.Maximum = new decimal(new int[] { 100000000, 0, 0, 0 });
             numAmount.Name = "numAmount";
             numAmount.Size = new Size(150, 23);
             numAmount.TabIndex = 14;

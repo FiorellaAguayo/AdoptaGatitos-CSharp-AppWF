@@ -42,6 +42,7 @@
             btnLogin = new Button();
             label1 = new Label();
             btnAutocomplete = new Button();
+            btnAutocompleteAdmin = new Button();
             ((System.ComponentModel.ISupportInitialize)SeePassword).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -82,7 +83,9 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Controls.Add(btnAutocompleteAdmin);
             panel1.Controls.Add(label3);
+            panel1.Controls.Add(btnAutocomplete);
             panel1.Controls.Add(pictureBox3);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -190,13 +193,24 @@
             // btnAutocomplete
             // 
             btnAutocomplete.ForeColor = SystemColors.ActiveCaptionText;
-            btnAutocomplete.Location = new Point(488, 12);
+            btnAutocomplete.Location = new Point(25, 185);
             btnAutocomplete.Name = "btnAutocomplete";
-            btnAutocomplete.Size = new Size(120, 27);
+            btnAutocomplete.Size = new Size(97, 38);
             btnAutocomplete.TabIndex = 49;
-            btnAutocomplete.Text = "Autocompletar";
+            btnAutocomplete.Text = "Autompletar visitante\r\n\r\n ";
             btnAutocomplete.UseVisualStyleBackColor = true;
             btnAutocomplete.Click += btnAutocomplete_Click;
+            // 
+            // btnAutocompleteAdmin
+            // 
+            btnAutocompleteAdmin.ForeColor = SystemColors.ActiveCaptionText;
+            btnAutocompleteAdmin.Location = new Point(25, 229);
+            btnAutocompleteAdmin.Name = "btnAutocompleteAdmin";
+            btnAutocompleteAdmin.Size = new Size(97, 38);
+            btnAutocompleteAdmin.TabIndex = 50;
+            btnAutocompleteAdmin.Text = "Autocompletar administrador\r\n";
+            btnAutocompleteAdmin.UseVisualStyleBackColor = true;
+            btnAutocompleteAdmin.Click += btnAutocompleteAdmin_Click;
             // 
             // Login
             // 
@@ -204,7 +218,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 192, 255);
             ClientSize = new Size(620, 273);
-            Controls.Add(btnAutocomplete);
             Controls.Add(SeePassword);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
@@ -246,5 +259,6 @@
         private Button btnLogin;
         private Label label1;
         private Button btnAutocomplete;
+        private Button btnAutocompleteAdmin;
     }
 }

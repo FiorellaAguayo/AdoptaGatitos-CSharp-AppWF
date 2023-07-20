@@ -22,7 +22,7 @@ namespace Tests
             bool result = UserValidation.ValidateEmail(email);
 
             // Assert
-            Assert.IsTrue(result); // espera
+            Assert.IsTrue(result);
         }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace Tests
         public async Task ValidateRequiredFields_ValidCat_ReturnsTrue()
         {
             // Arrange
-            Cat cat = new Cat("pepe", "12", "12", "C:\\Users\\fiore\\source\\repos\\PatitasSuaves\\Photos\\hide.png", "marrón", "No tiene", "no");
+            Cat cat = new Cat("pepe", "12", "12", "hide.png", "marrón", "No tiene", "no");
 
             // Act
             bool result = CatValidation.ValidateRequiredFields(cat);

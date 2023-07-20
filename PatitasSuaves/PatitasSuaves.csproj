@@ -11,7 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EntitiesManager\EntitiesManager.csproj" />
     <ProjectReference Include="..\Entities\Entities.csproj" />
-    <ProjectReference Include="..\Firestore\Firestore.csproj" />
+    <ProjectReference Include="..\Firestore\BDD.csproj" />
     <ProjectReference Include="..\Graphics\Graphics.csproj" />
     <ProjectReference Include="..\LogData\LogData.csproj" />
     <ProjectReference Include="..\Reports\Reports.csproj" />

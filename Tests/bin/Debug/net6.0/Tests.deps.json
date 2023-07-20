@@ -681,6 +681,15 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "BDD/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0",
+          "Google.Cloud.Firestore": "3.3.0"
+        },
+        "runtime": {
+          "BDD.dll": {}
+        }
+      },
       "Entities/1.0.0": {
         "dependencies": {
           "Google.Cloud.Firestore": "3.3.0"
@@ -691,24 +700,15 @@
       },
       "EntitiesManager/1.0.0": {
         "dependencies": {
+          "BDD": "1.0.0",
           "CsvHelper": "30.0.1",
           "Entities": "1.0.0",
-          "Firestore": "1.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Validations": "1.0.0",
           "iTextSharp": "5.5.13.3"
         },
         "runtime": {
           "EntitiesManager.dll": {}
-        }
-      },
-      "Firestore/1.0.0": {
-        "dependencies": {
-          "Entities": "1.0.0",
-          "Google.Cloud.Firestore": "3.3.0"
-        },
-        "runtime": {
-          "Firestore.dll": {}
         }
       },
       "Validations/1.0.0": {
@@ -1099,17 +1099,17 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
+    "BDD/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "EntitiesManager/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Firestore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

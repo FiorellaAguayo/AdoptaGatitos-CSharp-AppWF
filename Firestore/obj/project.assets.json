@@ -923,9 +923,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\Firestore.csproj",
-      "projectName": "Firestore",
-      "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\Firestore.csproj",
+      "projectUniqueName": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\BDD.csproj",
+      "projectName": "BDD",
+      "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\BDD.csproj",
       "packagesPath": "C:\\Users\\fiore\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\obj\\",
       "projectStyle": "PackageReference",

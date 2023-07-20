@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Firestore
 {
-    public interface IDataBaseRepository<T> where T : class
+    public interface ICrud<T> where T : class
     {
         /// <summary>
         /// Crea una entidad en la base de datos.

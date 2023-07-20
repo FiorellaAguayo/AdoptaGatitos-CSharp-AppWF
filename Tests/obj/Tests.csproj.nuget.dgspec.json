@@ -31,8 +31,8 @@
               "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\Firestore.csproj": {
-                "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\Firestore.csproj"
+              "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\BDD.csproj": {
+                "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\BDD.csproj"
               },
               "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Validations\\Validations.csproj": {
                 "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Validations\\Validations.csproj"
@@ -144,12 +144,12 @@
         }
       }
     },
-    "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\Firestore.csproj": {
+    "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\BDD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\Firestore.csproj",
-        "projectName": "Firestore",
-        "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\Firestore.csproj",
+        "projectUniqueName": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\BDD.csproj",
+        "projectName": "BDD",
+        "projectPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\BDD.csproj",
         "packagesPath": "C:\\Users\\fiore\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\obj\\",
         "projectStyle": "PackageReference",

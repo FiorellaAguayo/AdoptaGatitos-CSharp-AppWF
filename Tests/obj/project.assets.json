@@ -988,6 +988,20 @@
           }
         }
       },
+      "BDD/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "Google.Cloud.Firestore": "3.3.0"
+        },
+        "compile": {
+          "bin/placeholder/BDD.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BDD.dll": {}
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1005,9 +1019,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "BDD": "1.0.0",
           "CsvHelper": "30.0.1",
           "Entities": "1.0.0",
-          "Firestore": "1.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Validations": "1.0.0",
           "iTextSharp": "5.5.13.3"
@@ -1017,20 +1031,6 @@
         },
         "runtime": {
           "bin/placeholder/EntitiesManager.dll": {}
-        }
-      },
-      "Firestore/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Entities": "1.0.0",
-          "Google.Cloud.Firestore": "3.3.0"
-        },
-        "compile": {
-          "bin/placeholder/Firestore.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Firestore.dll": {}
         }
       },
       "Validations/1.0.0": {
@@ -3583,6 +3583,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "BDD/1.0.0": {
+      "type": "project",
+      "path": "../Firestore/BDD.csproj",
+      "msbuildProject": "../Firestore/BDD.csproj"
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -3592,11 +3597,6 @@
       "type": "project",
       "path": "../EntitiesManager/EntitiesManager.csproj",
       "msbuildProject": "../EntitiesManager/EntitiesManager.csproj"
-    },
-    "Firestore/1.0.0": {
-      "type": "project",
-      "path": "../Firestore/Firestore.csproj",
-      "msbuildProject": "../Firestore/Firestore.csproj"
     },
     "Validations/1.0.0": {
       "type": "project",

@@ -77,3 +77,41 @@
 13/7/2023 17:14:30: Se exportó una lista de gatos a json.
 13/7/2023 17:14:31: Se exportó una lista de gatos a csv.
 13/7/2023 17:14:33: Se exportó una lista de gatos a pdf.
+13/7/2023 17:18:21: El usuario admin ha iniciado sesión
+13/7/2023 17:18:24: El usuario admin está mirando administracion de gatos.
+13/7/2023 17:18:53: Se agregó un gato.
+13/7/2023 17:18:54: El usuario admin está mirando cuenta.
+13/7/2023 17:18:54: El usuario admin está mirando administracion de gatos.
+13/7/2023 17:18:58: El usuario admin está mirando perfiles.
+13/7/2023 17:19:13: El usuario admin está mirando donaciones.
+13/7/2023 17:19:13: El usuario admin está mirando cuenta.
+13/7/2023 17:19:14: El usuario admin está mirando contacto.
+13/7/2023 17:19:14: El usuario admin está mirando donaciones.
+13/7/2023 17:19:15: El usuario admin está mirando perfiles.
+13/7/2023 17:19:15: El usuario admin está mirando cuenta.
+13/7/2023 17:19:15: El usuario admin está mirando administracion de usuarios.
+13/7/2023 17:19:19: El usuario admin está mirando perfiles.
+13/7/2023 19:21:27: El usuario admin ha iniciado sesión
+13/7/2023 19:21:36: El usuario admin está mirando perfiles.
+13/7/2023 19:22:32: El usuario admin está mirando donaciones.
+13/7/2023 19:22:35: El usuario admin está mirando perfiles.
+13/7/2023 19:22:41: El usuario admin está mirando donaciones.
+13/7/2023 19:22:44: El usuario admin está mirando contacto.
+13/7/2023 19:22:45: El usuario admin está mirando cuenta.
+13/7/2023 19:22:50: El usuario admin está mirando administracion de gatos.
+13/7/2023 19:22:52: El usuario admin está mirando administracion de usuarios.
+13/7/2023 20:22:15: El usuario admin ha iniciado sesión
+13/7/2023 20:22:18: El usuario admin está mirando administracion de gatos.
+13/7/2023 20:22:18: El usuario admin está mirando cuenta.
+13/7/2023 20:22:18: El usuario admin está mirando contacto.
+13/7/2023 20:22:19: El usuario admin está mirando contacto.
+13/7/2023 21:17:31: El usuario admin ha iniciado sesión
+13/7/2023 21:17:46: El usuario admin está mirando perfiles.
+13/7/2023 21:18:00: El usuario admin está mirando donaciones.
+13/7/2023 21:18:03: El usuario admin está mirando contacto.
+13/7/2023 21:18:06: El usuario admin está mirando cuenta.
+13/7/2023 21:18:15: El usuario admin está mirando administracion de gatos.
+13/7/2023 21:18:28: El usuario admin está mirando administracion de usuarios.
+13/7/2023 21:18:34: Se exportó una lista de usuarios a json.
+13/7/2023 21:18:37: Se exportó una lista de usuarios a csv.
+13/7/2023 21:18:50: Se exportó una lista de usuarios a pdf.

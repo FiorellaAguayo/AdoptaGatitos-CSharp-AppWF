@@ -14,7 +14,7 @@ namespace Reports
         /// </summary>
         /// <param name="data">La lista de datos a exportar.</param>
         /// <param name="path">La ubicación del archivo PDF de destino.</param>
-        /// <returns>Una tarea que representa la finalización de la exportación.</returns>
+        /// <returns>Una tareaterminada.</returns>
         public Task ExportData(List<T> data, string path)
         {
             return Task.Run(() =>

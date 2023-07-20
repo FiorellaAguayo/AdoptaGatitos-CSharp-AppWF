@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatitasSuaves", "PatitasSuaves\PatitasSuaves.csproj", "{A3D58A2C-3A75-49AD-9FC5-FF1823577747}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firestore", "Firestore\Firestore.csproj", "{B642145E-EB50-46F9-8C6B-729F2FF62F04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDD", "Firestore\BDD.csproj", "{B642145E-EB50-46F9-8C6B-729F2FF62F04}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{C4D68AC4-DCF3-4122-9CF0-B5E67CE3A15A}"
 EndProject

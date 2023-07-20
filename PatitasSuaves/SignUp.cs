@@ -1,9 +1,6 @@
 ﻿using Entities;
-
 using EntitiesManager;
-
 using LogData;
-
 using static EntitiesManager.UserManager;
 
 namespace PatitasSuaves

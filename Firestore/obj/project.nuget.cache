@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UCx6qmGyke3aUeTylvwY4ABmuRPeI5+Mz3kg5nyIYqp3pDe5zdvewsRe4Lkb88b5oIxEhT1m/ZAVxuYBcYIRbg==",
+  "dgSpecHash": "TzQ+gk+yqgJLr0+yKOfu/WVW8ykJKplOLEHnRFQG6yM9z3ZdaFlmfYgECtOJosKoJPtZ8wTxN7cxSwX6U8IkNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\Firestore.csproj",
+  "projectFilePath": "C:\\Users\\fiore\\OneDrive\\Escritorio\\nuevoREPOO\\Firestore\\BDD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fiore\\.nuget\\packages\\google.api.commonprotos\\2.7.0\\google.api.commonprotos.2.7.0.nupkg.sha512",
     "C:\\Users\\fiore\\.nuget\\packages\\google.api.gax\\4.3.1\\google.api.gax.4.3.1.nupkg.sha512",

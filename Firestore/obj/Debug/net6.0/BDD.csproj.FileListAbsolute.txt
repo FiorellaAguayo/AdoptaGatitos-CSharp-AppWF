@@ -1,0 +1,15 @@
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\bin\Debug\net6.0\BDD.deps.json
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\bin\Debug\net6.0\BDD.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\bin\Debug\net6.0\BDD.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\bin\Debug\net6.0\Entities.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\bin\Debug\net6.0\Entities.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\BDD.csproj.AssemblyReference.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\BDD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\BDD.AssemblyInfoInputs.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\BDD.AssemblyInfo.cs
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\BDD.csproj.CoreCompileInputs.cache
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\BDD.csproj.CopyComplete
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\BDD.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\refint\BDD.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\BDD.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Firestore\obj\Debug\net6.0\ref\BDD.dll

@@ -112,15 +112,15 @@ C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\zh-Hans\Mic
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\BDD.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\Entities.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\EntitiesManager.dll
-C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\Firestore.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\Validations.dll
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\EntitiesManager.pdb
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\Validations.pdb
+C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\BDD.pdb
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\Entities.pdb
-C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\Firestore.pdb
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\obj\Debug\net6.0\Tests.csproj.AssemblyReference.cache
 C:\Users\fiore\OneDrive\Escritorio\nuevoREPOO\Tests\obj\Debug\net6.0\Tests.GeneratedMSBuildEditorConfig.editorconfig
